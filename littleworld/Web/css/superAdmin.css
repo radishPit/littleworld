@@ -8,22 +8,49 @@ input{ border:0;}
 /*******************整体布局 end*****************************/
 
 /*******************top *****************************/
-#topNav{ border: 1px solid #ccc; width: 100%; height: 30px;}
-#topMain{ width: 960px; height: 30px; margin: 0 auto; line-height: 30px; text-align: left;}
+#topNav{ width: 100%; height: 27px; border-bottom: 1px solid rgb(195, 195, 195); box-shadow: 0 0 1px rgba(0,0,0,0.1); background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat;}
+#topMain{ width: 960px; height: 27px; margin: 0 auto; line-height: 30px; text-align: left;}
 #topMain a{ color: red; text-decoration: underline;}
 /*******************top nav*****************************/
 
 /*******************mainNav*****************************/
-#mainTop{ border: 1px solid #ccc; width: 960px; height: 100px; margin: 0 auto; line-height: 100px; font-size: 50px; margin-top: 10px; font-weight: 700;}
-#mainNav{ border: 1px solid #ccc; width: 960px; height: 40px; margin: 15px auto 10px auto;}
-#mainNav ul{ width: 970px; height: 100%;}
-#mainNav li{ width: 138px; float: left; height: 40px; display: block; }
-#mainNav a{ width: 114px; height: 32px; *width: 134px; *height: 40px; border-top-left-radius: 8px; border-top-right-radius: 8px; display: block; background-color: rgb(160, 163, 166); box-shadow: rgba(0, 0, 0, 0.4) 1px 0px 1px 0px; font-size: 14px; float: left; font-weight: 700; line-height: 28px; color: #fff; padding: 8px 10px 0 10px; margin-right: 4px;}
-#mainNav .as{ background-color: rgb(100, 24, 51);}
+#mainTop{ width: 960px; height: 100px; background-image: url("../images/superAdminImg/superAdimTop.jpg"); background-repeat: repeat-x; margin: 0 auto; line-height: 100px; font-size: 50px; margin-top: 10px; font-weight: 700;}
+#mainNav{ width: 960px; height: 40px; margin: 15px auto 10px auto;}
+#mainNav ul{ width: 800px; height: 100%; margin: 0 auto;}
+#mainNav li{ width: 390px; float: left; height: 40px; display: block; margin-right: 4px; cursor: pointer; }
+#mainNav a{ width: 100%; height: 40px; line-height: 40px;  border-top-left-radius: 8px; border-top-right-radius: 8px; display: block; background-color: rgb(206,244,255); box-shadow: rgba(0, 0, 0, 0.4) 1px 0px 1px 0px; font-size: 14px; float: left; font-weight: 700; color: #000; }
+#mainNav .as{ background-color: rgb(105,217,236);}
 /********************mainNav end****************************/
 
-#loginInf{ width: 245px; height: 111px;  margin:20px auto 0 auto; border-radius: 8px; border:1px solid #303031; background-color: #e0e7ee; box-shadow: 0 0 2px rgba(0,0,0,0.6) inset;}
-.logintext{ background-color: transparent; width: 225px; height:22px;  margin: 8px 10px 5px 10px; font-size: 14px; font-weight: 700; line-height: 16px; font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,"sans-serif"; color: rgb(68, 68, 68);}
-#textEmail{ width: 245px; height: 37px; border-bottom: 1px solid #ccc; }
-#textPassword{ width: 245px; height: 37px; border-bottom: 1px solid #ccc; }
-#loginBtn{ width: 245px; height: 32px; font-size: 14px; box-shadow: 0 0 2px rgba(0,0,0,0.6) inset; display: block; font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,"sans-serif"; line-height: 32px; color: #fff;  margin:20px auto 0 auto; border-radius: 5px; background-color: #609bc5; border:1px solid #1e4311;}
+/********************查看信息部分****************************/
+.searchs{ width: 100%; height: 30px;margin-bottom: 10px; }
+.searchsL{ width: 350px; height: 30px; float: right; text-align: left;}
+.searchsL button{ width: 50px; height: 25px;}
+#tags{ width: 200px; height: 23px; border: 1px solid #ccc; text-align: left; margin-right: 10px;}
+.mainContent{ width: 960px; height: 550px; margin: 0 auto; border: 1px solid rgb(195, 195, 195);}
+.mainCTitle{ width: 100%; height: 27px; background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat-x; border-bottom: 1px solid rgb(195, 195, 195); line-height: 27px;}
+.mainCContent{ width: 100%; height: 450px; margin-top: 20px; }
+.mainCContentTb{ width: 800px; height: 450px; margin: 0 auto; border: 1px solid rgb(197, 192, 232); }
+.mainCContentTb li{ width: 800px; height: 24px; border-bottom: 1px solid rgb(197, 192, 232); *margin-top: -1px;}
+.mainCContentTbLi1{ background-color: rgb(206,244,255); }
+.mainCContentTb span{ width: 159px; height: 24px; line-height: 24px;  display: inline-block; float: left; border-right: 1px solid rgb(197, 192, 232); text-align: center; }
+.mainCContentTbLi1 span{ font-weight: 700;}
+.mainCContentTb .sp1,.mainCContentTb .sp2{ cursor: pointer; height: 20px; *height: 24px; padding-top: 4px; line-height: 15px;}
+.sp2 img{ margin-right: 3px; vertical-align: bottom; *vertical-align: middle;}
+.sp2 a{ color: rgb(3, 101, 192); text-decoration: underline;}
+.mainCContentTb .sp2 { border-right: 0; }
+/********************查看信息部分 end****************************/
+
+/*******************添加管理员部分****************************/
+.AddAdmin{ display: none;}
+.addUl{ padding: 50px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
+
+.addUl li{ width: 100%; height: 70px; }
+.addUl label{ width: 100px; height: 22px; float: left; color: #000; line-height: 30px; text-align: right; font-size: 14px;}
+.addDiv{ margin-left: 10px; width: 250px; height: 100%; float: left; text-align: left; }
+.addDiv input{ width: 230px; height: 30px; line-height: 30px; border: 1px solid rgb(165, 175, 195);}
+.addDiv span{ display: none; margin-top: 5px; color: #999; *margin-left: 10px;}
+.addBtn{ cursor: pointer; margin: 30px 0 0 120px; text-align: center; font-weight: 700; width: 190px; height: 36px; line-height: 36px; color: #fff; font-size: 16px; background-position: -200px -70px; background-repeat: no-repeat; border:0; background-image: url("../images/superAdminImg/login_btn_01.png");}
+.addBtn:hover{ background-position: -200px -112px;}
+/*******************添加管理员部分 end****************************/
+
