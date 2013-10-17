@@ -1,0 +1,6 @@
+$(function () {
+    initEvents();
+});
+function initEvents() { 
+
+}
