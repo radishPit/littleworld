@@ -1,0 +1,9 @@
+E:\项目\littleworld\Common\bin\Debug\littleworld.Common.dll
+E:\项目\littleworld\Common\bin\Debug\littleworld.Common.pdb
+E:\项目\littleworld\Common\bin\Debug\COM.Excel.dll
+E:\项目\littleworld\Common\bin\Debug\Excel.dll
+E:\项目\littleworld\Common\bin\Debug\OpenSmtp.dll
+E:\项目\littleworld\Common\bin\Debug\OWC10Chart.dll
+E:\项目\littleworld\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\littleworld\Common\obj\Debug\littleworld.Common.dll
+E:\项目\littleworld\Common\obj\Debug\littleworld.Common.pdb

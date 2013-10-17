@@ -1,0 +1,5 @@
+E:\项目\littleworld\Model\bin\Debug\littleworld.Model.dll
+E:\项目\littleworld\Model\bin\Debug\littleworld.Model.pdb
+E:\项目\littleworld\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\littleworld\Model\obj\Debug\littleworld.Model.dll
+E:\项目\littleworld\Model\obj\Debug\littleworld.Model.pdb
