@@ -114,6 +114,7 @@
     <Content Include="css\userRegister.css" />
     <Content Include="css\userReport.css" />
     <Content Include="css\userResetPwd.css" />
+    <Content Include="css\userSpace.css" />
     <Content Include="css\userStore.css" />
     <Content Include="css\userSupport.css" />
     <Content Include="images\commonImg\Logo250,100.png" />
@@ -146,6 +147,7 @@
     <Content Include="js\userRegister.js" />
     <Content Include="js\userReport.js" />
     <Content Include="js\userResetPwd.js" />
+    <Content Include="js\userSpace.js" />
     <Content Include="js\userStore.js" />
     <Content Include="js\userSupport.js" />
     <Content Include="superAdmin.aspx" />
@@ -159,6 +161,7 @@
     <Content Include="userRegister.aspx" />
     <Content Include="userReport.aspx" />
     <Content Include="userResetPwd.aspx" />
+    <Content Include="userSpace.aspx" />
     <Content Include="userStore.aspx" />
     <Content Include="userSupport.aspx" />
     <Content Include="Web.config" />
@@ -304,6 +307,13 @@
     </Compile>
     <Compile Include="userResetPwd.aspx.designer.cs">
       <DependentUpon>userResetPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userSpace.aspx.cs">
+      <DependentUpon>userSpace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userSpace.aspx.designer.cs">
+      <DependentUpon>userSpace.aspx</DependentUpon>
     </Compile>
     <Compile Include="userStore.aspx.cs">
       <DependentUpon>userStore.aspx</DependentUpon>
