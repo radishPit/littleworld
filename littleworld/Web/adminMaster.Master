@@ -4,16 +4,78 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>普通管理员</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="shortcut icon" href="css/images/" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/adminMaster.css" />
+	<script type="text/javascript" src="js/Jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/adminMaster.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         <div id="topNav">
+			<div id="topMain"><label>commonAdmin,你好！</label><a href="">退出</a></div>
+		</div>
+		<div id="mainTop">普通管理员</div>
+        <div id="main">
+            <div id="mainLeft">
+                <ul id="menu">
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>个人信息管理</a>
+                        <ul>
+                            <li><a href="adminModifyInfo.aspx">修改密码</a></li>
+                            <%--<li><a href="adminSeeUser.aspx">管理用户</a></li>--%>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>用户管理</a>
+                        <ul>
+                            <li><a href="adminSeeUser.aspx">查看用户信息</a></li>
+                            <%--<li><a href="adminSeeUser.aspx">管理用户</a></li>--%>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>新鲜事管理</a>
+                        <ul>
+                            <li><a href="adminSeeNovelty.aspx">查看新鲜事</a></li>
+                           <%-- <li><a href="adminSeeUser.aspx">管理新鲜事</a></li>--%>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>通知管理</a>
+                        <ul>
+                            <li><a href="adminSendNotice.aspx">发送通知</a></li>
+                            <li><a href="adminSeeNotice.aspx">查看通知</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>事务日志管理</a>
+                        <ul>
+                            <li><a href="adminSeeEvents.aspx">查看事务日志</a></li>
+                        </ul>
+                     </li>
+                     <li class="ui-state-disabled">
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>其它</a>
+                     </li>
+                </ul>
+            </div>
+            <div id="mainRight">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+       
     </div>
     </form>
 </body>

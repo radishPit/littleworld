@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminLogin.aspx" />
+    <Content Include="adminModifyInfo.aspx" />
     <Content Include="adminSeeEvents.aspx" />
     <Content Include="adminSeeNotice.aspx" />
     <Content Include="adminSeeNovelty.aspx" />
@@ -78,6 +79,7 @@
     <Content Include="adminSendNotice.aspx" />
     <Content Include="css\adminLogin.css" />
     <Content Include="css\adminMaster.css" />
+    <Content Include="css\adminModifyInfo.css" />
     <Content Include="css\adminSeeEvents.css" />
     <Content Include="css\adminSeeNotice.css" />
     <Content Include="css\adminSeeNovelty.css" />
@@ -126,6 +128,7 @@
     <Content Include="images\superAdminImg\topnav.jpg" />
     <Content Include="js\adminLogin.js" />
     <Content Include="js\adminMaster.js" />
+    <Content Include="js\adminModifyInfo.js" />
     <Content Include="js\adminSeeEvents.js" />
     <Content Include="js\adminSeeNotice.js" />
     <Content Include="js\adminSeeNovelty.js" />
@@ -164,7 +167,9 @@
     <Content Include="userSpace.aspx" />
     <Content Include="userStore.aspx" />
     <Content Include="userSupport.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminLogin.aspx.cs">
@@ -180,6 +185,13 @@
     </Compile>
     <Compile Include="adminMaster.Master.designer.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminModifyInfo.aspx.cs">
+      <DependentUpon>adminModifyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminModifyInfo.aspx.designer.cs">
+      <DependentUpon>adminModifyInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminSeeEvents.aspx.cs">
       <DependentUpon>adminSeeEvents.aspx</DependentUpon>
