@@ -40,8 +40,8 @@ i{color: #fff;font-family:"SimSun";line-height:38px;font-size:14px;padding: 11px
 .gn_text_list a:hover{background-color:#ccc;}
 
 
-.W_main{width: 980px;height: 14999px;margin: 0 auto;border-radius: 5px 5px 5px 5px;border-radius:5px 5px 5px 5px;}
-.W_profile{width:980px;height:1290px;}
+.W_main{width: 980px;height: auto;margin: 0 auto;border-radius: 5px 5px 5px 5px;border-radius:5px 5px 5px 5px;}
+.W_profile{width:980px;height:auto;min-height:300px;}
 
 
 .ContentPlaceHolder1{width: 600px;height: 5908px;padding: 28px 0 50px 0;float: left;overflow: hidden;}
