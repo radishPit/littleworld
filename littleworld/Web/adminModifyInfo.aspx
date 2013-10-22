@@ -5,13 +5,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="mainContent AddAdmin">
-		<div class="mainCTitle">修改密码</div>
+		<div class="mainCTitle">&nbsp;&nbsp;修改密码</div>
 		<ul class="addUl">
 			<li>
 				<label>账&nbsp;&nbsp;&nbsp;&nbsp;号:</label>
 				<div class="addDiv">
                     <asp:TextBox type="text" runat="server" ID="adminName" ReadOnly="True"></asp:TextBox>
-					<%--<asp:input type="text"/>--%>
 					<span>请输入新管理员的账号，请注意唯一性！</span>
 				</div>
 			</li>
@@ -26,7 +25,6 @@
 				<label>新密码:</label>
 				<div class="addDiv">
                     <asp:TextBox type="text" runat="server" ID="adminPwd" TextMode="Password"  class="commonText"></asp:TextBox>
-					<%--<input type="text"/>--%>
 					<span>请输入新密码，6-16位字符，可用数字、字母或符号组合！</span>
 				</div>
 			</li>
@@ -34,16 +32,12 @@
 				<label>确认新密码:</label>
 				<div class="addDiv">
                     <asp:TextBox type="text" runat="server" ID="adminPwdAgain" TextMode="Password"  class="commonText"></asp:TextBox>
-					<%--<input type="text"/>--%>
 					<span>请再次输入新密码，两次密码必须一致！</span>
 				</div>
 			</li>
 			<li>
-                <asp:Button ID="addBtn" runat="server"  Text="确定" class="addBtn" OnClick="sureBtn_Click" />
-                <asp:Button ID="cancelBtn" runat="server"  Text="取消" class="addBtn addBtn2" OnClick="cancelBtn_Click"/>
-                <%--<asp:Button runat="server" ID="submit" class="addBtn" Text="添加" />--%>
-                <%--<button class="addBtn">添&nbsp;&nbsp;加</button>--%>
-					<%--<div class="addBtn">添&nbsp;&nbsp;加</div>--%>
+                <asp:Button ID="addBtn" runat="server"  Text="确定" class="addBtn" OnClick="sureBtn_Click"  />
+                <asp:Button ID="cancelBtn" runat="server"  Text="取消" class="addBtn addBtn2" OnClick="cancelBtn_Click"/> 
             </li>
 		</ul>
 	</div>

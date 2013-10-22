@@ -1,0 +1,48 @@
+﻿#all{ width:100%; height:1000px; background-image:url("../images/superAdminImg/bg-body.gif"); background-repeat:repeat-y; background-color:rgb(240, 240, 240); }
+#main{ width:100%; height:100%; background-image:url("../images/superAdminImg/bg-radial-gradient.gif"); background-repeat:no-repeat; background-position:230px 0%;}
+#mainLeft{ width:221px; *width:230px; height: 100%; float:left; padding-left:9px;text-align: right; }
+#mainRight{ width:77%; height: 960px; float:right; margin-right:30px; padding-top:40px; text-align:left;} 
+
+/**************************mainLeft******************************/
+.mainLeft1{ width: 100%; height:40px;margin:40px 0 40px -10px;  }
+.mainLeft1 img{ width:100%; height:40px; cursor: pointer;}
+.mainLoginInfo{ width: 191px; *width:221px; height:70px; margin-bottom:20px; line-height:35px; color:rgb(136, 136, 136); padding: 0 15px; } 
+.adminName{ color: rgb(204,204,204);  } 
+.adminName:hover{ color:#fff;}
+.mainLeft3{ width: 206px; height:390px; margin-left:15px;}
+.mainLeft3Li{ width: 100%; height:auto; margin-bottom: 10px; }
+.mainLeft3ATitle{ width:176px; height:14px; *width: 206px; *height: 34px; padding: 10px 15px; color: #fff; display: block; background-image:url("../images/superAdminImg/bg-menu-item-green.gif"); background-repeat: no-repeat; line-height: 14px; font-size:14px; }
+.mainLeft3ATitleS{ background-image:url("../images/superAdminImg/bg-menu-item-current.gif"); color: rgb(51, 51, 51); font-weight: 700;} 
+/**************************mainLeft end*******************************/
+/**************************mainRight*******************************/
+#mainRight h2{ width:100%; height:26px; margin-bottom:10px; color:rgb(34, 34, 34); font-size:26px; line-height: 26px; font-family:Helvetica,Arial,sans-serif; font-weight:700;}
+.mainRightP{ width:100%; height:27px; font-size:17px; color:rgb(85, 85, 85); margin-bottom:20px; font-family:Arial,Helvetica,sans-serif; line-height:27.2px;}
+.mainRightUl{ width: 100%; height: 132px; margin: 10px 0; text-align: center;}
+.mainRightUl li{ width: 122px; height: 132px; margin-right:15px; float: left; }
+.mainRightUl a{ width: 122px; height:110px; display: block; background-color:rgb(247, 247, 247); color:rgb(85, 85, 85); font-size:13px; line-height: 17px; border: 1px solid rgb(204, 204, 204);background-image:url("../images/superAdminImg/shortcut-button-bg.gif"); border-radius:6px; background-repeat:no-repeat;  }
+.mainRightUl img{ width: 48px; height: 48px; margin: 15px auto 20px auto; }
+
+#mainRTop{ width: 100%; height: auto;}
+#mainRBottom{ width: 100%; height: 630px; border: 1px solid rgb(204, 204, 204); border-radius: 6px;}
+#mainRFoot{ width: 100%; height: 20px; margin:40px 0 20px 0; padding-top:20px; border-top: 1px solid rgb(204, 204, 204); color:rgb(85, 85, 85); line-height: 20px; position:relative;}
+#goTop{ width: 50px; height: 49px; background-image:url("../images/superAdminImg/aside_float_bar_d2b39075.png"); background-position:0 -246px; background-repeat: no-repeat; position: absolute; right:0; top:0px; display:block; }
+
+.mainCTitle{ width: 100%; height: 40px; background-image: url("../images/superAdminImg/bg-content-box.gif"); background-repeat: repeat-x; font-size: 17px; color:rgb(34, 34, 34); line-height:40px; font-weight: 700;}
+/**************************mainRight end*******************************/
+
+/**************************普通管理员*******************************/
+/**************************普通管理员 mainLeft*******************************/
+.mainLeft3UlContent{ display: none; width:100%; height:auto;}
+.mainLeft3UlContentS{ display: block;}
+.mainLeft3UlContent li{ width:100%; height:32px; }
+.mainLeft3UlContent a{ width:176px; *width:206px; height:16px; *height:32px; padding: 8px 15px; display:block; color:rgb(170, 170, 170); line-height: 15.6px; font-size:13px; } 
+/**************************普通管理员 mainLeft end*******************************/
+/**************************普通管理员 end*******************************/
+
+
+
+
+
+
+
+

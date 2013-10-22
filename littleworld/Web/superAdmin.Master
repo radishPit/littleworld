@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="superAdmin.master.cs" Inherits="littleworld.Web.superAdmin1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>超级管理员</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="shortcut icon" href="css/images/" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/superAdministration.css" />
+	<script type="text/javascript" src="js/Jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/superAdministration.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="all">
+        <div id="main">
+            <div id="mainLeft">
+                <div class="mainLeft1"><img src="images/superAdminImg/logo.png" alt="" /></div>
+                <div class="mainLoginInfo">
+                    <a class="adminName" href="#"><asp:Label ID="adminNa" runat="server">超级管理员</asp:Label></a> <span>,你好！</span><br/>
+                    <a class="adminName" href="adminLogin.aspx">退出&nbsp;&nbsp;</a>
+                </div>
+                <ul class="mainLeft3">
+                    <li class="mainLeft3Li">
+                        <a href="superSeeAdminInfo.aspx" class="mainLeft3ATitle mainLeft3ATitle1 mainLeft3ATitleS">查看管理员信息</a>
+                        
+                    </li>
+                     <li class="mainLeft3Li">
+                        <a href="superAddAdmin.aspx" class="mainLeft3ATitle mainLeft3ATitle2">添加管理员</a>                 
+                    </li>
+                </ul>
+            </div>
+            <div id="mainRight">
+                <div id="mainRTop">
+                    <h2>Welcome superAdministration</h2>
+                    <p class="mainRightP">What would you like to do?(你想要做什么？)</p>
+                    <ul class="mainRightUl">                   
+                        <li><a href="superSeeAdminInfo.aspx" class="mainRightUla"><img src="images/superAdminImg/paper_content_pencil_48.png" alt="查看管理员信息" title="查看管理员信息"/><br/>查看管理员信息</a></li>
+                        <li><a href="superAddAdmin.aspx" class="mainRightUla"><img src="images/superAdminImg/pencil_48.png" alt="添加管理员" title="添加管理员"/><br/>添加管理员</a></li>
+                    </ul>
+                </div>
+                <div id="mainRBottom">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="mainRFoot">
+                    <a>&copy;&nbsp;Powered by RadishPit</a>
+                    <a href="#" id="goTop"></a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    </form>
+</body>
+</html>
