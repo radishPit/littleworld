@@ -170,6 +170,30 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="ws\adminLogin.asmx" />
+    <Content Include="ws\adminMaster.asmx" />
+    <Content Include="ws\adminModifyInfo.asmx" />
+    <Content Include="ws\adminSeeEvents.asmx" />
+    <Content Include="ws\adminSeeNotice.asmx" />
+    <Content Include="ws\adminSeeNovelty.asmx" />
+    <Content Include="ws\adminSeeUser.asmx" />
+    <Content Include="ws\adminSendNotice.asmx" />
+    <Content Include="ws\superAdmin.asmx" />
+    <Content Include="ws\userComment.asmx" />
+    <Content Include="ws\userFindPwd.asmx" />
+    <Content Include="ws\userGroupManage.asmx" />
+    <Content Include="ws\userHome.asmx" />
+    <Content Include="ws\userInfo.asmx" />
+    <Content Include="ws\userLogin.asmx" />
+    <Content Include="ws\userMassage.asmx" />
+    <Content Include="ws\userMasterTB.asmx" />
+    <Content Include="ws\userMasterTRB.asmx" />
+    <Content Include="ws\userRegister.asmx" />
+    <Content Include="ws\userReport.asmx" />
+    <Content Include="ws\userResetPwd.asmx" />
+    <Content Include="ws\userSpace.asmx" />
+    <Content Include="ws\userStore.asmx" />
+    <Content Include="ws\userSupport.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminLogin.aspx.cs">
@@ -340,6 +364,102 @@
     </Compile>
     <Compile Include="userSupport.aspx.designer.cs">
       <DependentUpon>userSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ws\adminLogin.asmx.cs">
+      <DependentUpon>adminLogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminMaster.asmx.cs">
+      <DependentUpon>adminMaster.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminModifyInfo.asmx.cs">
+      <DependentUpon>adminModifyInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminSeeEvents.asmx.cs">
+      <DependentUpon>adminSeeEvents.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminSeeNotice.asmx.cs">
+      <DependentUpon>adminSeeNotice.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminSeeNovelty.asmx.cs">
+      <DependentUpon>adminSeeNovelty.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminSeeUser.asmx.cs">
+      <DependentUpon>adminSeeUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\adminSendNotice.asmx.cs">
+      <DependentUpon>adminSendNotice.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\superAdmin.asmx.cs">
+      <DependentUpon>superAdmin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userComment.asmx.cs">
+      <DependentUpon>userComment.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userFindPwd.asmx.cs">
+      <DependentUpon>userFindPwd.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userGroupManage.asmx.cs">
+      <DependentUpon>userGroupManage.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userHome.asmx.cs">
+      <DependentUpon>userHome.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userInfo.asmx.cs">
+      <DependentUpon>userInfo.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userLogin.asmx.cs">
+      <DependentUpon>userLogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userMassage.asmx.cs">
+      <DependentUpon>userMassage.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userMasterTB.asmx.cs">
+      <DependentUpon>userMasterTB.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userMasterTRB.asmx.cs">
+      <DependentUpon>userMasterTRB.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userRegister.asmx.cs">
+      <DependentUpon>userRegister.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userReport.asmx.cs">
+      <DependentUpon>userReport.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userResetPwd.asmx.cs">
+      <DependentUpon>userResetPwd.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userSpace.asmx.cs">
+      <DependentUpon>userSpace.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userStore.asmx.cs">
+      <DependentUpon>userStore.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ws\userSupport.asmx.cs">
+      <DependentUpon>userSupport.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
