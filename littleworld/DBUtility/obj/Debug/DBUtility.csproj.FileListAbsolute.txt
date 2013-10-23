@@ -7,6 +7,7 @@ E:\项目\网页\littleworld\DBUtility\bin\Debug\System.Data.SQLite.DLL
 E:\项目\网页\littleworld\DBUtility\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.dll
 E:\项目\网页\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.pdb
+<<<<<<< HEAD
 E:\项目\littleworld\littleworld\DBUtility\bin\Debug\littleworld.DBUtility.dll
 E:\项目\littleworld\littleworld\DBUtility\bin\Debug\littleworld.DBUtility.pdb
 E:\项目\littleworld\littleworld\DBUtility\bin\Debug\IBatisNet.Common.dll
@@ -16,3 +17,14 @@ E:\项目\littleworld\littleworld\DBUtility\bin\Debug\System.Data.SQLite.DLL
 E:\项目\littleworld\littleworld\DBUtility\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.dll
 E:\项目\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.pdb
+=======
+E:\littleworld\littleworld\DBUtility\bin\Debug\littleworld.DBUtility.dll
+E:\littleworld\littleworld\DBUtility\bin\Debug\littleworld.DBUtility.pdb
+E:\littleworld\littleworld\DBUtility\bin\Debug\IBatisNet.Common.dll
+E:\littleworld\littleworld\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+E:\littleworld\littleworld\DBUtility\bin\Debug\MySql.Data.dll
+E:\littleworld\littleworld\DBUtility\bin\Debug\System.Data.SQLite.DLL
+E:\littleworld\littleworld\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.dll
+E:\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.pdb
+>>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725

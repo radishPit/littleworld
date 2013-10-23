@@ -11,7 +11,16 @@ function initEvents() {
     tabs();
     //当文本获得焦点或者失去焦点时，显示和隐藏提示部分
     showHideDes();
+    //点击取消按钮，所有文本框置空
+    setNullbtn2();
 }
+//点击取消按钮，所有文本框置空
+function setNullbtn2(){
+    $(".addBtn2").click(function () {
+        $("[type='text']").attr("Text", "");
+    });
+}
+
 function showHideDes() {
     $(".addDiv input").focus(function () {
         $(this).next("span").css("display", "block");
@@ -32,11 +41,11 @@ function tabs() {
 //提交按钮的背景颜色随着鼠标的移入、移出和点击时的变化
 function changeBgColor() {
     $(".addBtn").hover(function () {
-        $(this).css("background-position", "-200px -112px");
+        $(this).css("background-position", "-210px -112px");
     }, function () {
-        $(this).css("background-position", "-200px -70px");
+        $(this).css("background-position", "-210px -70px");
     }).mousedown(function () {
-        $(this).css("background-position", "-200px -154px");
+        $(this).css("background-position", "-210px -154px");
     });
 }
 function tags() {

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace littleworld.Web
 {
-    public partial class superAdmin : System.Web.UI.Page
+    public partial class superAdmin1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

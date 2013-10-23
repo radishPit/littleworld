@@ -1,12 +1,4 @@
-﻿/*******************整体布局*****************************/
-*{ margin:0; padding: 0;}
-img{ border:0;}
-a{ text-decoration: none;}
-ul,li{ list-style: none;}
-body{ text-align: center; font-size: 12px; font-family: "宋体";}
-input{ border:0;}
-/*******************整体布局 end*****************************/
-
+﻿
 /*******************top *****************************/
 #topNav{ width: 100%; height: 27px; border-bottom: 1px solid rgb(195, 195, 195); box-shadow: 0 0 1px rgba(0,0,0,0.1); background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat;}
 #topMain{ width: 960px; height: 27px; margin: 0 auto; line-height: 30px; text-align: left;}
@@ -27,10 +19,31 @@ input{ border:0;}
 .searchsL{ width: 350px; height: 30px; float: right; text-align: left;}
 .searchsL button{ width: 50px; height: 25px;}
 #tags{ width: 200px; height: 23px; border: 1px solid #ccc; text-align: left; margin-right: 10px;}
-.mainContent{ width: 960px; height: 550px; margin: 0 auto; border: 1px solid rgb(195, 195, 195);}
-.mainCTitle{ width: 100%; height: 27px; background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat-x; border-bottom: 1px solid rgb(195, 195, 195); line-height: 27px;}
+.mainContent{ width: 960px; height: 550px; margin: 0 auto; border: 1px solid rgb(195, 195, 195); border-radius: 5px;}
+.mainCTitle{ width: 100%; height: 27px; background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat-x; border-bottom: 1px solid rgb(195, 195, 195); line-height: 27px; border-radius: 3px;}
+
+.gvAdmin{ border: 1px solid #ccc;}
+.gvAdminAllHeader{  width: 159px; height: 24px; line-height: 24px; text-align: center; background-color: rgb(105,217,236); border: 1px solid rgb(197, 192, 232); }
+.oGvRow,.jGvRow{ height: 24px; line-height: 24px; text-align: center; background-color:#fff; }
+.jGvRow{ background-color:rgb(206,244,255);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mainCContent{ width: 100%; height: 450px; margin-top: 20px; }
-.mainCContentTb{ width: 800px; height: 450px; margin: 0 auto; border: 1px solid rgb(197, 192, 232); }
+.mainCContentTb{ width: 800px; height: 450px; margin: 0 auto; border: 1px solid rgb(197, 192, 232);border-radius: 5px; }
 .mainCContentTb li{ width: 800px; height: 24px; border-bottom: 1px solid rgb(197, 192, 232); *margin-top: -1px;}
 .mainCContentTbLi1{ background-color: rgb(206,244,255); }
 .mainCContentTb span{ width: 159px; height: 24px; line-height: 24px;  display: inline-block; float: left; border-right: 1px solid rgb(197, 192, 232); text-align: center; }
@@ -44,13 +57,13 @@ input{ border:0;}
 /*******************添加管理员部分****************************/
 .AddAdmin{ display: none;}
 .addUl{ padding: 50px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
-
 .addUl li{ width: 100%; height: 70px; }
 .addUl label{ width: 100px; height: 22px; float: left; color: #000; line-height: 30px; text-align: right; font-size: 14px;}
 .addDiv{ margin-left: 10px; width: 250px; height: 100%; float: left; text-align: left; }
 .addDiv input{ width: 230px; height: 30px; line-height: 30px; border: 1px solid rgb(165, 175, 195);}
 .addDiv span{ display: none; margin-top: 5px; color: #999; *margin-left: 10px;}
-.addBtn{ cursor: pointer; margin: 30px 0 0 120px; text-align: center; font-weight: 700; width: 190px; height: 36px; line-height: 36px; color: #fff; font-size: 16px; background-position: -200px -70px; background-repeat: no-repeat; border:0; background-image: url("../images/superAdminImg/login_btn_01.png");}
+.addBtn{ border-radius:5px; cursor: pointer; margin: 0 10px 0 120px; text-align: center; font-weight: 700; width: 90px; height: 36px; line-height: 36px; color: #fff; font-size: 16px; background-position: -210px -70px; background-repeat: no-repeat; border:0; background-image: url("../images/superAdminImg/login_btn_01.png");}
 .addBtn:hover{ background-position: -200px -112px;}
+.addBtn2{  margin: 0;}
 /*******************添加管理员部分 end****************************/
 

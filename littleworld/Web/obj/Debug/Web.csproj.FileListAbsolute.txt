@@ -23,6 +23,7 @@ E:\项目\网页\littleworld\Web\bin\littleworld.DBUtility.pdb
 E:\项目\网页\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\Web\obj\Debug\littleworld.Web.dll
 E:\项目\网页\littleworld\Web\obj\Debug\littleworld.Web.pdb
+<<<<<<< HEAD
 E:\项目\littleworld\littleworld\Web\bin\littleworld.Web.dll
 E:\项目\littleworld\littleworld\Web\bin\littleworld.Web.pdb
 E:\项目\littleworld\littleworld\Web\bin\littleworld.BLL.dll
@@ -48,3 +49,30 @@ E:\项目\littleworld\littleworld\Web\bin\littleworld.DBUtility.pdb
 E:\项目\littleworld\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\littleworld\littleworld\Web\obj\Debug\littleworld.Web.dll
 E:\项目\littleworld\littleworld\Web\obj\Debug\littleworld.Web.pdb
+=======
+E:\littleworld\littleworld\Web\bin\littleworld.Web.dll
+E:\littleworld\littleworld\Web\bin\littleworld.Web.pdb
+E:\littleworld\littleworld\Web\bin\littleworld.BLL.dll
+E:\littleworld\littleworld\Web\bin\littleworld.Common.dll
+E:\littleworld\littleworld\Web\bin\littleworld.Model.dll
+E:\littleworld\littleworld\Web\bin\LTP.Accounts.dll
+E:\littleworld\littleworld\Web\bin\LtpPageControl.dll
+E:\littleworld\littleworld\Web\bin\Microsoft.Web.UI.WebControls.dll
+E:\littleworld\littleworld\Web\bin\littleworld.DAL.dll
+E:\littleworld\littleworld\Web\bin\Excel.dll
+E:\littleworld\littleworld\Web\bin\COM.Excel.dll
+E:\littleworld\littleworld\Web\bin\OpenSmtp.dll
+E:\littleworld\littleworld\Web\bin\littleworld.DBUtility.dll
+E:\littleworld\littleworld\Web\bin\IBatisNet.DataMapper.dll
+E:\littleworld\littleworld\Web\bin\IBatisNet.Common.dll
+E:\littleworld\littleworld\Web\bin\System.Data.SQLite.dll
+E:\littleworld\littleworld\Web\bin\MySql.Data.dll
+E:\littleworld\littleworld\Web\bin\littleworld.BLL.pdb
+E:\littleworld\littleworld\Web\bin\littleworld.Common.pdb
+E:\littleworld\littleworld\Web\bin\littleworld.Model.pdb
+E:\littleworld\littleworld\Web\bin\littleworld.DAL.pdb
+E:\littleworld\littleworld\Web\bin\littleworld.DBUtility.pdb
+E:\littleworld\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
+E:\littleworld\littleworld\Web\obj\Debug\littleworld.Web.dll
+E:\littleworld\littleworld\Web\obj\Debug\littleworld.Web.pdb
+>>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725

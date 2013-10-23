@@ -4,17 +4,182 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>普通管理员</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="shortcut icon" href="css/images/" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/superAdministration.css" />
+	<script type="text/javascript" src="js/Jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/superAdministration.js"></script>
+
+    <%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<link rel="shortcut icon" href="css/images/" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/adminMaster.css" />
+	<script type="text/javascript" src="js/Jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/adminMaster.js"></script>--%>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div id="all">
+            <div id="main">
+                <div id="mainLeft">
+                    <div class="mainLeft1"><img src="images/superAdminImg/logo.png" alt="" /></div>
+                    <div class="mainLoginInfo">
+                        <a class="adminName" href="#"><asp:Label ID="adminNamel" runat="server">管理员</asp:Label></a> <span>,你好！</span><br/>
+                        <a class="adminName" href="adminLogin.aspx">退出&nbsp;&nbsp;</a>
+                    </div>
+                    <ul class="mainLeft3">
+                        <li class="mainLeft3Li">
+                            <a href="#" class="mainLeft3ATitle mainLeft3ATitleS">个人信息管理</a>
+                            <ul class="mainLeft3UlContent mainLeft3UlContentS">
+                                <li><a href="adminModifyInfo.aspx">修改密码</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLeft3Li">
+                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle2">用户管理</a>   
+                            <ul class="mainLeft3UlContent">
+                                <li><a href="adminSeeUser.aspx">查看用户信息</a></li>
+                            </ul>              
+                        </li>
+                        <li class="mainLeft3Li">
+                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle3">新鲜事管理</a>   
+                            <ul class="mainLeft3UlContent">
+                                <li><a href="adminSeeNovelty.aspx">查看新鲜事</a></li>
+                            </ul>              
+                        </li>
+                        <li class="mainLeft3Li">
+                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle4">通知管理</a>   
+                            <ul class="mainLeft3UlContent">
+                                <li><a href="adminSendNotice.aspx">发送通知</a></li>
+                                <li><a href="adminSeeNotice.aspx">查看通知</a></li>
+                            </ul>              
+                        </li>
+                        <li class="mainLeft3Li">
+                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle5">事务日志管理</a>   
+                            <ul class="mainLeft3UlContent">
+                                <li><a href="adminSeeNovelty.aspx">查看事务日志</a></li>
+                            </ul>              
+                        </li>
+                         <li class="mainLeft3Li">
+                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle3">其他</a>             
+                        </li>
+                    </ul>
+                </div>
+                <div id="mainRight">
+                    <div id="mainRTop">
+                        <h2>Welcome dministration</h2>
+                        <p class="mainRightP">What would you like to do?(你想要做什么？)</p>
+                        <ul class="mainRightUl">                   
+                            <li><a href="adminModifyInfo.aspx" class="mainRightUla"><img src="images/superAdminImg/paper_content_pencil_48.png" alt="个人信息管理" title="个人信息管理"/><br/>个人信息管理</a></li>
+                            <li><a href="adminSeeUser.aspx" class="mainRightUla"><img src="images/superAdminImg/pencil_48.png" alt="用户管理" title="用户管理"/><br/>用户管理</a></li>
+                            <li><a href="adminSeeNovelty.aspx" class="mainRightUla"><img src="images/superAdminImg/comment_48.png" alt="新鲜事管理" title="新鲜事管理"/><br/>新鲜事管理</a></li>
+                            <li><a href="adminSendNotice.aspx" class="mainRightUla"><img src="images/superAdminImg/image_add_48.png" alt="通知管理" title="通知管理"/><br/>通知管理</a></li>
+                            <li><a href="adminSeeNovelty.aspx" class="mainRightUla"><img src="images/superAdminImg/clock_48.png" alt="查看事务日志" title="查看事务日志"/><br/>查看事务日志</a></li>
+                        </ul>
+                    </div>
+                    <div id="mainRBottom">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div id="mainRFoot">
+                         <a>&copy;&nbsp;Powered by RadishPit</a>
+                         <a href="#" id="goTop"></a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%--<div>
+         <div id="topNav">
+			<div id="topMain"><asp:Label runat="server" ID="adminNamel">commonAdmin</asp:Label>,你好！<a href="">退出</a></div>
+		</div>
+		<div id="mainTop">普通管理员</div>
+        <div id="main">
+            <div id="mainLeft">
+                <ul id="menu">
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>个人信息管理</a>
+                        <ul>
+                            <li><a href="adminModifyInfo.aspx">修改密码</a></li>
+                           
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>用户管理</a>
+                        <ul>
+                            <li><a href="adminSeeUser.aspx">查看用户信息</a></li>
+                          
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>新鲜事管理</a>
+                        <ul>
+                            <li><a href="adminSeeNovelty.aspx">查看新鲜事</a></li>
+                           
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>通知管理</a>
+                        <ul>
+                            <li><a href="adminSendNotice.aspx">发送通知</a></li>
+                            <li><a href="adminSeeNotice.aspx">查看通知</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>事务日志管理</a>
+                        <ul>
+                            <li><a href="adminSeeEvents.aspx">查看事务日志</a></li>
+                        </ul>
+                     </li>
+                     <li class="ui-state-disabled">
+                        <a href="#"><span class="ui-icon ui-icon-disk"></span>其它</a>
+                     </li>
+                </ul>
+            </div>
+            <div id="mainRight">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+       
+    </div>--%>
     </form>
 </body>
 </html>

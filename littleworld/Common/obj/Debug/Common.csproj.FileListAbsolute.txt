@@ -7,6 +7,7 @@ E:\项目\网页\littleworld\Common\bin\Debug\OWC10Chart.dll
 E:\项目\网页\littleworld\Common\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\Common\obj\Debug\littleworld.Common.dll
 E:\项目\网页\littleworld\Common\obj\Debug\littleworld.Common.pdb
+<<<<<<< HEAD
 E:\项目\littleworld\littleworld\Common\bin\Debug\littleworld.Common.dll
 E:\项目\littleworld\littleworld\Common\bin\Debug\littleworld.Common.pdb
 E:\项目\littleworld\littleworld\Common\bin\Debug\COM.Excel.dll
@@ -16,3 +17,14 @@ E:\项目\littleworld\littleworld\Common\bin\Debug\OWC10Chart.dll
 E:\项目\littleworld\littleworld\Common\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\littleworld\littleworld\Common\obj\Debug\littleworld.Common.dll
 E:\项目\littleworld\littleworld\Common\obj\Debug\littleworld.Common.pdb
+=======
+E:\littleworld\littleworld\Common\bin\Debug\littleworld.Common.dll
+E:\littleworld\littleworld\Common\bin\Debug\littleworld.Common.pdb
+E:\littleworld\littleworld\Common\bin\Debug\COM.Excel.dll
+E:\littleworld\littleworld\Common\bin\Debug\Excel.dll
+E:\littleworld\littleworld\Common\bin\Debug\OpenSmtp.dll
+E:\littleworld\littleworld\Common\bin\Debug\OWC10Chart.dll
+E:\littleworld\littleworld\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\littleworld\littleworld\Common\obj\Debug\littleworld.Common.dll
+E:\littleworld\littleworld\Common\obj\Debug\littleworld.Common.pdb
+>>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725

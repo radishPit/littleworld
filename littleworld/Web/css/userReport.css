@@ -1,2 +1,205 @@
-﻿body {
+﻿/*******************整体布局*****************************/
+*{ margin:0; padding: 0;}
+img{ border:0;}
+a{ text-decoration: none;}
+ul,li{ list-style: none;}
+body{ background:url(../images/userReportImg/bg.jpg) no-repeat center 0 #abcedf;}
+input{ border:0;}
+body, button, input, select, textarea {
+    font: 12px/1.125 Arial,Helvetica,sans-serif;
 }
+/*******************整体布局 end*****************************/
+
+/*******************container*****************************/
+.cp_container{
+	width:100%;
+	background:url(../images/userReportImg/bg_fill_h.jpg) repeat-x;
+	padding-top:25px;
+}
+.cp_paper{
+	margin:0 auto;
+	width:462px;
+}
+
+.cp_paper_head{
+	width:462px;
+	_height:auto!important;
+	_height:290px!important;
+	min-height:290px;
+	background:url(../images/userReportImg/paper.png) no-repeat;
+
+	_overflow-x:hidden;
+}
+
+.cp_paper_body{
+	width:462px;
+	_height:auto!important;
+	_height:36px!important;
+	height:105px;
+	min-height:36px;
+	background:url(../images/userReportImg/bg_paperfill.png) repeat-y;
+	
+}
+
+.cp_paper_bottom{
+	width:462px;
+	height:38px;
+	background:url(../images/userReportImg/paper.png) no-repeat 0 bottom;
+
+}
+.cp_txt_to{
+	margin:54px 0 0 41px;
+}
+.cp_txt_to {
+    display: inline;
+    float: left;
+    color: rgb(102, 102, 102);
+}
+.cp_link_blue{
+	color:#0078b6;
+}
+
+.clearfix{   display:block;
+}
+.cp_wb_short{
+	display:inline;
+	float:left;
+	width:380px;
+	height:50px;
+	background:#e6e6e6;
+	overflow:hidden;
+	color:#333;
+	margin: 10px 0px 0px 41px;
+}
+
+.cp_wb_short dl{margin-top:10px;}
+
+
+.cp_wb_long dt{
+	display:inline;
+	float:left;
+	margin-left:10px;
+	width:30px;
+}
+
+.cp_wb_long dd{
+	margin-left:70px;
+	line-height:17px;
+	color:#999;
+}
+
+.cp_wb_long dd .idtag{
+	color:#333;
+	margin-right:15px;
+}
+
+
+
+.cp_radiobox{
+	position:relative;
+	display:inline;
+	float:left;
+	width:380px;
+}
+
+.cp_radiobox {
+    margin: 20px 0px 0px 41px;
+    padding-bottom: 19px;
+}
+.cp_radiobox .radiobox_tit{
+	display:block;
+	margin-left:20px;
+	padding-bottom:2px;
+	_padding-bottom:0;
+	color:#666;
+	font-size:14px;
+}
+
+.cp_radiobox .radiobox{
+	display:inline;
+	float:left;
+	width:190px;
+	padding-bottom:1px;
+}
+
+
+.cp_radiobox .radiobox span{
+	display:block;
+	margin-left:20px;
+	padding-bottom:2px;
+	_padding-bottom:0;
+	color:#666;
+	font-size:14px;
+}
+
+.cp_radiobox .radiobox p{
+	display:block;
+	margin:11px 0 0 20px;
+	_margin:8px 0 -4px 16px;
+	*margin:8px 0 -4px 16px;
+	color:#333;
+}
+
+.cp_radiobox .radiobox p label{
+	position:relative;
+	margin-left:3px;
+}
+
+.cp_radiobox .radio_sel{
+	position:relative;
+	width:107px;
+	height:18px;
+	color:#999;
+	top:2px;
+	left:13px;
+}
+
+.cp_btnbox{
+	display:inline;
+	float:left;
+	width:380px;
+}
+.cp_btnbox {
+    margin: 20px 0px 0px 61px;
+    padding-bottom: 30px;
+}
+
+
+a.cp_btn_sub{
+	display:block;
+	width:55px;
+	height:24px;
+	background:url(../images/userReportImg/btn.png) no-repeat;
+	color:#fff;
+	text-align:center;
+	line-height:24px;
+	border-radius:2px;
+}
+
+a.cp_btn_sub:hover{
+	background-position:0 -40px;
+	text-decoration:none;
+}
+.cp_footbox{
+	width:440px;
+	border-top:dashed 1px #ccc;
+	color:#bbb;
+	text-align:center;
+	line-height:30px;
+	text-shadow:0 1px 1px #fff;
+}
+.logoimg
+{
+    position:absolute;
+    width:240px;
+    height:175px;
+    left:605px;
+    top:560px;
+}
+.logoimg .logo
+{    width:120px;
+    height:75px;
+    display:block;
+    background:url(../images/userReportImg/logo.png) no-repeat;
+}
+/*******************container End*****************************/

@@ -1,0 +1,16 @@
+﻿.mainCTitle{ width: 100%; height: 27px; background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat-x; border-bottom: 1px solid rgb(195, 195, 195); line-height: 27px; border-radius: 3px;}
+/*******************添加管理员部分****************************/
+.mainContent{ width: 100%; height: auto; margin: 0 auto; }
+.addUl{ padding: 50px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
+.addUl li{ width: 100%; height: 70px; }
+.addUl label{ width: 100px; height: 22px; float: left; color: #000; line-height: 30px; text-align: right; font-size: 14px;}
+.addDiv{ margin-left: 10px; width: 250px; height: 100%; float: left; text-align: left; }
+.addDiv input{ width: 230px; height: 30px; line-height: 30px; border: 1px solid rgb(165, 175, 195);}
+.addDiv span{ display: none; margin-top: 5px; color: #999; *margin-left: 10px;}
+.addBtn{ border-radius:5px; cursor: pointer; margin: 0 10px 0 120px; text-align: center; font-weight: 700; width: 90px; height: 36px; line-height: 36px; color: #fff; font-size: 16px; background-position: -210px -70px; background-repeat: no-repeat; border:0; background-image: url("../images/superAdminImg/login_btn_01.png");}
+.addBtn:hover{ background-position: -200px -112px;}
+.addBtn2{  margin: 0;}
+/*******************添加管理员部分 end****************************/
+
+
+

@@ -16,6 +16,7 @@ E:\项目\网页\littleworld\DAL\bin\Debug\littleworld.Model.pdb
 E:\项目\网页\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\DAL\obj\Debug\littleworld.DAL.dll
 E:\项目\网页\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
+<<<<<<< HEAD
 E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.dll
 E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.pdb
 E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.dll
@@ -34,3 +35,23 @@ E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.Model.pdb
 E:\项目\littleworld\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.dll
 E:\项目\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
+=======
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.dll
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.pdb
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.dll
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.DBUtility.dll
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.Model.dll
+E:\littleworld\littleworld\DAL\bin\Debug\MySql.Data.dll
+E:\littleworld\littleworld\DAL\bin\Debug\Excel.dll
+E:\littleworld\littleworld\DAL\bin\Debug\COM.Excel.dll
+E:\littleworld\littleworld\DAL\bin\Debug\OpenSmtp.dll
+E:\littleworld\littleworld\DAL\bin\Debug\IBatisNet.DataMapper.dll
+E:\littleworld\littleworld\DAL\bin\Debug\IBatisNet.Common.dll
+E:\littleworld\littleworld\DAL\bin\Debug\System.Data.SQLite.dll
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.pdb
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.DBUtility.pdb
+E:\littleworld\littleworld\DAL\bin\Debug\littleworld.Model.pdb
+E:\littleworld\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.dll
+E:\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
+>>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725

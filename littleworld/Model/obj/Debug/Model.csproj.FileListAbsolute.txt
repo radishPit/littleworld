@@ -3,8 +3,16 @@ E:\项目\网页\littleworld\Model\bin\Debug\littleworld.Model.pdb
 E:\项目\网页\littleworld\Model\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\Model\obj\Debug\littleworld.Model.dll
 E:\项目\网页\littleworld\Model\obj\Debug\littleworld.Model.pdb
+<<<<<<< HEAD
 E:\项目\littleworld\littleworld\Model\bin\Debug\littleworld.Model.dll
 E:\项目\littleworld\littleworld\Model\bin\Debug\littleworld.Model.pdb
 E:\项目\littleworld\littleworld\Model\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\littleworld\littleworld\Model\obj\Debug\littleworld.Model.dll
 E:\项目\littleworld\littleworld\Model\obj\Debug\littleworld.Model.pdb
+=======
+E:\littleworld\littleworld\Model\bin\Debug\littleworld.Model.dll
+E:\littleworld\littleworld\Model\bin\Debug\littleworld.Model.pdb
+E:\littleworld\littleworld\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\littleworld\littleworld\Model\obj\Debug\littleworld.Model.dll
+E:\littleworld\littleworld\Model\obj\Debug\littleworld.Model.pdb
+>>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
