@@ -6,9 +6,9 @@
 <head runat="server">
     <title>管理员登陆</title>
     <link href="css/adminLogin.css" rel="stylesheet" type="text/css" />
-    <script language="javascript" type="text/javascript">
+    <script src="js/Jquery-1.9.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/adminLogin.js"></script>
 
-    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -24,16 +24,14 @@
 
         <div id="screentxt">
           <div id="txtid">
-            <span class="zh">账号</span>
-            <asp:TextBox ID="txtQ" runat="server" Height="29px"></asp:TextBox>
-                &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+            <asp:TextBox id="txtQ" name1="账号" value="账号" class="logintext" CssClass ="value1 logintext" runat="server" Height="29px"></asp:TextBox>
+                <%--&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
                   ErrorMessage="*账号格式不正确" 
                   ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
-                  ControlToValidate="txtQ"></asp:RegularExpressionValidator>
+                  ControlToValidate="txtQ" ForeColor="#336600"></asp:RegularExpressionValidator>--%>
           </div>
           <div id="txtpwd">
-            <span class="zh">密码</span>
-            <asp:TextBox type="password" id="pwdQ" runat="server" />
+            <asp:TextBox type="password" id="pwdQ" name1="密码" value="密码"  CssClass ="value1 logintext" runat="server" />
           </div>
 
           <div id="btn">

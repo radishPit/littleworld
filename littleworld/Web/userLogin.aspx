@@ -14,19 +14,35 @@
     <form id="form1" runat="server">
     <div id="loginWhole">
 			<h1 id="TumblrName">
-				<a href="#"><img src=""/></a>
+				<a href="#"><%--<img src=""/>--%></a>
 			</h1>
+           <div id="style">
 			<div id="loginInf" >
 				<div id="textEmail">
-					<input type="text" onfocus="textInput(1,1);" onblur="textInput(1,2);" id="textEmailT" name="Email" value="Email" class="logintext" />
+				    <asp:TextBox type="text"  id="textEmailT" name1="Email" value="Email" class="logintext" CssClass ="value1 logintext" runat="server" ></asp:TextBox>
 				</div>
 				<div id="textPassword"> 
-					<input type="text" onfocus="textInput(2,1);" onblur="textInput(2,2);" value="Password" name="Password" id="textPasswordT" class="logintext" />
+					<asp:TextBox type="text"  name1="Password" value="Password" id="textPasswordT"  
+                        CssClass ="value1 logintext" runat="server" TextMode="Password" ></asp:TextBox>
 				</div>
+                </div>
+
+                                 <div id="logincheck">
+             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                  ErrorMessage="*邮箱格式不正确" 
+                  ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                  ControlToValidate="textEmailT" Cssclass="stxt" ForeColor="White"></asp:RegularExpressionValidator>
+
+                     
+
+            </div>
 			</div>
-			<a id="loginBtn" href="#" runat="server">
+<%--			<a id="loginBtn" href="#" runat="server">
 			    <strong>Login in</strong>
-			</a>
+			</a>--%>
+
+             <asp:Button ID="loginBtn1"  runat="server" Text="Sign up" BorderStyle="None" onclick="loginBtn_Click" />
+
 			<div id="forNew"><a href="userRegister.aspx">sign up for a new account</a></div>
 		</div>
 		<div id="footer">

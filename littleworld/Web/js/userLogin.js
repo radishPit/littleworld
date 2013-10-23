@@ -2,23 +2,23 @@
     initEvents();
 });
 function initEvents() {
-    $("input:text").focus(function () {
+    $(".value1").focus(function () {
         var val = $(this).val();
-        var name = $(this).attr("name");
-        if (val == name) {
+        var name1 = $(this).attr("name1");
+        if (val == name1) {
             $(this).val("");
         }
     });
-    $("input:text").blur(function () {
+    $(".value1").blur(function () {
         var val = $(this).val();
-        var name = $(this).attr("name");
+        var name1 = $(this).attr("name1");
         if (val == "") {
-            $(this).val(name);
+            $(this).val(name1);
         }
     });
-    $("input:text").keyup(function () {
+    $(".value1").keyup(function () {
         var val = $(this).val();
-        var name = $(this).attr("name");
+        var name = $(this).attr("name1");
         if (val == "") {
             $(this).val(name);
         }

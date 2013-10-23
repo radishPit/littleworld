@@ -16,17 +16,35 @@
 				<a href="#"><img src=""/></a>
 			</h1>
 			<p>Follow the blogs you've been hearing about.<br/>Share the things that you love.</p>
+        <div id="style">
 			<div id="loginInf">
 				<div id="textEmail">
 					<asp:TextBox type="text"  id="textEmailT" name1="Email" value="Email" class="logintext" CssClass ="value1 logintext" runat="server" ></asp:TextBox>
+				    
 				</div> 
 				<div id="textPassword"> 
-					<asp:TextBox type="text"  name1="Password" value="Password" id="textPasswordT"  CssClass ="value1 logintext" runat="server"></asp:TextBox>
+					<asp:TextBox type="text"  name1="Password" value="Password" id="textPasswordT"  
+                        CssClass ="value1 logintext" runat="server" TextMode="Password" ></asp:TextBox>
+
 				</div>
 				<div id="textUserName"> 
-					<asp:TextBox type="text" name1="Username" value="Username" id="textUserNameT"  CssClass ="value1 logintext" runat="server" ></asp:TextBox>
+					<asp:TextBox type="text" name1="Username" value="Username" id="textUserNameT"  
+                        CssClass ="value1 logintext" runat="server" ></asp:TextBox>
 				</div>
+                </div>
+                 <div id="logincheck">
+             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                  ErrorMessage="*邮箱格式不正确" 
+                  ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                  ControlToValidate="textEmailT" Cssclass="stxt" ForeColor="White"></asp:RegularExpressionValidator>
+
+                     
+
+            </div>
 			</div>
+
+
+           
 <%--			<a id="loginBtn" href="#" >
 			    <strong>Sign up</strong>
 			</a>--%>
