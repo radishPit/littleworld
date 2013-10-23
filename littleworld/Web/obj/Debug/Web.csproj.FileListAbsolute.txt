@@ -23,33 +23,6 @@ E:\项目\网页\littleworld\Web\bin\littleworld.DBUtility.pdb
 E:\项目\网页\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\Web\obj\Debug\littleworld.Web.dll
 E:\项目\网页\littleworld\Web\obj\Debug\littleworld.Web.pdb
-<<<<<<< HEAD
-E:\项目\littleworld\littleworld\Web\bin\littleworld.Web.dll
-E:\项目\littleworld\littleworld\Web\bin\littleworld.Web.pdb
-E:\项目\littleworld\littleworld\Web\bin\littleworld.BLL.dll
-E:\项目\littleworld\littleworld\Web\bin\littleworld.Common.dll
-E:\项目\littleworld\littleworld\Web\bin\littleworld.Model.dll
-E:\项目\littleworld\littleworld\Web\bin\LTP.Accounts.dll
-E:\项目\littleworld\littleworld\Web\bin\LtpPageControl.dll
-E:\项目\littleworld\littleworld\Web\bin\Microsoft.Web.UI.WebControls.dll
-E:\项目\littleworld\littleworld\Web\bin\littleworld.DAL.dll
-E:\项目\littleworld\littleworld\Web\bin\Excel.dll
-E:\项目\littleworld\littleworld\Web\bin\COM.Excel.dll
-E:\项目\littleworld\littleworld\Web\bin\OpenSmtp.dll
-E:\项目\littleworld\littleworld\Web\bin\littleworld.DBUtility.dll
-E:\项目\littleworld\littleworld\Web\bin\IBatisNet.DataMapper.dll
-E:\项目\littleworld\littleworld\Web\bin\IBatisNet.Common.dll
-E:\项目\littleworld\littleworld\Web\bin\MySql.Data.dll
-E:\项目\littleworld\littleworld\Web\bin\System.Data.SQLite.dll
-E:\项目\littleworld\littleworld\Web\bin\littleworld.BLL.pdb
-E:\项目\littleworld\littleworld\Web\bin\littleworld.Common.pdb
-E:\项目\littleworld\littleworld\Web\bin\littleworld.Model.pdb
-E:\项目\littleworld\littleworld\Web\bin\littleworld.DAL.pdb
-E:\项目\littleworld\littleworld\Web\bin\littleworld.DBUtility.pdb
-E:\项目\littleworld\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
-E:\项目\littleworld\littleworld\Web\obj\Debug\littleworld.Web.dll
-E:\项目\littleworld\littleworld\Web\obj\Debug\littleworld.Web.pdb
-=======
 E:\littleworld\littleworld\Web\bin\littleworld.Web.dll
 E:\littleworld\littleworld\Web\bin\littleworld.Web.pdb
 E:\littleworld\littleworld\Web\bin\littleworld.BLL.dll
@@ -75,8 +48,6 @@ E:\littleworld\littleworld\Web\bin\littleworld.DBUtility.pdb
 E:\littleworld\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
 E:\littleworld\littleworld\Web\obj\Debug\littleworld.Web.dll
 E:\littleworld\littleworld\Web\obj\Debug\littleworld.Web.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
 E:\资料\实训\大四实训内容\littleworld\littleworld\Web\bin\littleworld.Web.dll
 E:\资料\实训\大四实训内容\littleworld\littleworld\Web\bin\littleworld.Web.pdb
 E:\资料\实训\大四实训内容\littleworld\littleworld\Web\bin\littleworld.BLL.dll
@@ -102,9 +73,28 @@ E:\资料\实训\大四实训内容\littleworld\littleworld\Web\bin\littleworld.
 E:\资料\实训\大四实训内容\littleworld\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
 E:\资料\实训\大四实训内容\littleworld\littleworld\Web\obj\Debug\littleworld.Web.dll
 E:\资料\实训\大四实训内容\littleworld\littleworld\Web\obj\Debug\littleworld.Web.pdb
-=======
->>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
->>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
-=======
->>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
->>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
+E:\资料\实训\littleworld\Web\bin\littleworld.Web.dll
+E:\资料\实训\littleworld\Web\bin\littleworld.Web.pdb
+E:\资料\实训\littleworld\Web\bin\littleworld.BLL.dll
+E:\资料\实训\littleworld\Web\bin\littleworld.Common.dll
+E:\资料\实训\littleworld\Web\bin\littleworld.Model.dll
+E:\资料\实训\littleworld\Web\bin\LTP.Accounts.dll
+E:\资料\实训\littleworld\Web\bin\LtpPageControl.dll
+E:\资料\实训\littleworld\Web\bin\Microsoft.Web.UI.WebControls.dll
+E:\资料\实训\littleworld\Web\bin\littleworld.DAL.dll
+E:\资料\实训\littleworld\Web\bin\Excel.dll
+E:\资料\实训\littleworld\Web\bin\COM.Excel.dll
+E:\资料\实训\littleworld\Web\bin\OpenSmtp.dll
+E:\资料\实训\littleworld\Web\bin\littleworld.DBUtility.dll
+E:\资料\实训\littleworld\Web\bin\IBatisNet.DataMapper.dll
+E:\资料\实训\littleworld\Web\bin\IBatisNet.Common.dll
+E:\资料\实训\littleworld\Web\bin\System.Data.SQLite.dll
+E:\资料\实训\littleworld\Web\bin\MySql.Data.dll
+E:\资料\实训\littleworld\Web\bin\littleworld.BLL.pdb
+E:\资料\实训\littleworld\Web\bin\littleworld.Common.pdb
+E:\资料\实训\littleworld\Web\bin\littleworld.Model.pdb
+E:\资料\实训\littleworld\Web\bin\littleworld.DAL.pdb
+E:\资料\实训\littleworld\Web\bin\littleworld.DBUtility.pdb
+E:\资料\实训\littleworld\Web\obj\Debug\ResolveAssemblyReference.cache
+E:\资料\实训\littleworld\Web\obj\Debug\littleworld.Web.dll
+E:\资料\实训\littleworld\Web\obj\Debug\littleworld.Web.pdb

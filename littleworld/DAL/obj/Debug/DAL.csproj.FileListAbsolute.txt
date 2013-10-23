@@ -16,26 +16,6 @@ E:\项目\网页\littleworld\DAL\bin\Debug\littleworld.Model.pdb
 E:\项目\网页\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\DAL\obj\Debug\littleworld.DAL.dll
 E:\项目\网页\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
-<<<<<<< HEAD
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.pdb
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.DBUtility.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.Model.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\MySql.Data.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\OpenSmtp.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\Excel.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\COM.Excel.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\IBatisNet.DataMapper.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\IBatisNet.Common.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\System.Data.SQLite.dll
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.pdb
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.DBUtility.pdb
-E:\项目\littleworld\littleworld\DAL\bin\Debug\littleworld.Model.pdb
-E:\项目\littleworld\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
-E:\项目\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.dll
-E:\项目\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
-=======
 E:\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.dll
 E:\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.pdb
 E:\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.dll
@@ -54,8 +34,6 @@ E:\littleworld\littleworld\DAL\bin\Debug\littleworld.Model.pdb
 E:\littleworld\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
 E:\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.dll
 E:\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
 E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.dll
 E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\bin\Debug\littleworld.DAL.pdb
 E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\bin\Debug\littleworld.Common.dll
@@ -74,9 +52,3 @@ E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\bin\Debug\little
 E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\obj\Debug\ResolveAssemblyReference.cache
 E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.dll
 E:\资料\实训\大四实训内容\littleworld\littleworld\DAL\obj\Debug\littleworld.DAL.pdb
-=======
->>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
->>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
-=======
->>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
->>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854

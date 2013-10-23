@@ -5,13 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>用户注册</title>
-     <link href="css/userRegister.css" rel="stylesheet" type="text/css" />
+    <link href="css/userRegister.css" rel="stylesheet" type="text/css" />
     <script src="js/Jquery-1.9.1.js" type="text/javascript"></script>
     <script src="js/userRegister.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-     <div id="loginWhole">
+   <div id="loginWhole">
 			<h1 id="TumblrName">
 				<a href="#"><img src=""/></a>
 			</h1>

@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+<head runat="server">
     <title>用户登陆</title>
      <link href="css/userLogin.css" rel="stylesheet" type="text/css" />
     <script src="js/Jquery-1.9.1.js" type="text/javascript"></script>

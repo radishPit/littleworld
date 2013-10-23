@@ -18,28 +18,6 @@ E:\项目\网页\littleworld\BLL\bin\Debug\littleworld.DBUtility.pdb
 E:\项目\网页\littleworld\BLL\obj\Debug\ResolveAssemblyReference.cache
 E:\项目\网页\littleworld\BLL\obj\Debug\littleworld.BLL.dll
 E:\项目\网页\littleworld\BLL\obj\Debug\littleworld.BLL.pdb
-<<<<<<< HEAD
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.BLL.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.BLL.pdb
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.Common.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.DAL.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.Model.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\OpenSmtp.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\Excel.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\COM.Excel.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.DBUtility.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\MySql.Data.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\IBatisNet.DataMapper.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\IBatisNet.Common.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\System.Data.SQLite.dll
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.Common.pdb
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.DAL.pdb
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.Model.pdb
-E:\项目\littleworld\littleworld\BLL\bin\Debug\littleworld.DBUtility.pdb
-E:\项目\littleworld\littleworld\BLL\obj\Debug\ResolveAssemblyReference.cache
-E:\项目\littleworld\littleworld\BLL\obj\Debug\littleworld.BLL.dll
-E:\项目\littleworld\littleworld\BLL\obj\Debug\littleworld.BLL.pdb
-=======
 E:\littleworld\littleworld\BLL\bin\Debug\littleworld.BLL.dll
 E:\littleworld\littleworld\BLL\bin\Debug\littleworld.BLL.pdb
 E:\littleworld\littleworld\BLL\bin\Debug\littleworld.Common.dll
@@ -60,8 +38,6 @@ E:\littleworld\littleworld\BLL\bin\Debug\littleworld.DBUtility.pdb
 E:\littleworld\littleworld\BLL\obj\Debug\ResolveAssemblyReference.cache
 E:\littleworld\littleworld\BLL\obj\Debug\littleworld.BLL.dll
 E:\littleworld\littleworld\BLL\obj\Debug\littleworld.BLL.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
 E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\bin\Debug\littleworld.BLL.dll
 E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\bin\Debug\littleworld.BLL.pdb
 E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\bin\Debug\littleworld.Common.dll
@@ -82,9 +58,3 @@ E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\bin\Debug\little
 E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\obj\Debug\ResolveAssemblyReference.cache
 E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\obj\Debug\littleworld.BLL.dll
 E:\资料\实训\大四实训内容\littleworld\littleworld\BLL\obj\Debug\littleworld.BLL.pdb
-=======
->>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
->>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
-=======
->>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
->>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
