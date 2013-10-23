@@ -1,2 +1,25 @@
-﻿body {
-}
+﻿*{ margin: 0px; padding: 0px;}
+a{ text-decoration: none;} 
+img{ border:0px;}
+input{ border:0px;}
+body{ text-align: center; font-size: 12px; background-size: cover; background-image: url("../images/userRegisterImg/tumblr_msveccyqWc1qe3m9lo2_1280.png.jpg"); background-repeat: no-repeat;}
+
+#loginWhole{ width: 500px; height: 370px; margin: 100px auto 60px auto; padding: 0px; }
+
+#TumblrName{ width: 345px; height: 55px; margin:0 auto; *margin:0 0 0 -25px;  }
+
+#loginInf{ width: 245px; height: 111px;  margin:20px auto 0 auto; border-radius: 8px; border:1px solid #303031; background-color: #e0e7ee; box-shadow: 0 0 2px rgba(0,0,0,0.6) inset;}
+.logintext{ background-color: transparent; width: 225px; height:22px;  margin: 8px 10px 5px 10px; font-size: 14px; font-weight: 700; line-height: 16px; font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,"sans-serif"; color: rgb(68, 68, 68);}
+#textEmail{ width: 245px; height: 37px; border-bottom: 1px solid #ccc; }
+#textPassword{ width: 245px; height: 37px; border-bottom: 1px solid #ccc; }
+
+#loginBtn{ width: 245px; height: 32px; font-size: 14px; box-shadow: 0 0 2px rgba(0,0,0,0.6) inset; display: block; font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,"sans-serif"; line-height: 32px; color: #fff;  margin:20px auto 0 auto; border-radius: 5px; background-color: #609bc5; border:1px solid #1e4311;}
+
+#forNew{ margin: 20px auto;}
+#forNew a,.foorerA,#footer span,p{ text-shadow:0 1px 1px rgba(0,0,0,0.8);  color: #fff;  font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,"sans-serif";}
+#footer{ width: 96%; height:32px; margin:20 auto 0 auto; *margin:160px auto 0 auto; }
+.foorerA{ line-height: 30px;}
+#footerLeft{ width: 200px; height: 30px; float: left;}
+#footerRight{ width: 200px; height: 30px; float: right;}
+.foorerAS{ width:150px; height: 30px; display: block; float: left; }
+p{ font-size: 20px; font-size: 24px; text-align: center;}

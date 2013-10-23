@@ -27,4 +27,20 @@ E:\littleworld\littleworld\DBUtility\bin\Debug\System.Data.SQLite.DLL
 E:\littleworld\littleworld\DBUtility\obj\Debug\ResolveAssemblyReference.cache
 E:\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.dll
 E:\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.pdb
+<<<<<<< HEAD
+<<<<<<< HEAD
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\bin\Debug\littleworld.DBUtility.dll
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\bin\Debug\littleworld.DBUtility.pdb
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\bin\Debug\IBatisNet.Common.dll
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\bin\Debug\MySql.Data.dll
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\bin\Debug\System.Data.SQLite.DLL
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.dll
+E:\资料\实训\大四实训内容\littleworld\littleworld\DBUtility\obj\Debug\littleworld.DBUtility.pdb
+=======
 >>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
+>>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
+=======
+>>>>>>> cf0671b4de62ba9eb48fb34549c361125d890725
+>>>>>>> c68ac9148f3247970d60afd1f45c67a4390cb854
