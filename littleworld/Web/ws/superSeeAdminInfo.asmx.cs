@@ -31,9 +31,17 @@ namespace littleworld.Web.ws
             }
             catch (Exception)
             {
-                
+                throw;
             }
            
         }
+        [WebMethod]
+        public List<Model.adminTb> selectAdminName() {
+            BLL.adminTb bllAdmin = new BLL.adminTb();
+            List<Model.adminTb> admins = bllAdmin.GetModelList("adminLevel=1");
+           
+            return admins;
+
+        } 
     }
 }

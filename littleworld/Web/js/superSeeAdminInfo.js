@@ -2,6 +2,13 @@
     initEvents();
 });
 function initEvents() {
+    //搜索框自动搜索功能，引用jQuery ui
+    tags();
+    //删除管理员功能
+    deleteAdministration();
+}
+//删除管理员功能
+function deleteAdministration(){
     $(".gvSuperAdminSeeInfoHeaderAD").click(function () {
         var adminID = parseInt($(this).attr("thisAdminID"));
         var adminName = $(this).attr("thisAdminName");
@@ -14,9 +21,37 @@ function initEvents() {
                 data: "{adminid:" + adminID + "}",
                 dataType: "json",
                 success: function () {
-                    alert("成功将" + adminName + "删除！");
+                    showSuccessAlert("您成功删除管理员" + adminName + "！");
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);   
                 }
             });
         }
+        else {
+            showNoticeAlert("您取消了删除管理员" + adminName + "！");
+        }
+
+    });
+}
+
+//搜索框自动搜索功能，引用jQuery ui
+function tags() {
+    var availableTags =[];
+    $.ajax({
+        url: "ws/superSeeAdminInfo.asmx/selectAdminName",
+        type: "POST",
+        contentType: "application/json",
+        date: {},
+        dataType: "json",
+        success: function (res) {
+            $(res.d).each(function () {
+                //alert(this["adminName"]);
+                availableTags.push(this["adminName"]);
+            });
+        }
+    });
+    $(".Searchtags").autocomplete({
+        source: availableTags
     });
 }

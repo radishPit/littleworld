@@ -13,7 +13,7 @@ namespace littleworld.Web.ws
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // 若要允许使用 ASP.NET AJAX 从脚本中调用此 Web 服务，请取消对下行的注释。
-    // [System.Web.Script.Services.ScriptService]
+    [System.Web.Script.Services.ScriptService]
     public class adminSeeUser : System.Web.Services.WebService
     {
 
@@ -22,5 +22,21 @@ namespace littleworld.Web.ws
         {
             return "Hello World";
         }
+        [WebMethod]
+        public void fengAndJieUser(int userid)
+        {     
+            BLL.userTb userBll = new BLL.userTb();
+            Model.userTb userM = userBll.GetModel(userid);
+            if (userM.state == "1")
+            {
+                userM.state = "0";
+            }
+            else 
+            {
+                userM.state = "1";
+            }
+            userBll.Update(userM);
+        }
     }
+    
 }

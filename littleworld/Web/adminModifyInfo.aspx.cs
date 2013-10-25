@@ -14,10 +14,12 @@ namespace littleworld.Web
 
         }
         string adName;
+        string mainTitle;
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
             adName = (Master.FindControl("adminNamel") as Label).Text;
             this.adminName.Text = adName;
+            
         }
         protected void sureBtn_Click(object sender, EventArgs e)
         {
@@ -31,22 +33,27 @@ namespace littleworld.Web
             {
                 if (adminNewP=="" || adminNewPA=="")
                 {
-                    Response.Write("<script language=javascript>alert('新密码不能为空！');</" + "script>");
+                    //Response.Write("<script language=javascript>alert('新密码不能为空！');</" + "script>");
+                    ScriptManager.RegisterStartupScript(addBtn, this.GetType(), "showErrorAlert", "showErrorAlert('新密码不能为空！');", true);
+                    return;
                 }
                 if (adminOldP!=adminOne.adminPwd)
                 {
-                    Response.Write("<script language=javascript>alert('您输入的原密码有误，请重新输入！');</" + "script>");
+                    ScriptManager.RegisterStartupScript(addBtn, this.GetType(), "showErrorAlert", "showErrorAlert('您输入的原密码有误，请重新输入！');", true);
+                   // Response.Write("<script language=javascript>alert('您输入的原密码有误，请重新输入！');</" + "script>");
                     this.adminOldPwd.Text = "";
                     return;
                 }
                 if (adminNewP!=adminNewPA)
                 {
-                    Response.Write("<script language=javascript>alert('两次输入密码不一致！请重新输入！');</" + "script>");
+                    ScriptManager.RegisterStartupScript(addBtn, this.GetType(), "showErrorAlert", "showErrorAlert('两次输入密码不一致！请重新输入！');", true);
+                    //Response.Write("<script language=javascript>alert('两次输入密码不一致！请重新输入！');</" + "script>");
                     return;
                 }
                 adminOne.adminPwd = adminNewP;
                 adminBll.Update(adminOne);
-                Response.Write("<script language=javascript>alert('密码更新成功！');</" + "script>");
+                ScriptManager.RegisterStartupScript(addBtn, this.GetType(), "showSuccessAlert", "showSuccessAlert('密码更新成功！');", true);
+                //Response.Write("<script language=javascript>alert('密码更新成功！');</" + "script>");
             }
 
         } 
@@ -55,6 +62,7 @@ namespace littleworld.Web
             this.adminOldPwd.Text = "";
             this.adminPwd.Text = "";
             this.adminPwdAgain.Text = "";
+            ScriptManager.RegisterStartupScript(addBtn, this.GetType(), "showNoticeAlert", "showNoticeAlert('取消更新，文本框置空！');", true);
         } 
     }
 }

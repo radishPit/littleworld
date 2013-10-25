@@ -1,7 +1,6 @@
-﻿.mainCTitle{ width: 100%; height: 27px; background-image: url("../images/superAdminImg/topnav.jpg"); background-repeat: repeat-x; border-bottom: 1px solid rgb(195, 195, 195); line-height: 27px; border-radius: 3px;}
-/*******************添加管理员部分****************************/
+﻿/*******************添加管理员部分****************************/
 .mainContent{ width: 100%; height: auto; margin: 0 auto; }
-.addUl{ padding: 50px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
+.addUl{ padding: 10px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
 .addUl li{ width: 100%; height: 70px; }
 .addUl label{ width: 100px; height: 22px; float: left; color: #000; line-height: 30px; text-align: right; font-size: 14px;}
 .addDiv{ margin-left: 10px; width: 250px; height: 100%; float: left; text-align: left; }

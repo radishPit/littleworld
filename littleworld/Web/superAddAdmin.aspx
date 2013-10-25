@@ -6,7 +6,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="AddAdmin">
-	    <div class="mainCTitle">&nbsp;&nbsp;添加管理员</div>      
+	    <div class="mainCTitle">&nbsp;&nbsp;添加管理员</div> 
+        <div class="addAdminAlert">
+            <div class="addAdminAlertSuccess addAdminAlert1">
+                <div class="addAdminAlertInner"></div>
+                <a class="addAdminAlertInnerClose"><img src="images/superAdminImg/cross_grey_small.png" alt="关闭" title="关闭"/></a>
+            </div>
+            <div class="addAdminAlertFail addAdminAlert1">
+                <div class="addAdminAlertInner"></div>
+                <a class="addAdminAlertInnerClose"><img src="images/superAdminImg/cross_grey_small.png" alt="关闭" title="关闭"/></a>
+            </div>
+            <div class="addAdminAlertNotice addAdminAlert1">
+                <div class="addAdminAlertInner"></div>
+                <a class="addAdminAlertInnerClose"><img src="images/superAdminImg/cross_grey_small.png" alt="关闭" title="关闭"/></a>
+            </div>
+        </div> 
 		<ul class="addUl">
 			<li>
 				<label>账&nbsp;&nbsp;&nbsp;&nbsp;号:</label>

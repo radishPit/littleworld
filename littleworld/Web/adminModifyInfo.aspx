@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="mainContent AddAdmin">
-		<div class="mainCTitle">&nbsp;&nbsp;修改密码</div>
+		
 		<ul class="addUl">
 			<li>
 				<label>账&nbsp;&nbsp;&nbsp;&nbsp;号:</label>

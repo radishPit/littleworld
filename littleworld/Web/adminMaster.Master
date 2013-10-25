@@ -39,49 +39,49 @@
                 <div id="mainLeft">
                     <div class="mainLeft1"><img src="images/superAdminImg/logo.png" alt="" /></div>
                     <div class="mainLoginInfo">
-                        <a class="adminName" href="#"><asp:Label ID="adminNamel" runat="server">管理员</asp:Label></a> <span>,你好！</span><br/>
+                        <a class="adminName" href="#d"><asp:Label ID="adminNamel" runat="server">管理员</asp:Label></a> <span>,你好！</span><br/>
                         <a class="adminName" href="adminLogin.aspx">退出&nbsp;&nbsp;</a>
                     </div>
                     <ul class="mainLeft3">
                         <li class="mainLeft3Li">
-                            <a href="#" class="mainLeft3ATitle mainLeft3ATitleS">个人信息管理</a>
+                            <a href="#d" class="mainLeft3ATitle mainLeft3ATitleS">个人信息管理</a>
                             <ul class="mainLeft3UlContent mainLeft3UlContentS">
                                 <li><a href="adminModifyInfo.aspx">修改密码</a></li>
                             </ul>
                         </li>
                         <li class="mainLeft3Li">
-                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle2">用户管理</a>   
+                            <a href="#d" class="mainLeft3ATitle mainLeft3ATitle2">用户管理</a>   
                             <ul class="mainLeft3UlContent">
                                 <li><a href="adminSeeUser.aspx">查看用户信息</a></li>
                             </ul>              
                         </li>
                         <li class="mainLeft3Li">
-                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle3">新鲜事管理</a>   
+                            <a href="#d" class="mainLeft3ATitle mainLeft3ATitle3">新鲜事管理</a>   
                             <ul class="mainLeft3UlContent">
                                 <li><a href="adminSeeNovelty.aspx">查看新鲜事</a></li>
                             </ul>              
                         </li>
                         <li class="mainLeft3Li">
-                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle4">通知管理</a>   
+                            <a href="#d" class="mainLeft3ATitle mainLeft3ATitle4">通知管理</a>   
                             <ul class="mainLeft3UlContent">
                                 <li><a href="adminSendNotice.aspx">发送通知</a></li>
                                 <li><a href="adminSeeNotice.aspx">查看通知</a></li>
                             </ul>              
                         </li>
                         <li class="mainLeft3Li">
-                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle5">事务日志管理</a>   
+                            <a href="#d" class="mainLeft3ATitle mainLeft3ATitle5">事务日志管理</a>   
                             <ul class="mainLeft3UlContent">
                                 <li><a href="adminSeeNovelty.aspx">查看事务日志</a></li>
                             </ul>              
                         </li>
                          <li class="mainLeft3Li">
-                            <a href="#" class="mainLeft3ATitle mainLeft3ATitle3">其他</a>             
+                            <a href="#d" class="mainLeft3ATitle mainLeft3ATitle6">其他</a>             
                         </li>
                     </ul>
                 </div>
                 <div id="mainRight">
                     <div id="mainRTop">
-                        <h2>Welcome dministration</h2>
+                        <h2>Welcome administration</h2>
                         <p class="mainRightP">What would you like to do?(你想要做什么？)</p>
                         <ul class="mainRightUl">                   
                             <li><a href="adminModifyInfo.aspx" class="mainRightUla"><img src="images/superAdminImg/paper_content_pencil_48.png" alt="个人信息管理" title="个人信息管理"/><br/>个人信息管理</a></li>
@@ -92,6 +92,21 @@
                         </ul>
                     </div>
                     <div id="mainRBottom">
+                        <div class="mainCTitle"></div>
+                        <div class="addAdminAlert">
+                            <div class="addAdminAlertSuccess addAdminAlert1">
+                                <div class="addAdminAlertInner"></div>
+                                <a class="addAdminAlertInnerClose"><img src="images/superAdminImg/cross_grey_small.png" alt="关闭" title="关闭"/></a>
+                            </div>
+                            <div class="addAdminAlertFail addAdminAlert1">
+                                <div class="addAdminAlertInner"></div>
+                                <a class="addAdminAlertInnerClose"><img src="images/superAdminImg/cross_grey_small.png" alt="关闭" title="关闭"/></a>
+                            </div>
+                            <div class="addAdminAlertNotice addAdminAlert1">
+                                <div class="addAdminAlertInner"></div>
+                                <a class="addAdminAlertInnerClose"><img src="images/superAdminImg/cross_grey_small.png" alt="关闭" title="关闭"/></a>
+                            </div>
+                        </div> 
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                             
                         </asp:ContentPlaceHolder>
@@ -103,83 +118,6 @@
                 </div>
             </div>   
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <%--<div>
-         <div id="topNav">
-			<div id="topMain"><asp:Label runat="server" ID="adminNamel">commonAdmin</asp:Label>,你好！<a href="">退出</a></div>
-		</div>
-		<div id="mainTop">普通管理员</div>
-        <div id="main">
-            <div id="mainLeft">
-                <ul id="menu">
-                     <li>
-                        <a href="#"><span class="ui-icon ui-icon-disk"></span>个人信息管理</a>
-                        <ul>
-                            <li><a href="adminModifyInfo.aspx">修改密码</a></li>
-                           
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#"><span class="ui-icon ui-icon-disk"></span>用户管理</a>
-                        <ul>
-                            <li><a href="adminSeeUser.aspx">查看用户信息</a></li>
-                          
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#"><span class="ui-icon ui-icon-disk"></span>新鲜事管理</a>
-                        <ul>
-                            <li><a href="adminSeeNovelty.aspx">查看新鲜事</a></li>
-                           
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#"><span class="ui-icon ui-icon-disk"></span>通知管理</a>
-                        <ul>
-                            <li><a href="adminSendNotice.aspx">发送通知</a></li>
-                            <li><a href="adminSeeNotice.aspx">查看通知</a></li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#"><span class="ui-icon ui-icon-disk"></span>事务日志管理</a>
-                        <ul>
-                            <li><a href="adminSeeEvents.aspx">查看事务日志</a></li>
-                        </ul>
-                     </li>
-                     <li class="ui-state-disabled">
-                        <a href="#"><span class="ui-icon ui-icon-disk"></span>其它</a>
-                     </li>
-                </ul>
-            </div>
-            <div id="mainRight">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    
-                </asp:ContentPlaceHolder>
-            </div>
-        </div>
-       
-    </div>--%>
     </form>
 </body>
 </html>

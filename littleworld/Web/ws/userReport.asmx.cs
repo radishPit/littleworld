@@ -13,21 +13,14 @@ namespace littleworld.Web.ws
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // 若要允许使用 ASP.NET AJAX 从脚本中调用此 Web 服务，请取消对下行的注释。
-     [System.Web.Script.Services.ScriptService]
+    // [System.Web.Script.Services.ScriptService]
     public class userReport : System.Web.Services.WebService
     {
 
         [WebMethod]
-        public void InsertReport(int noveltyid,int reporeterid,DateTime reporttime,int reporttypeid,string state)
+        public string HelloWorld()
         {
-            BLL.reportTb bll = new BLL.reportTb();
-            Model.reportTb ml = new Model.reportTb();
-            ml.noveltyID = noveltyid;
-            ml.reporterID = reporeterid;
-            ml.reportTime = reporttime;
-            ml.reportTypeID = reporttypeid;
-            ml.state = state;
-            bll.Add(ml);
+            return "Hello World";
         }
     }
 }

@@ -7,12 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace littleworld.Web
 {
-    public partial class adminMaster : System.Web.UI.MasterPage
+    public partial class adminNoveltyDetail : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string adminN = Session["no"].ToString();
-            //this.adminNamel.Text = adminN;
+            string noveltyID = Request.QueryString["noveltyID"];
+
         }
     }
 }

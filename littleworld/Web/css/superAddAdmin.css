@@ -1,5 +1,5 @@
 ﻿
-.addUl{ padding: 50px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
+.addUl{ padding: 0px 0 0 50px; width: 560px; height: auto; margin: 0 auto; text-align: left;}
 .addUl li{ width: 100%; height: 70px; }
 .addUl label{ width: 100px; height: 22px; float: left; color: #000; line-height: 30px; text-align: right; font-size: 14px;}
 .addDiv{ margin-left: 10px; width: 250px; height: 100%; float: left; text-align: left; }
@@ -8,3 +8,5 @@
 .addBtn{ border-radius:5px; cursor: pointer; margin: 0 10px 0 120px; text-align: center; font-weight: 700; width: 90px; height: 36px; line-height: 36px; color: #fff; font-size: 16px; background-position: -210px -70px; background-repeat: no-repeat; border:0; background-image: url("../images/superAdminImg/login_btn_01.png");}
 .addBtn:hover{ background-position: -200px -112px;}
 .addBtn2{  margin: 0;}
+
+

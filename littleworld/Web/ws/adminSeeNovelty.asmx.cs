@@ -13,7 +13,7 @@ namespace littleworld.Web.ws
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // 若要允许使用 ASP.NET AJAX 从脚本中调用此 Web 服务，请取消对下行的注释。
-    // [System.Web.Script.Services.ScriptService]
+    [System.Web.Script.Services.ScriptService]
     public class adminSeeNovelty : System.Web.Services.WebService
     {
 
@@ -21,6 +21,23 @@ namespace littleworld.Web.ws
         public string HelloWorld()
         {
             return "Hello World";
+        }
+        [WebMethod]
+        public void deleteNoveltyAsmx(int noveltyid)
+        {
+            try
+            {
+                BLL.noveltyTb bllnovelty = new BLL.noveltyTb();
+                Model.noveltyTb novelty = bllnovelty.GetModel(noveltyid);
+                novelty.state = "0";
+                bllnovelty.Update(novelty);
+
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
     }
 }

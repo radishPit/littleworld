@@ -29,8 +29,8 @@
                <div class="cp_wb_short" node-type="abstract">
                     <dl>
                         <dt>
-                            <a  id="userimg" href="/">
-                                <img src="<% =headImgUrl %>" alt="Alternate Text" style="width:30px;height:30px;"></img>
+                            <a href="/">
+                                <img src="<% =headImgUrl %>" alt="Alternate Text"></img>
                             </a>
                         </dt>
                         <dd>
@@ -98,8 +98,8 @@
                </div>
            </div>
            <div class="cp_paper_body clearfix">    
-                <div class="cp_btnbox" title="选择正确的举报类别可增加举报处理的速度" >
-                    <a class="cp_btn_sub">
+                <div class="cp_btnbox" title="选择正确的举报类别可增加举报处理的速度" node-type="subBtn">
+                    <a class="cp_btn_sub" action-type="submit" href="/">
                         提交
                     </a>
                 </div>
