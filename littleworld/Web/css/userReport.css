@@ -165,7 +165,7 @@ body, button, input, select, textarea {
 }
 
 
-a.cp_btn_sub{
+ .cp_btn_sub{
 	display:block;
 	width:55px;
 	height:24px;
@@ -176,7 +176,7 @@ a.cp_btn_sub{
 	border-radius:2px;
 }
 
-a.cp_btn_sub:hover{
+.cp_btn_sub:hover{
 	background-position:0 -40px;
 	text-decoration:none;
 }
@@ -201,5 +201,13 @@ a.cp_btn_sub:hover{
     height:75px;
     display:block;
     background:url(../images/userReportImg/logo.png) no-repeat;
+}
+
+#userimg
+{   width:30px;
+    height:30px;
+    float:left;
+    margin-left:15px;
+    margin-right:10px;
 }
 /*******************container End*****************************/
