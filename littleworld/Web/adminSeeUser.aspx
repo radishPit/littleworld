@@ -7,7 +7,6 @@
     <div id="adminSeeNovelty">
         <div class="serchAdminInfo">
             <div class="searchsL">
-               <%-- <input runat="server" id="tags" class="Searchtags"  />--%>
                 <asp:TextBox ID="searchText" CssClass="Searchtags" runat="server"></asp:TextBox>
 			    <asp:Button ID="searchBtn" runat="server" Text="搜索" CssClass="searchButton" OnClick="search_Click" />
 		    </div>
@@ -49,25 +48,21 @@
                     <asp:TemplateField HeaderText="详细" 
                         HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
                         <ItemTemplate>
-                            <a href="adminUserDetail.aspx?userID=<%# Eval("userID") %>" class="adminNoveltyDetailA">详细...</a>     
+                            <a href="adminSeeUserDetail.aspx?userID=<%# Eval("userID") %>" class="adminNoveltyDetailA">详细...</a>     
                         </ItemTemplate>
-
 <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader"></HeaderStyle>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作" 
                         HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">   
                         <ItemTemplate>
-                            <a href="#d" class="adminNoveltyDetailA adminUserFengA" thisUserID="<%# Eval("userID") %>" thisUserState="<%# Eval("state") %>" >封锁</a>
-                           <%-- <a href="#d" class="adminNoveltyDetailA adminNoveltyDetailAJieFeng" thisUserID="<%# Eval("userID") %>">解封</a>--%>
+                            <a href="#d" class="adminNoveltyDetailA adminUserFengA" thisUserID="<%# Eval("userID") %>" thisUserState="<%# Eval("state") %>" ><%# showuserState(Eval("state").ToString()) %></a>
+                          
                         </ItemTemplate>
 <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader"></HeaderStyle>
                     </asp:TemplateField>
-                    
                 </Columns>
-                
             </asp:GridView>
             <div class="paging" runat="server" id="dgvpage"></div>
         </div>
-        
     </div>
 </asp:Content>

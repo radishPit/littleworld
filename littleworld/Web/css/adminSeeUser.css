@@ -1,5 +1,25 @@
-﻿.gvSuperAdminSeeInfoHeader{ width:90px;}
+﻿/**********************see user*******************************/
+.gvSuperAdminSeeInfoHeader{ width:90px;}
 .adminNoveltyDetailA{ line-height: 35px; color:rgb(102,171,0);}
 .adminNoveltyDetailA:hover{ color:rgb(69,147,0); text-decoration:underline;}
 .gvSuperAdminSeeInfoHeaderA{ margin: 0 auto; float:none;}
 .gvSuperAdminSeeInfoHeaderAddr{ width:130px;}
+/**********************see user end*******************************/
+
+/**********************see user detail*******************************/
+.adminSeeUserDetail{ width: 90%; height:540px; margin:20px auto 0 auto;}
+.adminSeeUserDetailLeft,.adminSeeUserDetailRight{border:1px solid #ccc; width:97%; height:100%; border-radius:6px;}
+.adminSeeUserDetailLeft{ float: left; position:relative;}
+
+.userEssentialInformatio{ margin-top:10px;}
+.formTitleFieldset{ width:95%; height:16px; border:0; border-top:1px solid rgb(230, 230, 230); margin:15px 0 11px 10px; }
+.formTitleLegend{ font-weight:700; font-size: 14px; line-height:16px; color:rgb(51, 70, 63);}
+.detail{ width:90%; height:30px; font-family:Arial,Helvetica,sans-serif;}
+.lableTitle{ margin-left:20px; width:63px; height:30px; float:left; color:rgb(128, 128, 128); line-height:30px; text-align:right;}
+.lableCon{ width: 83%; height: 30px; float: right; color:rgb(51, 70, 63); line-height:30px; text-align: left;}
+.detailUserImg{ width:auto; height:120px; position:absolute; top:50px; right:50px; z-index:2; }
+.detailUserImg img{ width:100px; height:100px;  border:1px solid #ccc; border-radius:5px;}
+.noveltyDetailUserImg{ height:120px; }
+.noveltyDetailUserImg img{ width:100px; height: 100px;}
+.details{ height:120px;}
+/**********************see user detail end3*******************************/
