@@ -43,27 +43,15 @@ namespace littleworld.Web
 
             Session["no"] = no;
             Session["pwd"] = pwd;
-<<<<<<< HEAD
-
-=======
->>>>>>> add supermodifyadminInfo
             if (modadmin[0].adminLevel == 0)
             {
                 Response.Redirect("superSeeAdminInfo.aspx");
             }
-<<<<<<< HEAD
-            else
-=======
             else 
->>>>>>> add supermodifyadminInfo
             {
                 Response.Redirect("adminModifyInfo.aspx");
             }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> add supermodifyadminInfo
         }
 
 

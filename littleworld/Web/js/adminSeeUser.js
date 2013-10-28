@@ -11,16 +11,6 @@ function initEvents() {
 }
 //封锁功能,就是将它的状态改为0
 function fengsuoUser() {
-    $(".adminUserFengA").load(function () {
-        var stateUser = $(this).attr("thisUserState");
-        if (stateUser == 1) {
-            $(this).html("封锁");
-        }
-        else {
-            $(this).html("解封");
-        }
-
-    });
     $(".adminUserFengA").click(function () {
         var userIDd = parseInt($(this).attr("thisUserID"));
         var stateUser = $(this).attr("thisUserState");
@@ -35,9 +25,10 @@ function fengsuoUser() {
                     data: "{userid:" + userIDd + "}",
                     dataType: "json",
                     success: function () {
-                        //alert("dd");
                         showSuccessAlert("您成功封锁该用户！");
-                        location.reload();
+                        setTimeout(function () {
+                            location.reload();
+                        }, 2000);
                     }
                 });
                 $(this).html("解封");
@@ -58,7 +49,9 @@ function fengsuoUser() {
                     success: function () {
                         //alert("dd");
                         showSuccessAlert("您成功解封该用户！");
-                        location.reload();
+                        setTimeout(function () {
+                            location.reload();
+                        }, 2000);
                     }
                 });
                 $(this).html("封锁");
@@ -67,6 +60,5 @@ function fengsuoUser() {
                 showNoticeAlert("您取消了解封该用户！");
             }
         }
-
     });
 }

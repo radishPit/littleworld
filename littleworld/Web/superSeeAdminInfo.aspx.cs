@@ -13,12 +13,12 @@ namespace littleworld.Web
         {
             if (Request.QueryString["pageInd"] == null)
             {
-                bindData(0, "adminLevel=1");
+                bindData(0, "adminLevel=1 and adminName like '%1%'");
             }
             else 
             {
                 int pageInde = Convert.ToInt32(Request.QueryString["pageInd"]);
-                bindData(pageInde, "adminLevel=1");
+                bindData(pageInde, "adminLevel=1 and adminName like '%1%'");
             }    
         }
         public void bindData(int pageIn,string selectWhere) 
@@ -72,7 +72,7 @@ namespace littleworld.Web
             }
         }
 
-        protected void search_Click(object sender,EventArgs e)
+        protected void search_Click(object sender, EventArgs e)
         {
             string searchT = this.searchText.Text;
             if (searchT=="")
@@ -83,18 +83,18 @@ namespace littleworld.Web
             try
             {
                 BLL.adminTb bllAdmin = new BLL.adminTb();
-                List<Model.adminTb> admins = bllAdmin.GetModelList("adminLevel=1 and adminName like %" + searchT + "%");
+                List<Model.adminTb> admins = bllAdmin.GetModelList("adminLevel=1 and adminName like '%" + searchT + "%'");
                 if (admins.Count == 0)
                 {
                     ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showNoticeAlert", "showNoticeAlert('没有您要找的管理员！');", true);
                     return;
                 }
-                bindData(0, "adminLevel=1 and adminName like %" + searchT+"%");
+                //ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showErrorAlert", "showErrorAlert('输入关键字"+searchT+"！');", true);   
+                bindData(0, "adminLevel=1 and adminName like '%"+searchT+"%'");
             }
             catch (Exception)
             {
-                ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showErrorAlert", "showErrorAlert('发生错误,请重新输入关键字！');", true);
-                    
+                ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showErrorAlert", "showErrorAlert('发生错误,请重新输入关键字！');", true);    
             }  
         }
     }
