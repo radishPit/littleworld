@@ -22,17 +22,19 @@
                         HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
 <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader"></HeaderStyle>
                     </asp:BoundField>
-                    <asp:BoundField DataField="senderID" HeaderText="发送人" 
-                        HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
-<HeaderStyle CssClass="gvSuperAdminSeeInfoHeader"></HeaderStyle>
-                    </asp:BoundField>
-                    <asp:TemplateField HeaderText="内容" HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
+                    <asp:TemplateField HeaderText="发送人" HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
                         <ItemTemplate>
-                            <a href="adminNoveltyDetail.aspx?noveltyID=<%# Eval("noveltyID") %>" class="adminNoveltyDetailA">详细...</a>     
+                            <a href="adminSeeUserDetail.aspx?userID=<%# Eval("senderID") %>" class="adminNoveltyDetailA adminUserFengA" ><%# showSenderName(Eval("senderID").ToString()) %></a>
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:TemplateField HeaderText="内容" HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
+                        <ItemTemplate>
+                            <a href="adminSeeNoveltyDetail.aspx?noveltyID=<%# Eval("noveltyID") %>" class="adminNoveltyDetailA">详细...</a>     
+                        </ItemTemplate>
+                        <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader" />
+                    </asp:TemplateField>
                     <asp:BoundField DataField="commentNum" HeaderText="评论数" 
-                        HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader" >
+                        HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
 <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader"></HeaderStyle>
                     </asp:BoundField>
                     <asp:BoundField DataField="supportNum" HeaderText="赞数" 

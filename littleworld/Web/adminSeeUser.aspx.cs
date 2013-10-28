@@ -36,14 +36,14 @@ namespace littleworld.Web
 
             int pageCount = pds.PageCount;
             StringBuilder html = new StringBuilder("");
-            html.Append("<a class='pageA pageStart' href='adminSeeNovelty.aspx?pageInd=0'>首页</a>");
+            html.Append("<a class='pageA pageStart pageA0' href='adminSeeUser.aspx?pageInd=0'>首页</a>");
             for (int i = 0; i < pageCount; i++)
             {
-                html.Append("<a class='pageA pageNum pageA" + (i + 1).ToString() + "' href='adminSeeNovelty.aspx?pageInd=" + i.ToString() + "'>" + (i + 1).ToString() + "</a>");
+                html.Append("<a class='pageA pageNum pageA" + i.ToString() + "' href='adminSeeUser.aspx?pageInd=" + i.ToString() + "'>" + (i + 1).ToString() + "</a>");
             }
-            html.Append("<a class='pageA pageStart' href='adminSeeNovelty.aspx?pageInd=" + (pageCount - 1).ToString() + "'>尾页</a>");
+            html.Append("<a class='pageA pageStart pageA"+(pageCount-1).ToString()+"' href='adminSeeUser.aspx?pageInd=" + (pageCount - 1).ToString() + "'>尾页</a>");
             this.dgvpage.InnerHtml = html.ToString();
-            ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "clickPage", "clickPage(" + (pageIn + 1).ToString() + ");", true);
+            ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "clickPage", "clickPage(" + pageIn.ToString() + ");", true);
 
         }
 
@@ -78,18 +78,31 @@ namespace littleworld.Web
             try
             {
                 BLL.userTb blluserTb = new BLL.userTb();
-                List<Model.userTb> users= blluserTb.GetModelList("state=1 and contents like %" + searchT + "%");
+                List<Model.userTb> users = blluserTb.GetModelList("userID like '%" + searchT + "%'");
                 if (users.Count == 0)
                 {
                     ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showNoticeAlert", "showNoticeAlert('没有您要找的用户！');", true);
                     return;
                 }
-                bindData(0, "state=1 and contents like %" + searchT + "%");
+                bindData(0, "userID like '%" + searchT + "%'");
             }
             catch (Exception)
             {
                 ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showErrorAlert", "showErrorAlert('发生错误,请重新输入关键字！');", true);
             }
+        }
+        public string showuserState(string state) {
+            if (state==null)
+            {
+                return "封锁";
+            }
+            string nowState;
+            switch (state) {
+                case "0": nowState = "解封"; break;
+                case "1": nowState = "封锁"; break;
+                default: nowState = "封锁"; break;
+            }
+            return nowState;
         }
     }
 }

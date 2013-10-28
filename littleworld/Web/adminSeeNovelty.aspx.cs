@@ -77,19 +77,26 @@ namespace littleworld.Web
             try
             {
                 BLL.noveltyTb bllnovelTy = new BLL.noveltyTb();
-                List<Model.noveltyTb> noveltys = bllnovelTy.GetModelList("state=1 and contents like %" + searchT + "%");
+                List<Model.noveltyTb> noveltys = bllnovelTy.GetModelList("noveltyID like '%" + searchT + "%'");
                 if (noveltys.Count == 0)
                 {
                     ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showNoticeAlert", "showNoticeAlert('没有您要找的新鲜事！');", true);
                     return;
                 }
-                bindData(0, "state=1 and contents like %" + searchT + "%");
+                bindData(0, "noveltyID like '%" + searchT + "%'");
             }
             catch (Exception)
             {
                 ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showErrorAlert", "showErrorAlert('发生错误,请重新输入关键字！');", true);
 
             }
+        }
+        public string showSenderName(string userID) 
+        {
+            int userIDs = Convert.ToInt32(userID);
+            BLL.userTb bllUser = new BLL.userTb();
+            Model.userTb mUser = bllUser.GetModel(userIDs);
+            return mUser.userName;
         }
     }
 }
