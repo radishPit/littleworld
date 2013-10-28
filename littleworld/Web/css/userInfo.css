@@ -1,23 +1,2 @@
-﻿*{ margin: 0; padding: 0;
-	}
-body{background-image: url("../images/userInfoImg/tumblr_mru7l73vil1qez33oo1_1280.jpg");}
-#all{width: 900px;height: 480px;margin: auto;}
-.n{width: 330px;height: 60px;margin: 180px 0 0 70px;}
-.w{width: 330px;height: 60px;margin: 0 0 0 70px;}
-.zh{color: rgb(162,162,115);font-size: 15px;font-weight: 600;font-family: 微软雅黑,Arial;}
-#allLeft{width:450px;height: 600px;float: left;}
-#allRight{width:450px;height: 600px;float: right;}
-.txtQ{width: 250px;height: 30px;border: 1px;margin: 0 0 0 30px;border-radius: 5px;}
-#txtw5{width: 146px;
-height: 160px;margin: 100px 0 15px 100px;
+﻿body {
 }
-.txtQu{width: 250px;height: 30px;border: 1px;margin: 0 0 0 16px;border-radius: 5px;}
-.imgQ{width: 150px;height: 150px;margin: 0 0 0 30px;}
-
-#btn{width: 200px;height: 46px;background-color:rgb(162,162,115);line-height: 56px;margin: 30px auto auto auto;border-radius: 15px;position: relative;}
-.top2{text-decoration: none;color: rgb(255,255,255);line-height: 16px;font-size: 18px;font-weight: 400;margin: 0px 0 10px 30px;position: absolute;top: 10px;left: 46px;background-color:rgb(162,162,115);
-	height: 21px;
-}
-.n1{width: 330px;height: 60px;margin: 130px 0 0 70px;}
-.txtQ1{width: 150px;height: 20px;border: 1px;margin: 0 0 0 0px;border-radius: 5px;}
-.w1{width: 300px;height: 40px;margin: 0 0 0 70px;}
