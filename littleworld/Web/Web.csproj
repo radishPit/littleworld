@@ -72,11 +72,13 @@
   <ItemGroup>
     <Content Include="adminLogin.aspx" />
     <Content Include="adminModifyInfo.aspx" />
+    <Content Include="adminSeeNoveltyDetail.aspx" />
     <Content Include="adminSeeEvents.aspx" />
     <Content Include="adminSeeNotice.aspx" />
     <Content Include="adminSeeNovelty.aspx" />
     <Content Include="adminSeeUser.aspx" />
     <Content Include="adminSendNotice.aspx" />
+    <Content Include="adminSeeUserDetail.aspx" />
     <Content Include="css\adminLogin.css" />
     <Content Include="css\adminMaster.css" />
     <Content Include="css\adminModifyInfo.css" />
@@ -119,45 +121,24 @@
     <Content Include="css\userRegister.css" />
     <Content Include="css\userReport.css" />
     <Content Include="css\userResetPwd.css" />
-    <Content Include="css\userSpace.css" />
     <Content Include="css\userStore.css" />
     <Content Include="css\userSupport.css" />
-    <Content Include="images\adminLoginImg\tumblr_mt810zPtot1sccgico1_1280.jpg" />
-    <Content Include="images\adminMasterImg\bg_line.png" />
-    <Content Include="images\adminMasterImg\bg_nav.png" />
-    <Content Include="images\adminMasterImg\body_bg.jpg" />
-    <Content Include="images\adminMasterImg\footer_bg.png" />
-    <Content Include="images\adminMasterImg\icon.png" />
-    <Content Include="images\adminMasterImg\icon2.png" />
-    <Content Include="images\adminMasterImg\left_nav_border.png" />
-    <Content Include="images\adminMasterImg\repeat_bg_y.png" />
     <Content Include="images\commonImg\Logo250,100.png" />
-    <Content Include="images\superAdminImg\aside_float_bar_d2b39075.png" />
-    <Content Include="images\superAdminImg\bg-body.gif" />
-    <Content Include="images\superAdminImg\bg-content-box.gif" />
-    <Content Include="images\superAdminImg\bg-menu-item-current.gif" />
-    <Content Include="images\superAdminImg\bg-menu-item-green.gif" />
-    <Content Include="images\superAdminImg\bg-radial-gradient.gif" />
-    <Content Include="images\superAdminImg\bg-sidebar.gif" />
     <Content Include="images\superAdminImg\btn_modify.gif" />
-    <Content Include="images\superAdminImg\clock_48.png" />
-    <Content Include="images\superAdminImg\comment_48.png" />
-    <Content Include="images\superAdminImg\cross.png" />
     <Content Include="images\superAdminImg\icon_del.gif" />
-    <Content Include="images\superAdminImg\image_add_48.png" />
     <Content Include="images\superAdminImg\jianbian.jpg" />
     <Content Include="images\superAdminImg\login_btn_01.png" />
-    <Content Include="images\superAdminImg\logo.png" />
-    <Content Include="images\superAdminImg\paper_content_pencil_48.png" />
-    <Content Include="images\superAdminImg\pencil.png" />
-    <Content Include="images\superAdminImg\pencil_48.png" />
-    <Content Include="images\superAdminImg\shortcut-button-bg.gif" />
     <Content Include="images\superAdminImg\superAdimTop.jpg" />
     <Content Include="images\superAdminImg\topnav.jpg" />
-    <Content Include="images\userLoginImg\avatar_2b3c1d15ffc8_30.png" />
-    <Content Include="images\userLoginImg\tumblr_msxh53kD9w1sbjv1ho1_1280.jpg" />
-    <Content Include="images\userRegisterImg\avatar_2b3c1d15ffc8_30.png" />
-    <Content Include="images\userRegisterImg\tumblr_msveccyqWc1qe3m9lo2_1280.png.jpg" />
+    <Content Include="images\Temp\09246ad5-bf96-4b5c-a6b9-b180a98b73b0.jpg" />
+    <Content Include="images\Temp\1.jpg" />
+    <Content Include="images\Temp\1dbd40c2-d333-4a42-9bf3-9a3a19cbefd8.jpg" />
+    <Content Include="images\Temp\1e30e924b899a901f76d337a1d950a7b03087bf40ad1d51e.jpg" />
+    <Content Include="images\Temp\5e8cce68-5708-492a-876f-9d242c17583c.jpg" />
+    <Content Include="images\Temp\7dcd53fb-9fd9-41ba-b751-450fa63b19e6.jpg" />
+    <Content Include="images\Temp\90a0234c-dc97-4a8f-8381-38699b1acec9.jpg" />
+    <Content Include="images\Temp\d1947469-5091-4f1b-857c-70d5b3619bd5.jpg" />
+    <Content Include="images\Temp\f1471c98-bf9b-489d-8527-90d05c9aa349.jpg" />
     <Content Include="js\adminLogin.js" />
     <Content Include="js\adminMaster.js" />
     <Content Include="js\adminModifyInfo.js" />
@@ -167,12 +148,12 @@
     <Content Include="js\adminSeeUser.js" />
     <Content Include="js\adminSendNotice.js" />
     <Content Include="js\common.js" />
-    <Content Include="js\jqBackgroundPositionAnimate.js" />
     <Content Include="js\Jquery-1.9.1.js" />
     <Content Include="js\jquery-ui-1.10.3.custom.min.js" />
     <Content Include="js\superAddAdmin.js" />
     <Content Include="js\superAdmin.js" />
     <Content Include="js\superAdministration.js" />
+    <Content Include="js\superModifyAdminInfo.js" />
     <Content Include="js\superSeeAdminInfo.js" />
     <Content Include="js\userComment.js" />
     <Content Include="js\userFindPwd.js" />
@@ -186,10 +167,11 @@
     <Content Include="js\userRegister.js" />
     <Content Include="js\userReport.js" />
     <Content Include="js\userResetPwd.js" />
-    <Content Include="js\userSpace.js" />
     <Content Include="js\userStore.js" />
     <Content Include="js\userSupport.js" />
     <Content Include="superAddAdmin.aspx" />
+    <Content Include="superAdmin.aspx" />
+    <Content Include="superModifyAdminInfo.aspx" />
     <Content Include="superSeeAdminInfo.aspx" />
     <Content Include="userComment.aspx" />
     <Content Include="userFindPwd.aspx" />
@@ -201,7 +183,6 @@
     <Content Include="userRegister.aspx" />
     <Content Include="userReport.aspx" />
     <Content Include="userResetPwd.aspx" />
-    <Content Include="userSpace.aspx" />
     <Content Include="userStore.aspx" />
     <Content Include="userSupport.aspx" />
     <Content Include="Web.config">
@@ -255,6 +236,13 @@
     <Compile Include="adminModifyInfo.aspx.designer.cs">
       <DependentUpon>adminModifyInfo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminSeeNoveltyDetail.aspx.cs">
+      <DependentUpon>adminSeeNoveltyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSeeNoveltyDetail.aspx.designer.cs">
+      <DependentUpon>adminSeeNoveltyDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminSeeEvents.aspx.cs">
       <DependentUpon>adminSeeEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,6 +278,13 @@
     <Compile Include="adminSendNotice.aspx.designer.cs">
       <DependentUpon>adminSendNotice.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminSeeUserDetail.aspx.cs">
+      <DependentUpon>adminSeeUserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminSeeUserDetail.aspx.designer.cs">
+      <DependentUpon>adminSeeUserDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="superAddAdmin.aspx.cs">
       <DependentUpon>superAddAdmin.aspx</DependentUpon>
@@ -298,12 +293,26 @@
     <Compile Include="superAddAdmin.aspx.designer.cs">
       <DependentUpon>superAddAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="superAdmin.aspx.cs">
+      <DependentUpon>superAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="superAdmin.aspx.designer.cs">
+      <DependentUpon>superAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="superAdmin.Master.cs">
       <DependentUpon>superAdmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="superAdmin.Master.designer.cs">
       <DependentUpon>superAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="superModifyAdminInfo.aspx.cs">
+      <DependentUpon>superModifyAdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="superModifyAdminInfo.aspx.designer.cs">
+      <DependentUpon>superModifyAdminInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="superSeeAdminInfo.aspx.cs">
       <DependentUpon>superSeeAdminInfo.aspx</DependentUpon>
@@ -395,13 +404,6 @@
     </Compile>
     <Compile Include="userResetPwd.aspx.designer.cs">
       <DependentUpon>userResetPwd.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="userSpace.aspx.cs">
-      <DependentUpon>userSpace.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="userSpace.aspx.designer.cs">
-      <DependentUpon>userSpace.aspx</DependentUpon>
     </Compile>
     <Compile Include="userStore.aspx.cs">
       <DependentUpon>userStore.aspx</DependentUpon>
@@ -539,6 +541,8 @@
     <Content Include="userMasterTB.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="images\adminLoginImg\" />
+    <Folder Include="images\adminMasterImg\" />
     <Folder Include="images\adminSeeEventsImg\" />
     <Folder Include="images\adminSeeNoticeImg\" />
     <Folder Include="images\adminSeeNoveltyImg\" />
@@ -549,9 +553,11 @@
     <Folder Include="images\userGroupManageImg\" />
     <Folder Include="images\userHomeImg\" />
     <Folder Include="images\userInfoImg\" />
+    <Folder Include="images\userLoginImg\" />
     <Folder Include="images\userMassageImg\" />
     <Folder Include="images\userMasterTBImg\" />
     <Folder Include="images\userMasterTRBImg\" />
+    <Folder Include="images\userRegisterImg\" />
     <Folder Include="images\userReportImg\" />
     <Folder Include="images\userResetPwdImg\" />
     <Folder Include="images\userStoreImg\" />
