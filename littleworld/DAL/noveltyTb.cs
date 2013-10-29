@@ -52,7 +52,7 @@ namespace littleworld.DAL
 			strSql.Append(";select @@IDENTITY");
 			SqlParameter[] parameters = {
 					new SqlParameter("@senderID", SqlDbType.Int,4),
-					new SqlParameter("@contents", SqlDbType.NVarChar,50),
+					new SqlParameter("@contents", SqlDbType.NVarChar,500),
 					new SqlParameter("@state", SqlDbType.NVarChar,50),
 					new SqlParameter("@hasImgs", SqlDbType.Int,4),
 					new SqlParameter("@typeID", SqlDbType.Int,4),
@@ -102,7 +102,7 @@ namespace littleworld.DAL
 			strSql.Append(" where noveltyID=@noveltyID");
 			SqlParameter[] parameters = {
 					new SqlParameter("@senderID", SqlDbType.Int,4),
-					new SqlParameter("@contents", SqlDbType.NVarChar,50),
+					new SqlParameter("@contents", SqlDbType.NVarChar,500),
 					new SqlParameter("@state", SqlDbType.NVarChar,50),
 					new SqlParameter("@hasImgs", SqlDbType.Int,4),
 					new SqlParameter("@typeID", SqlDbType.Int,4),
