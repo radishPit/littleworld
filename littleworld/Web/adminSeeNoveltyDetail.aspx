@@ -11,7 +11,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="adminSeeUserDetail">
+    <div class="adminSeeUserDetail">
     <div class="adminSeeUserDetailLeft">
         <div class="userEssentialInformatio">
             <form action="">
@@ -40,7 +40,8 @@
                 </div>
                 <div class="detail details">
                     <div class="lableTitle">图&nbsp;片：</div>
-                    <div class="lableCon noveltyDetailUserImg" runat="server" id="noveltyImgs"></div>
+                    <div class="lableCon noveltyDetailUserImg" runat="server" id="noveltyImgs">
+                    </div>
                 </div>
             </form> 
         </div>

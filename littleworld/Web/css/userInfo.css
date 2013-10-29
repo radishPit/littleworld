@@ -1,2 +1,37 @@
-﻿body {
+﻿*{ margin: 0; padding: 0;
+	}
+body{background-image: url("../images/userInfoImg/tumblr_muwt4yjL3k1r8u7byo1_1280.jpg");}
+#all{width: 750px;height: 480px;margin: auto;}
+.n{width: 330px;height: 60px;margin: 180px 0 0 70px;}
+.w{width: 330px;height: 60px;margin: 0 0 0 70px;}
+.zh{color: rgb(132,102,115);font-size: 15px;font-weight: 600;font-family: 微软雅黑,Arial;}
+#allLeft{width:300px;height: 600px;float: left;}
+#allRight{width:450px;height: 600px;float: right;}
+.txtQ{width: 250px;height: 30px;border: 1px;margin: 0 0 0 30px;border-radius: 5px;}
+#txtw5{width: 146px;
+height: 190px;
+margin: 100px 0 15px 100px;
+position:relative ;
 }
+.txtQu{width: 250px;height: 30px;border: 1px;margin: 0 0 0 16px;border-radius: 5px;}
+.imgQ{width: 150px;height: 150px;margin: 0 0 0 30px;}
+
+#btn{width: 200px;height: 46px;background-color:rgb(132,102,115);line-height: 56px;margin: 30px auto auto auto;border-radius: 15px;position: relative;}
+.top2{text-decoration: none;color: rgb(255,255,255);line-height: 16px;font-size: 18px;font-weight: 400;margin: 0px 0 10px 30px;position: absolute;top: 10px;left: 46px;background-color:rgb(132,102,115);
+	height: 21px;
+}
+.n1{width: 330px;height: 60px;margin: 130px 0 0 70px;}
+.txtQ1{width: 150px;height: 20px;border: 1px;margin: 0 0 0 0px;border-radius: 5px;}
+.w1{width: 300px;height: 40px;margin: 0 0 0 70px;}
+#Image1{display:block; border :1px solid #ccc;background-image: url("../images/userInfoImg/1.gif");}
+#FileUpload1{display:block;position:absolute ;top:1px;z-index:1;}
+.picd{width:120px;height:30px;background-color:rgb(242, 242, 242);z-index:2;position:absolute ;top:120px;list-style-type: none;color: rgb(121,122,128);border-style: none;cursor: pointer;}
+.W_btn_upload{font-size: 15px;line-height: 30px;font-family: Arial;color: rgb(121,122,128);width: 120px;height: 30px;}
+.icon_upload_upload{display: block;line-height: 30px;width: 16px;height: 16px;margin: 6px 8px 0 0;background-image: url("../images/userInfoImg/icon.png");background-position: -125px -100px;background-repeat: no-repeat;float:left;}
+.picd:hover{background-color: rgb(255, 184, 71);color: rgb(100,80,128);}
+
+.btnok{width: 120px;height: 30px;background-color: rgb(242,242,242);list-style-type: none;color: rgb(121,122,128);border-style: none;cursor: pointer;position:absolute ;top:150px;}
+.btnok:hover{background-color: rgb(255, 184, 71);color: rgb(100,80,128);}
+#txtw6{width: 330px;height: 43px;}
+#txtw7{width: 330px;height: 43px;}
+#txtw8{width: 330px;height: 43px;}

@@ -8,7 +8,7 @@
 		
 		<ul class="addUl">
 			<li>
-				<label>账&nbsp;&nbsp;&nbsp;&nbsp;号:</label>
+				<label>账&nbsp; 号:</label>
 				<div class="addDiv">
                     <asp:TextBox type="text" runat="server" ID="adminName" ReadOnly="True"></asp:TextBox>
 					<span>请输入新管理员的账号，请注意唯一性！</span>

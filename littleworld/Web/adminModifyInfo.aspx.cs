@@ -18,7 +18,7 @@ namespace littleworld.Web
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
             adName = (Master.FindControl("adminNamel") as Label).Text;
-            this.adminName.Text = adName;
+            this.adminName.Text = Session["no"].ToString ();
             
         }
         protected void sureBtn_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace littleworld.Web
             string adminNewP = this.adminPwd.Text;
             string adminNewPA = this.adminPwdAgain.Text;
             BLL.adminTb adminBll = new BLL.adminTb();
-            List<Model.adminTb> adminM = adminBll.GetModelList("adminLevel=1 and adminName='"+adminN+"'");
+            List<Model.adminTb> adminM = adminBll.GetModelList("adminName='"+adminN+"'");
             foreach (var adminOne in adminM)
             {
                 if (adminNewP=="" || adminNewPA=="")
