@@ -1,2 +1,215 @@
-﻿body {
+﻿ .W_main_c {
+    padding: 22px 0px 50px;
+}
+.W_main_c {
+    float: left;
+    width: 600px;
+    min-height: 800px;
+    overflow: hidden;
+}
+img{border:0px;}
+.group_read {
+    clear: both;
+    margin:0px 20px;
+}
+body, .S_txt1, .SW_fun .S_func1, .current .S_func1:hover {
+    color: rgb(89, 89, 89);
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.125 Arial,Helvetica,sans-serif;
+}
+.group_read .title 
+{
+    text-align:left;
+    height: 24px;
+    line-height: 28px;
+    padding: 0px 0px 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.group_read .sort, .group_read .title {
+    border-bottom: 2px solid rgb(234, 20, 41);
+}
+ .tab_normal {
+    margin: 0px 20px;
+    padding: 10px 0px 6px;
+}
+.tab_normal {
+    line-height: 22px;
+}
+.tab_normal .tab_nosep, .tab_normal_l {
+    float: left;
+}
+.tab_normal_r {
+    float: right;
+}
+.tab_normal .W_btn_b {
+    margin-right: 10px;
+}
+.W_btn_b, .W_btn_c, .W_btn_e, .W_btn_f, .W_funbtn_b, .W_funbtn_c, .W_btn_round, .W_btn_round_ico, .W_btn_round2, .W_btn_a_disable, .W_btn_a_disable:hover, .W_btn_b_disable, .W_btn_b_disable:hover, .W_btn_c_disable, .W_btn_c_disable:hover, .W_btn_d_disable, .W_btn_d_disable:hover, .W_btn_v_disable, .W_btn_v_disable:hover, .W_btn_e_disable, .W_btn_e_disable:hover, .W_btn_f_disable, .W_btn_f_disable:hover, .W_btn_g_disable, .W_btn_g_disable:hover, .W_btn_a_disable span, .W_btn_a_disable:hover span, .W_btn_b_disable span, .W_btn_b_disable:hover span, .W_btn_c_disable span, .W_btn_c_disable:hover span, .W_btn_d_disable span, .W_btn_d_disable:hover span, .W_btn_v_disable span, .W_btn_v_disable:hover span, .W_btn_e_disable span, .W_btn_e_disable:hover span, .W_btn_f_disable span, .W_btn_f_disable:hover span, .W_btn_g_disable span, .W_btn_g_disable:hover span {
+    border-color: rgb(217, 217, 217);
+    background-color: rgb(242, 242, 242);
+}
+.W_btn_b {
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    border-color: rgb(217, 217, 217);
+    background-color: rgb(242, 242, 242);
+}
+a, .S_link1, .S_func1:hover, .S_bg5 .S_func1:hover, .SW_fun:hover .S_func1, .SW_fun2:hover .S_func3, .SW_fun2:hover .S_func4 {
+    color: rgb(48, 125, 116);
+}
+.W_btn_a span, .W_btn_a_disable span, .W_btn_b span, .W_btn_b_disable span, .W_btn_c span, .W_btn_c_disable span, .W_btn_d span, .W_btn_d_disable span, .W_btn_v span, .W_btn_v_disable span {
+    padding: 0px 9px 0px 10px;
+    white-space: nowrap;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px 2px 2px 2px;
+    height: 18px;
+    line-height: 18px;
+}
+.icon_mes {
+    display: inline-block;
+    width: 12px;
+    height: 9px;
+    overflow: hidden;
+    background: url("../images/userMassageImg/msg_icon.png") repeat scroll 0% 0% transparent;
+}
+
+.W_btn_b span, .W_btn_c span, .W_btn_e span, .W_btn_f span, .W_btn_round span, .W_btn_round2 span, .W_btn_round_ico span, .W_funbtn_b .btn_inborder, .W_funbtn_c .btn_inborder, .W_btn_a_disable span, .W_btn_a_disable:hover span, .W_btn_b_disable span, .W_btn_b_disable:hover span, .W_btn_c_disable span, .W_btn_c_disable:hover span, .W_btn_d_disable span, .W_btn_d_disable:hover span, .W_btn_v_disable span, .W_btn_v_disable:hover span, .W_btn_e_disable span, .W_btn_e_disable:hover span, .W_btn_f_disable span, .W_btn_f_disable:hover span, .W_btn_g_disable span, .W_btn_g_disable:hover span {
+    border-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+}
+a:hover .icon_mes {
+    background-position: -18px 0px;
+}
+.W_btn_a:hover span, .W_btn_d:hover span, .W_btn_b:hover span {
+    color: rgb(255, 255, 255);
+}
+.W_btn_a:hover, .W_btn_d:hover, .W_btn_b:hover, .W_btn_a:hover span, .W_btn_d:hover span, .W_btn_b:hover span {
+    text-decoration: none;
+    background: -moz-linear-gradient(center top , rgb(255, 184, 71) 0%, rgb(255, 162, 16) 100%) repeat scroll 0% 0% transparent;
+}
+.W_btn_a, .W_btn_d, .W_btn_b:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 155, 1);
+    background-color: rgb(255, 160, 10);
+    color: rgb(255, 255, 255);
+    border-radius: 2px 2px 2px 2px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.icon_lock {
+    background-position: -350px -100px;
+    vertical-align: -2px;
+}
+.W_ico16 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/userMassageImg/icon.png");
+    background-repeat: no-repeat;
+    padding:0 0 0 0 ;
+}
+.S_txt2, .SW_fun2:hover .S_txt3 {
+    color: rgb(128, 128, 128);
+}
+address, caption, cite, code, dfn, em, i, th, var, b {
+    font-style: normal;
+    font-weight: normal;
+}
+.tab_normal_r .func_setup {
+    margin-left: 10px;
+}
+a:focus, input, textarea {
+    outline-style: none;
+}
+a, .S_link1, .S_func1:hover, .S_bg5 .S_func1:hover, .SW_fun:hover .S_func1, .SW_fun2:hover .S_func3, .SW_fun2:hover .S_func4 {
+    color: rgb(48, 125, 116);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.WB_msg_type {
+    cursor: pointer;
+    margin-top: -1px;
+    position: relative;
+    padding-top: 1px;
+}
+.WB_msg_type .msg_list_node {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.S_line2 {
+    border-color: rgb(230, 230, 230);
+}
+.clearfix {
+    display: block;
+}
+.B_message_box #all_msg_list .msg_list_node {
+    margin: 0px 20px;
+}
+#all_msg_list{margin-top:15px;}
+.WB_msg_type .id_avatar {
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left:10px;
+}
+.W_face_radius {
+    border-radius: 2px 2px 2px 2px;
+}
+ img {
+    border: 0px none;
+}
+.WB_msg_type .msg_main {
+    margin-left: 65px;
+    height: 50px;
+    overflow: hidden;
+}
+.WB_msg_type .msg_main .msg_title {
+    margin-bottom: 5px;
+}
+.W_f14 
+{
+    text-align:left;
+    font-size: 14px;
+}
+.W_fb {
+    font-weight: 700;
+}
+.WB_msg_type .msg_main .msg_detail {
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-right: 2em;
+}
+.S_txt2, .SW_fun2:hover .S_txt3 {
+    color: rgb(128, 128, 128);
+}
+.WB_msg_type .msg_ctrls {
+    position: absolute;
+    right: 0px;
+    top: 22px;
+}
+.WB_msg_type .msg_ctrls .W_ico12 {
+    vertical-align: top;
+    visibility: hidden;
+    margin-left: 7px;
 }
