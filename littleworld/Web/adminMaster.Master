@@ -71,7 +71,7 @@
                         <li class="mainLeft3Li">
                             <a href="#d" class="mainLeft3ATitle mainLeft3ATitle5">事务日志管理</a>   
                             <ul class="mainLeft3UlContent">
-                                <li><a href="adminSeeNovelty.aspx">查看事务日志</a></li>
+                                <li><a href="adminSeeEvents.aspx">查看事务日志</a></li>
                             </ul>              
                         </li>
                          <li class="mainLeft3Li">

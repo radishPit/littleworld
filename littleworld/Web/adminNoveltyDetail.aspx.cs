@@ -9,7 +9,7 @@ namespace littleworld.Web
 {
     public partial class adminNoveltyDetail : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load1(object sender, EventArgs e)
         {
             string noveltyID = Request.QueryString["noveltyID"];
 

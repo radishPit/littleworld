@@ -1,0 +1,31 @@
+﻿#header{width:980px;height:439px;border:1px solid #ccc;}
+#header-top{width:980px;height:300px;border:1px solid #ccc;}
+#header-footer{width:980px;height:124px;padding-bottom:15px;position: relative;}
+#headerimage{width:184px;height:235px;position: absolute;border:1px solid #ccc;top:-108px;left:20px;}
+#info{width:550px;height:114px;margin-right:190px;border:1px solid #ccc;float:right;}
+#headerpic{width:180px;height:180px;padding: 2px;border:1px solid #ccc;position: relative;}
+#userfan{width:184px;height:42px;border:1px solid #ccc;}
+.fanc{width:53px;height:39px;padding: 0 3px 3px 3px;font-size:12px;border-right:1px solid #ccc;display:block;float:left;text-align:center;color:rgb(51, 51, 51);}
+.fanc strong{font-size:16px;}
+.fanc:hover{color:rgb(235,100,120);}
+#changeimg{width:48px;height:18px;position: absolute;left:100px;top:140px;border:1px solid #ccc;padding:0 10px;text-align: center;font-size:12px;color:rgb(51,51,51);cursor: pointer;}
+#changeimg a{color:rgb(51,51,51);}
+#changehead{width:48px;height:18px;}
+#name{width:550px;height:30px;padding-bottom:8px;border:1px solid #ccc;}
+#intruduce{width:550px;height:14px;border:1px solid #ccc;padding-bottom:8px;color:rgb(235,100,120);font-size:12px;}
+#intruduce a{color:rgb(235,100,120);line-height:14px;display: block;}
+#tags{width:550px;height:24px;border:1px solid #ccc;}
+#exit{width:72px;height:18px;padding: 0 10px;border:1px solid #ccc;margin-top:2px; font-size:12px;}
+#exit a{color:rgb(51,51,51);font-size:12px;text-align:center; }
+.info{color:rgb(235,100,120);font-size:12px;}
+#lblname{color:rgb(51, 51, 51); font-size:20px; font-family:Arial;}
+#lblurl{color:rgb(235, 100, 120); font-size:12px;}
+#imgsax{width:12px;height:13px;line-height:24px;float:left;border:1px solid #ccc;}
+#tags span{ font-size:12px;color:rgb(128, 128, 128); line-height:24px;float:left;}
+#lblconlege{float:left;color:rgb(235, 100, 120);font-size:12px;width:auto;height:13px;margin-right:10px; margin-left:10px;}
+#imghead{display:block;width:180px;height:180px;padding: 2px;border:1px solid #ccc;}
+#lblstate{float:left;color:rgb(235, 100, 120); display:block;width:auto;height:13px; margin-right:10px;}
+#btnedit{ margin-left:100px;}
+#tags span{float:left; margin-left:5px; margin-right:5px;}
+#state{color:rgb(235, 100, 120);}
+#conlege{color:rgb(235, 100, 120);}

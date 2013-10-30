@@ -1,0 +1,20 @@
+﻿body {
+}
+.skin{color:rgb(235, 100, 120);}
+#box{width:940px;height:1251px;border:1px solid #ccc; padding:20px; background-color:#fff;}
+#box-title{width:920px;height:35px; padding:0 10px; background-color:rgb(242, 242, 242); text-align:left;}
+#box-content{width:940px;height:auto;}
+.ablumlist{width:198px;height:243px;float:left; margin-right:10px;}
+.photobox{width:180px;height:180px; padding:6px;border:1px solid #ccc; position:relative;background-color:#fff; margin-top:20px;}
+.a-photobox1{width:180px;height:180px; padding:6px;border:1px solid #ccc; position:absolute;left:-5px;top:-5px; background-color:#fff;}
+.a-photobox2{width:180px;height:180px; padding:6px;border:1px solid #ccc; position:absolute;left:-10px;top:-10px; background-color:#fff;}
+.ablumtitle-box{width:198px;height:36px;}
+.ablumtitle{ font-family:Arial; font-weight:bold; font-size:12px; display:block;}
+.titlediv{width:198px;height:14px; margin-top:9px; text-align:left;}
+.updatetime{width:198px;height:14px; margin-top:9px; text-align:left;color:rgb(51, 51, 51); font-size:12px; font-family:Arial;}
+.updatetime span{color:rgb(51, 51, 51); font-size:12px; font-family:Arial;display:block;}
+.count{width:31px;height:22px; padding:0 11px; position:absolute; background-color:#ccc; color:#fff; font-size:12px;left:120px;top:150px; text-align:center;}
+#boxtitle-a{ font-size:14px; color:#000; font-family:Arial; line-height:35px; font-weight:bold; float:left;}
+#boxtitle-a:hover{color:rgb(235, 100, 120);}
+#box-title span{ font-size:12px;color:rgb(51, 51, 51); line-height:35px;margin-left:8px; display:block;float:left; margin-right:10px;}
+#addablum{width:48px;height:18px; padding:0 10px; display:block; background-color:rgb(255, 160, 10);color:#fff; font-size:12px; margin-top:7px; margin-left:10px; text-align:center; padding:3px;}

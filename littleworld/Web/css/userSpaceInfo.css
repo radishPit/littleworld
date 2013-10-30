@@ -1,0 +1,22 @@
+﻿body {
+}
+#infobox{width:980px;height:300px;border:1px solid #ccc;}
+#box-left{width:560px;height:300px;border:1px solid #ccc;float:left;}
+#box-right{width:358px;height:auto;border:1px oslid #ccc;float:left;}
+#userinfo{width:560px;height:19px;border:1px solid #ccc;margin-top:20px;}
+#userinfo span{color:rgb(51, 51, 51); font-size:14px; font-family:Arial;float:right;}
+.btnwrite{float:right;}
+.content{width:560px;height:1432px;margin-bottom:40px;border:1px solid #ccc;margin-top:20px;}
+.content-title{width:560px;height:29px;border-bottom:0.5px solid #ccc;z-index:4; }
+.content-title a{color:rgb(51, 51, 51);font-size:14px;font-family:"SimSun";width:auto;height:30px;display:block;float:left;margin-right:5px;position: relative;}
+.content-title a:hover{text-decoration: underline;}
+.content-title span{float:left;margin-right:5px;}
+.infotd{width:560px;height:30px; font-size:12px;color:rgb(51, 51, 51); display:block; padding:5px; position:relative;}
+.info-left{width:60px;height:30px;display:block; text-align:right; line-height:30px;float:left; font-size:12px;}
+.inforight{width:473px;height:30px;padding:0 10px; float:left;position:absolute;left:100px;top:0; z-index:2; text-align:left; }
+.hidediv{width:473px;height:30px;padding:0 10px; position:absolute;left:100px;top:0; display:none; text-align:left;}
+.hidediv input{ line-height:30px;}
+.btnwrite{width:43px;height:20px;border:1px solid #ccc; cursor:pointer; float:right; text-align:center;margin:auto 0;}
+.btnwrite:hover{ background-color:Orange;color:#fff;}
+.title-left{width:auto;height:29px;float:left; margin-right:400px;}
+#titleright{width:150px;height:29px;float:right;}

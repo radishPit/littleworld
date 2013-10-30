@@ -1,0 +1,35 @@
+﻿body {
+}#sllcontent{width:980px;height:auto; min-height:902px;}
+#ablumnav{width:980px;height:42px; border-bottom:1px solid #ccc; margin-top:40px;}
+#midnav{width:950px;height:36px;margin:0 auto;}
+#logobox{float:left; width:93px;height:30px; margin-top:9px;margin-right:16px;}
+#navabox{width:401px;height:25px;margin-top:12px;float:left;}
+.nava{width:79px;height:25px;float:left; text-align:center;}
+.nava a{font-size:12px; font-family:Arial; line-height:25px;color:rgb(85, 85, 85);}
+.nava a:hover{ color:Blue;}
+.navb{width:55px;height:25px;float:left; text-align:center;}
+.navb a{font-size:12px; font-family:Arial; line-height:25px;color:rgb(85, 85, 85);}
+.navb a:hover{color:Blue;}
+#main{width:950px;height:776px;}
+#main-title{width:950px;height:21px; margin-top:24px; margin-bottom:20px;}
+#main-title span{color:rgb(34, 34, 34); font-size:14px;float:left; font-weight:bold;}
+#mainselect{ width:950px;height:31px;}
+#lfm{width:378px;height:31px;float:left;}
+#flspan{float:left;width:48px; height:18px; margin-top:8px; margin-right:10px;color:rgb(85, 85, 85); font-size:12px;}
+#flselect{width:230px;height:17px; padding:6px 3px 6px 5px;border:1px solid #ccc;color:rgb(85, 85, 85); position:relative; float:left;}
+#moren{width:205px;height:18px;float:left;border:1px solid #ccc; font-size:12px; font-family:Arial; text-align:left;}
+#btnshow{width:17px;height:17px; margin-right:2px; background-image:url("../images/ablumImg/icon.png"); background-position:0px -990px; background-repeat:no-repeat;border:1px solid #ccc;}
+.Ablums{width:234px;height:22px; padding:2px; position:absolute;left:0px;top:30px;border:1px solid #ccc;font-size:12px; font-family:Arial; text-align:left;}
+#createAlum{width:70px;height:24px;float:left;font-size:12px; font-family:Arial; text-align:left;color:rgb(85, 85, 85); border:1px solid #ccc; text-align:center; cursor:pointer;}
+#addablumdes{width:512px;height:196px;border:1px oslid #ccc; position:absolute; background-color:rgb(240, 240, 240);left:500px;top:40px;font-size:12px; font-family:Arial; text-align:left;color:rgb(85, 85, 85);}
+#ablum-title{width:492px;height:30px; padding:0 0 0 20px; background-color:#ccc; font-size:12px; font-family:Arial; font-weight:bold;color:rgb(85, 85, 85);}
+#editalbum{width:412px;height:246px; padding:20px 50px 30px 50px;}
+#albumnamebox{width:412px;height:29px; padding-bottom:0 0 15px 0px;}
+#inputname{width:282px;height:14px; padding:6px 4px 7px 5px; margin-right:10px; background-color:transparent;border:1px;}
+#albumdes{width:412px;height:60px; padding:10px 0 15px 0px;}
+#albumdestxt{width:282px;height:50px; padding:5px 4px 3px 5px; margin-left:10px;margin-right:10px;}
+#btnbox{width:352px;height:24px; margin-top:40px; margin-left:60px;}
+#btnOK{width:44px;height:20px; padding:1px; margin-right:10px; background-color:rgb(135, 198, 245);color:#fff; text-align:center; display:block;float:left;}
+#btnCancle{width:44px;height:20px; padding:1px; margin-right:10px; background-color:rgb(135, 198, 245);color:#fff; text-align:center;float:left;}
+#fl{float:left;}
+#fr{float:right; width:28px;height:28px; display:block; background-image:url("../images/ablumImg/icon.png"); background-position:0px -960px; background-repeat:no-repeat; cursor:pointer;}
