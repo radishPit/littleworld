@@ -168,28 +168,28 @@
 										</fieldset>
 									</form>
 									<div class="group_show_list">
-										<div class="lev">
+										<div id="starlist" class="lev">
 											<a href="###" class="S_txt">
 												<em class="W_ico12"></em>
 												<em class="W_ico20t"></em>
 												<span class="levtxt">名人明星</span>
 											</a>
 										</div>
-										<div class="lev">
+										<div id="workmatelist" class="lev">
 											<a href="###" class="S_txt">
 												<em class="W_ico12"></em>
 												<em class="W_ico20t"></em>
 												<span class="levtxt">同事</span>
 											</a>
 										</div>
-										<div class="lev">
+										<div id="classmatelist" class="lev">
 											<a href="###" class="S_txt">
 												<em class="W_ico12"></em>
 												<em class="W_ico20t"></em>
 												<span class="levtxt">同学</span>
 											</a>
 										</div>
-										<div class="lev">
+										<div id="speciallist" class="lev">
 											<a href="###" class="S_txt">
 												<em class="W_ico12"></em>
 												<em class="W_ico20t"></em>
