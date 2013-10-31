@@ -59,7 +59,9 @@
 /**************************搜索框 end*******************************/
 
 /**************************gridwiew *******************************/
-.gvSuperAdminSeeInfoCss{ margin: 20px auto; border: 1px solid #ccc; border-radius:6px;}
+.gvSuperAdminSeeInfoCss{ margin: 20px auto 20px 0px; 
+border: 1px solid #ccc; border-radius:6px;
+}
 .gvSuperAdminSeeInfoHeader{ width: 180px;  background-color: #e6e6e6; color: #444; font-family:"微软雅黑"; font-size:12px; height:35px; text-align:center;}
 .gvSuperAdminSeeInfoORow{ background-color:#fff; color:#616161; font-size: 12px; text-align:center; height: 35px; font-family:"微软雅黑";}
 .gvSuperAdminSeeInfoJRow{ background-color:#f5f5f5; color:#616161; font-size: 12px;text-align:center; height: 35px; font-family:"微软雅黑";}

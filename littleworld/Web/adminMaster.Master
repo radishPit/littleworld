@@ -88,7 +88,7 @@
                             <li><a href="adminSeeUser.aspx" class="mainRightUla"><img src="images/superAdminImg/pencil_48.png" alt="用户管理" title="用户管理"/><br/>用户管理</a></li>
                             <li><a href="adminSeeNovelty.aspx" class="mainRightUla"><img src="images/superAdminImg/comment_48.png" alt="新鲜事管理" title="新鲜事管理"/><br/>新鲜事管理</a></li>
                             <li><a href="adminSendNotice.aspx" class="mainRightUla"><img src="images/superAdminImg/image_add_48.png" alt="通知管理" title="通知管理"/><br/>通知管理</a></li>
-                            <li><a href="adminSeeNovelty.aspx" class="mainRightUla"><img src="images/superAdminImg/clock_48.png" alt="查看事务日志" title="查看事务日志"/><br/>查看事务日志</a></li>
+                            <li><a href="adminSeeEvents.aspx" class="mainRightUla"><img src="images/superAdminImg/clock_48.png" alt="查看事务日志" title="查看事务日志"/><br/>查看事务日志</a></li>
                         </ul>
                     </div>
                     <div id="mainRBottom">

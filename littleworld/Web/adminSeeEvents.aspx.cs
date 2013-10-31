@@ -14,20 +14,23 @@ namespace littleworld.Web
         {
             if (Request.QueryString["pageInd"] == null)
             {
-                bindData(0, "state=1");
+                bindData(0, "operatorID!=1");
             }
             else
             {
                 int pageInde = Convert.ToInt32(Request.QueryString["pageInd"]);
-                bindData(pageInde, "state=1");
+                bindData(pageInde, "operatorID!=1");
             }
         }
         public void bindData(int pageIn, string selectWhere)
         {
-            BLL.noveltyTb bllAdmin = new BLL.noveltyTb();
-            List<Model.noveltyTb> admins = bllAdmin.GetModelList(selectWhere);
+            BLL.eventsTb bllevent = new BLL.eventsTb();
+            List<Model.eventsTb> modevent = bllevent.GetModelList(selectWhere);
+
+            //BLL.noveltyTb bllAdmin = new BLL.noveltyTb();
+            //List<Model.noveltyTb> admins = bllAdmin.GetModelList(selectWhere);
             PagedDataSource pds = new PagedDataSource();
-            pds.DataSource = admins;
+            pds.DataSource = modevent;
             pds.PageSize = 8;
             pds.AllowPaging = true;
             pds.CurrentPageIndex = pageIn;
@@ -36,13 +39,14 @@ namespace littleworld.Web
 
             int pageCount = pds.PageCount;
             StringBuilder html = new StringBuilder("");
-            html.Append("<a class='pageA pageStart' href='adminSeeNovelty.aspx?pageInd=0'>首页</a>");
+            html.Append("<a class='pageA pageStart' href='adminSeeEvents.aspx?pageInd=0'>首页</a>");
             for (int i = 0; i < pageCount; i++)
             {
-                html.Append("<a class='pageA pageNum pageA" + (i + 1).ToString() + "' href='adminSeeNovelty.aspx?pageInd=" + i.ToString() + "'>" + (i + 1).ToString() + "</a>");
+                html.Append("<a class='pageA pageNum pageA" + (i + 1).ToString() + "' href='adminSeeEvents.aspx?pageInd=" + i.ToString() + "'>" + (i + 1).ToString() + "</a>");
             }
-            html.Append("<a class='pageA pageStart' href='adminSeeNovelty.aspx?pageInd=" + (pageCount - 1).ToString() + "'>尾页</a>");
+            html.Append("<a class='pageA pageStart' href='adminSeeEvents.aspx?pageInd=" + (pageCount - 1).ToString() + "'>尾页</a>");
             this.dgvpage.InnerHtml = html.ToString();
+
             ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "clickPage", "clickPage(" + (pageIn + 1).ToString() + ");", true);
 
         }
@@ -66,6 +70,7 @@ namespace littleworld.Web
         }
         protected void search_Click(object sender, EventArgs e)
         {
+            //Response.Write("<Script type='text/javascript'>alert( this.dgvpage.InnerHtml);</Script>");
             string searchT = this.searchText.Text;
             if (searchT == "")
             {
@@ -74,14 +79,14 @@ namespace littleworld.Web
             }
             try
             {
-                BLL.noveltyTb bllnovelTy = new BLL.noveltyTb();
-                List<Model.noveltyTb> noveltys = bllnovelTy.GetModelList("noveltyID like '%" + searchT + "%'");
-                if (noveltys.Count == 0)
+                BLL.eventsTb bllevents = new BLL.eventsTb();
+                List<Model.eventsTb> modevents = bllevents.GetModelList("operatorID like '%" + searchT + "%'");
+                if (modevents.Count == 0)
                 {
                     ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showNoticeAlert", "showNoticeAlert('没有您要找的新鲜事！');", true);
                     return;
                 }
-                bindData(0, "noveltyID like '%" + searchT + "%'");
+                bindData(0, "operatorID like '%" + searchT + "%'");
             }
             catch (Exception)
             {
@@ -95,6 +100,11 @@ namespace littleworld.Web
             BLL.userTb bllUser = new BLL.userTb();
             Model.userTb mUser = bllUser.GetModel(userIDs);
             return mUser.userName;
+        }
+
+        protected void gvSuperAdminSeeInfo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LTsectionMaster.master.cs" Inherits="littleworld.Web.LTsectionMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>就事论事</title>
+	<meta name="keywords" content="kw1,kw2,kw3"/>
+	<meta name="description" content="This is it."/>
+	<meta name="author" content="GX"/>
+    <link rel="shortcut icon" href="images/LTsection/spotify_variation.ico"/>
+    <link href="css/LTsectionMaster.css" rel="stylesheet" type="text/css" />
+  
+    <script src="js/Jquery-1.9.1.js" type="text/javascript"></script>
+      <script src="js/LTsectionMaster.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+        <div id="totalpage">
+  	<div id="toptb">
+  		<div id="login">
+  			<a class="logininfo" href="#" target="_blank">登录</a>
+  			<a class="logininfo" href="#" target="_blank">注册</a>
+  		</div> 		
+  	</div>
+  	<div id="hd">
+  		<div id="wp">
+  			<div id="logo"></div>
+  			<div id="topnav">
+  			    <a href="#" target="_blank" class="topnavitem tn1">旅行</a>
+  			    <a href="#" target="_blank" class="topnavitem tn2">美食</a>
+  			    <a href="#" target="_blank" class="topnavitem tn3">电影</a>
+  			    <a href="#" target="_blank" class="topnavitem tn4">音乐</a>
+  			    <a href="#" target="_blank" class="topnavitem tn5">时尚</a>
+  			    <a href="#" target="_blank" class="topnavitem tn6">体育</a>
+  			    <a href="#" target="_blank" class="topnavitem tn7">亲子</a>
+  			    <a href="#" target="_blank" class="topnavitem tn8">动漫</a>
+  			    <a href="#" target="_blank" class="topnavitem tn9">摄影</a>
+  			    <a href="#" target="_blank" class="topnavitem tn0">绘画</a>
+  			</div>
+  		</div>
+  	</div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+  	<div id="ftbg">
+  		<div id="ft">
+  			<div id="ftLeft"></div>
+  			<div id="ftmiddle">
+  				<div id="ftMtop">
+  				    <a href="#" target="_blank" class="ftMtopitem ftMtop1">商务合作</a>
+  				    <a href="#" target="_blank" class="ftMtopitem ftMtop2">信息举报</a>
+  				    <a href="#" target="_blank" class="ftMtopitem ftMtop3">关于景腾</a>
+  				    <a href="#" target="_blank" class="ftMtopitem ftMtop4">职务介绍</a>
+  				</div>
+  				<div id="ftMbottom">
+  					<p>Copyright (C) 2005-2013 pcbeta.com, All rights reserved</p>
+  					<p>Powered by Discuz!  沪ICP备10012085号</p>
+  					<p>请勿发布违反中华人民共和国法律法规的言论，会员观点不代表远景论坛官方立场。</p>
+  					<div id="ftMbottomitem">
+  						<p id="ftMB1">我们的平台：</p>
+  						<a href="#" target="_blank" class="ftMB">远景在线</a>
+  						<span class="fgt">|</span>
+  						<a href="#" target="_blank" class="ftMB">远景论坛</a>
+  						<span class="fgt">|</span>
+  						<a href="#" target="_blank" class="ftMB">苹果论坛</a>
+  						<span class="fgt">|</span>
+  						<a href="#" target="_blank" class="ftMB">Windows8</a>
+  						<span class="fgt">|</span>
+  						<a href="#" target="_blank" class="ftMB">Windows7</a>
+  						<span class="fgt">|</span>
+  						<a href="#" target="_blank" class="ftMB">Windows Phone论坛</a>
+  						<span class="fgt">|</span>
+  						<a href="#" target="_blank" class="ftMB">电脑硬件</a>
+  					</div>
+  				</div>
+  			</div>
+  			<div id="ftRight"></div>
+  		</div>
+  	</div>
+  </div>
+    </form>
+</body>
+</html>

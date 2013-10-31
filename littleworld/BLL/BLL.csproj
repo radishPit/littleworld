@@ -116,6 +116,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LTnoteTb.cs" />
+    <Compile Include="LTreportTb.cs" />
+    <Compile Include="LTreportTypeTb.cs" />
+    <Compile Include="LTsectionTb.cs" />
+    <Compile Include="LTstoreTb.cs" />
+    <Compile Include="LTsuppoterTb.cs" />
+    <Compile Include="LTtransmitTb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
