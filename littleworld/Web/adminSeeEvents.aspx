@@ -19,7 +19,7 @@
                 CssClass="gvSuperAdminSeeInfoCss" 
                 onselectedindexchanged="gvSuperAdminSeeInfo_SelectedIndexChanged" >
                 <Columns>
-                    <asp:BoundField DataField="operatorID" HeaderText="ID" 
+                    <asp:BoundField DataField="ID" HeaderText="ID" 
                         HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
             <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader"></HeaderStyle>
                     </asp:BoundField>
@@ -29,12 +29,11 @@
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="内容" HeaderStyle-CssClass="gvSuperAdminSeeInfoHeader">
-                       <%-- <ItemTemplate>
-                            <a href="adminSeeNoveltyDetail.aspx?noveltyID=<%# Eval("operatorID") %>" class="adminNoveltyDetailA">详细...</a>     
+                        <ItemTemplate>
+                            <a href="adminSeeEventsDetail.aspx?EventsID=<%# Eval("ID") %>" class="adminNoveltyDetailA">详细...</a>     
                         </ItemTemplate>
-                        <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader" />--%>
+                        <HeaderStyle CssClass="gvSuperAdminSeeInfoHeader" />
                     </asp:TemplateField>
-
                 </Columns>
                 
             </asp:GridView>

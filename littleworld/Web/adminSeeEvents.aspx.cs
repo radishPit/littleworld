@@ -14,19 +14,19 @@ namespace littleworld.Web
         {
             if (Request.QueryString["pageInd"] == null)
             {
-                bindData(0, "operatorID!=1");
+                bindData(0, "operatorID!=1 and operateContent like '用户%'");
             }
             else
             {
                 int pageInde = Convert.ToInt32(Request.QueryString["pageInd"]);
-                bindData(pageInde, "operatorID!=1");
+                bindData(pageInde, "operatorID!=1 and operateContent like '用户%'");
             }
         }
         public void bindData(int pageIn, string selectWhere)
         {
             BLL.eventsTb bllevent = new BLL.eventsTb();
             List<Model.eventsTb> modevent = bllevent.GetModelList(selectWhere);
-
+           
             //BLL.noveltyTb bllAdmin = new BLL.noveltyTb();
             //List<Model.noveltyTb> admins = bllAdmin.GetModelList(selectWhere);
             PagedDataSource pds = new PagedDataSource();
@@ -80,13 +80,13 @@ namespace littleworld.Web
             try
             {
                 BLL.eventsTb bllevents = new BLL.eventsTb();
-                List<Model.eventsTb> modevents = bllevents.GetModelList("operatorID like '%" + searchT + "%'");
+                List<Model.eventsTb> modevents = bllevents.GetModelList("ID like '%" + searchT + "%' and operatorID!=1 and operateContent like '用户%'");
                 if (modevents.Count == 0)
                 {
                     ScriptManager.RegisterStartupScript(searchBtn, this.GetType(), "showNoticeAlert", "showNoticeAlert('没有您要找的新鲜事！');", true);
                     return;
                 }
-                bindData(0, "operatorID like '%" + searchT + "%'");
+                bindData(0, "ID like '%" + searchT + "%' and operatorID!=1 and operateContent like '用户%'");
             }
             catch (Exception)
             {

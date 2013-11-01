@@ -24,35 +24,41 @@ namespace littleworld.Web
             BLL.adminTb blladmin = new BLL.adminTb();
             if (no == "" || pwd == "")
             {
-                this.Response.Write("<script language=javascript>alert('用户名与密码不能为空，请重新输入！');</script> ");
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script language=javascript>alert('用户名与密码不能为空，请重新输入！');</script>", false);
                 return;
             }
 
            
             List<Model.adminTb> modadmin = blladmin.GetModelList("adminName='" + no + "'");
             //modadmin = blladmin.GetModel(Convert.ToInt32(no));
+            foreach(Model.adminTb modadmin1 in modadmin )
+            {
+                if (modadmin1.adminPwd != pwd)
+                {
+                    //this.txtQ.Text = "";
+                    this.pwdQ.Text = "";
+                    Page.ClientScript.RegisterStartupScript(this.GetType (),"","<script type='text/javascript'>alert('用户名与密码不匹配，请重新输入！');</script>",false);
+                    return;
+                }
 
-            if (modadmin[0].adminPwd  != pwd)
-            {
-                this.txtQ.Text = "";
-                this.pwdQ.Text = "";
-                this.Response.Write("<script language=javascript>alert('用户名与密码不匹配，请重新输入！');</script> ");
-                ////Response.Write ("用户名与密码不匹配，请重新输入！");
-                return;
+                Session["no"] = no;
+                Session["pwd"] = pwd;
+                if (modadmin1.adminLevel == 0)
+                {
+                    Response.Redirect("superSeeAdminInfo.aspx");
+                }
+                else
+                {
+                    Response.Redirect("adminModifyInfo.aspx");
+                }
             }
 
-            Session["no"] = no;
-            Session["pwd"] = pwd;
-            if (modadmin[0].adminLevel == 0)
-            {
-                Response.Redirect("superSeeAdminInfo.aspx");
-            }
-            else 
-            {
-                Response.Redirect("adminModifyInfo.aspx");
-            }
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script type='text/javascript'>alert('账号不存在，请重新输入！');</script>", false);
+            this.txtQ.Text  = "";
+            this.pwdQ.Text = "";
 
         }
+
 
 
 

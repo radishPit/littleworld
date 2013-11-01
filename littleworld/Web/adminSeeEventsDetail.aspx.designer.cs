@@ -13,6 +13,15 @@ namespace littleworld.Web {
     public partial class adminSeeEventsDetail {
         
         /// <summary>
+        /// userImgs 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl userImgs;
+        
+        /// <summary>
         /// labelID 控件。
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace littleworld.Web {
         protected global::System.Web.UI.WebControls.Label labelID;
         
         /// <summary>
+        /// labeloperatorID 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labeloperatorID;
+        
+        /// <summary>
         /// labelSenderName 控件。
         /// </summary>
         /// <remarks>
@@ -29,15 +47,6 @@ namespace littleworld.Web {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label labelSenderName;
-        
-        /// <summary>
-        /// labelpublishTime 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelpublishTime;
         
         /// <summary>
         /// labelType 控件。
@@ -58,48 +67,12 @@ namespace littleworld.Web {
         protected global::System.Web.UI.WebControls.Label labelContent;
         
         /// <summary>
-        /// noveltyImgs 控件。
+        /// labelTime 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl noveltyImgs;
-        
-        /// <summary>
-        /// labelcommentNum 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelcommentNum;
-        
-        /// <summary>
-        /// labelsupportNum 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelsupportNum;
-        
-        /// <summary>
-        /// labeltransmitNum 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labeltransmitNum;
-        
-        /// <summary>
-        /// labelreportNum 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelreportNum;
+        protected global::System.Web.UI.WebControls.Label labelTime;
     }
 }

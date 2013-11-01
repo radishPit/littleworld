@@ -88,6 +88,7 @@
     <Content Include="css\adminMaster.css" />
     <Content Include="css\adminModifyInfo.css" />
     <Content Include="css\adminSeeEvents.css" />
+    <Content Include="css\adminSeeEventsDetail.css" />
     <Content Include="css\adminSeeNotice.css" />
     <Content Include="css\adminSeeNovelty.css" />
     <Content Include="css\adminSeeUser.css" />
@@ -114,6 +115,7 @@
     <Content Include="css\LTnote.css" />
     <Content Include="css\LTsection.css" />
     <Content Include="css\LTsectionMaster.css" />
+    <Content Include="css\LTuserlogin.css" />
     <Content Include="css\superAddAdmin.css" />
     <Content Include="css\superAdmin.css" />
     <Content Include="css\superAdministration.css" />
@@ -136,6 +138,8 @@
     <Content Include="css\userSpaceMaster.css" />
     <Content Include="css\userStore.css" />
     <Content Include="css\userSupport.css" />
+    <Content Include="DynamicData\FieldTemplates\adminSeeEvents.ascx" />
+    <Content Include="DynamicData\FieldTemplates\adminSeeEvents_Edit.ascx" />
     <Content Include="images\ablumImg\icon.png" />
     <Content Include="images\ablumImg\logo_o.png" />
     <Content Include="images\commonImg\Logo250,100.png" />
@@ -173,6 +177,7 @@
     <Content Include="images\userHomeImg\img_default.png" />
     <Content Include="images\userHomeImg\layer_arrow.png" />
     <Content Include="images\userHomeImg\layer_bg.png" />
+    <Content Include="images\userMassageImg\msg_icon.png" />
     <Content Include="js\ablum.js" />
     <Content Include="js\adminLogin.js" />
     <Content Include="js\adminMaster.js" />
@@ -212,6 +217,7 @@
     <Content Include="js\userSupport.js" />
     <Content Include="LTnote.aspx" />
     <Content Include="LTsection.aspx" />
+    <Content Include="LTuserlogin.aspx" />
     <Content Include="superAddAdmin.aspx" />
     <Content Include="superAdmin.aspx" />
     <Content Include="superModifyAdminInfo.aspx" />
@@ -436,6 +442,20 @@
     <Compile Include="adminUserDetail.aspx.designer.cs">
       <DependentUpon>adminUserDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DynamicData\FieldTemplates\adminSeeEvents.ascx.cs">
+      <DependentUpon>adminSeeEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\adminSeeEvents.ascx.designer.cs">
+      <DependentUpon>adminSeeEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\adminSeeEvents_Edit.ascx.cs">
+      <DependentUpon>adminSeeEvents_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\adminSeeEvents_Edit.ascx.designer.cs">
+      <DependentUpon>adminSeeEvents_Edit.ascx</DependentUpon>
+    </Compile>
     <Compile Include="LTnote.aspx.cs">
       <DependentUpon>LTnote.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -456,6 +476,12 @@
     </Compile>
     <Compile Include="LTsectionMaster.Master.designer.cs">
       <DependentUpon>LTsectionMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LTuserlogin.aspx.cs">
+      <DependentUpon>LTuserlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LTuserlogin.aspx.designer.cs">
+      <DependentUpon>LTuserlogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="superAddAdmin.aspx.cs">
@@ -767,7 +793,6 @@
     <Folder Include="images\userGroupManageImg\" />
     <Folder Include="images\userInfoImg\" />
     <Folder Include="images\userLoginImg\" />
-    <Folder Include="images\userMassageImg\" />
     <Folder Include="images\userMasterTBImg\" />
     <Folder Include="images\userMasterTRBImg\" />
     <Folder Include="images\userRegisterImg\" />
