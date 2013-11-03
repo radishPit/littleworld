@@ -479,6 +479,7 @@
     </Compile>
     <Compile Include="LTuserlogin.aspx.cs">
       <DependentUpon>LTuserlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LTuserlogin.aspx.designer.cs">
       <DependentUpon>LTuserlogin.aspx</DependentUpon>

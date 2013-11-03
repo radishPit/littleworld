@@ -117,10 +117,10 @@ namespace littleworld.Web
             int t = blluser.Add(moduser);
             if (t <= 0)
             {
-                this.Response.Write("<script language=javascript>alert('保存失败，请重新输入！');</script> ");
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script language=javascript>alert('保存失败，请重新输入！');</script> ", false);
 
             }
-            this.Response.Write("<script language=javascript>alert('保存成功！');</script> ");
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script language=javascript>alert('保存成功！');</script> ", false);
 
             this.txtaddr.Text = "";
             this.txtage.Text = "";
