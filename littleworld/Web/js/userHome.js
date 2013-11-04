@@ -1,34 +1,122 @@
 ﻿$(function () {
 
-
+    var myID = $(".FindID").attr("id");
    
     loadthing();
     getFocus();
-    submitClick();
+    submitClick(myID);
     addImg();
     closeHover();
 
-    addInfo();
+
     chooseup_click();
     unitcolor_hover();
     weibo_hide();
     WB_feed_typeHover();
-    Wbface_hover();
-   
+    Wbface_hover(myID);
 
-   
+    addInfo(myID);
+    support(myID);
+    transmit(myID);
     //
-    
+
 });
 
 function test() {
-    $(document).on("click", "hi", function () {
+   
         alert("hi");
+
+
+    }
+
+//待完成
+function transmit(myID) {
+    var userName = "";
+    var comments = "";
+    var time = "";
+    var supportnum = "";
+    var transmitnum = "";
+    var commentnum = "";
+    var precontents;
+    var preuserName;
+    var presupnum;
+    var pretrnum;
+
+    var thisurl;
+    var novID;
+    var recept;
+    $(document).on("click", ".transmit", function () {
+        var id = $(this).parents(".WB_feed_type").attr("id");
+        var th = $(this);
+        precontents = $(this).parents(".WB_feed_type").find(".WB_text").html();
+        preuserName = $(this).parents(".WB_feed_type").find(".WB_name").html();
+       
+        $.ajax({
+            url: "ws/userHome.asmx/Addsupport",
+            type: "POST",
+            contentType: "application/json",
+            data: "{novityID:" + id + ",type:11,ID:" + myID + "}",
+            dataType: "json",
+
+            success: function (res) {
+                //alert(res.d);
+                var all = res.d;
+                var num = all.split("@=@")[0];
+                recept = all.split("@=@")[1];
+                th.html("转发(" + num + ") ");
+
+
+                userName = recept.split(";")[0];
+                comments = recept.split(";")[1];
+                time = recept.split(";")[2];
+                supportnum = recept.split(";")[3];
+                transmitnum = recept.split(";")[4];
+                commentnum = recept.split(";")[5];
+                thisurl = recept.split(";")[6];
+                novID = recept.split(";")[7];
+
+                $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_media_expand'><div class='WB_arrow'><em class='S_line1_c'>◆</em><span class='S_bg1_c'>◆</span></div><div node-type='feed_list_forwardContent'><div class='WB_info'><a href='#' class='WB_name'>"+preuserName+"</a></div><div class='WB_text'>"+precontents+"</div><div class='WB_func'><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan'><em class='icon_praised_b'></em>(1299)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>转发(1443)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>收藏</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>评论(1443)</a></div><div class='WB_from'><a href='' class='WB_time'>10月24日 22:37</a></div></div></div></div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+
+
+            }
+        });
+
+    });
+}
+function support(myID) {
+
+    $(document).on("click", ".support", function () {
+        var id = $(this).parents(".WB_feed_type").attr("id");
+        var th = $(this);
+        $.ajax({
+            url: "ws/userHome.asmx/Addsupport",
+            type: "POST",
+            contentType: "application/json",
+            data: "{novityID:" + id + ",type:1,ID:"+myID+"}",
+            dataType: "json",
+
+            success: function (res) {
+                var ty = res.d.split("@=@")[0];
+                var num = res.d.split("@=@")[1];
+                if (ty=="1") {
+                    th.html("<em class='icon_praised_b'></em>(" + num + ")");
+                }
+                else {
+                    th.html("<em class='icon_praised_b'></em>(" + num + ")");
+                    th.find(".icon_praised_b").toggleClass("supporttoggle");
+                }
+               
+                //
+               
+            }
+        });
+       
+
     });
    
 }
 
-function addInfo() {
+function addInfo(myID) {
     var userName="";
     var comments="";
     var time="";
@@ -39,43 +127,29 @@ function addInfo() {
     var novID;
     var recept;
     var arr = new Array();
-    var array = new Array();
 
     $.ajax({
         url: "ws/userHome.asmx/Addinfo",
         type: "POST",
         contentType: "application/json",
-        data: "{sendID:5}",
+        data: "{sendID:"+myID+"}",
         dataType: "json",
-
         success: function (res) {
+            var num;
             recept = res.d;
-            var num = recept.split("%")[0]; //好友总数
-            var left = recept.split("%")[1];
-
+            num = recept.split("@+@")[0];
+            var left = recept.split("@+@")[1];
             for (var i = 0; i < num; i++) {
-                arr[i] = left.split("@")[i]; //每个好友的新鲜事
-            }
-            for (var j = 0; j < arr.length; j++) {
-                var novnum = arr[j].split("#+#")[0]; //每个好友新鲜事数目
-                var novleft = arr[j].split("#+#")[1]; //每个好友新鲜事综合
-
-                for (var m = 0; m < novnum; m++) {
-                    array[m] = novleft.split("!=!")[m]; //每个新鲜事
-                    userName = array[m].split(";")[0];
-                    comments = array[m].split(";")[1];
-                    time = array[m].split(";")[2];
-                    supportnum = array[m].split(";")[3];
-                    transmitnum = array[m].split(";")[4];
-                    commentnum = array[m].split(";")[5];
-                    thisurl = array[m].split(";")[6];
-                    novID = array[m].split(";")[7];
-                    
-                    $("#news_container").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
-                    //$("#news_container").append("<a href='#' class='hi'>hhhh</a>");
-                    //$("#test").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
-
-                }
+                arr[i] = left.split("!=!")[i]; //每个新鲜事
+                userName = arr[i].split(";")[0];
+                comments = arr[i].split(";")[1];
+                time = arr[i].split(";")[2];
+                supportnum = arr[i].split(";")[3];
+                transmitnum = arr[i].split(";")[4];
+                commentnum = arr[i].split(";")[5];
+                thisurl = arr[i].split(";")[6];
+                novID = arr[i].split(";")[7];
+                $("#news_container").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
 
             }
 
@@ -91,7 +165,7 @@ function addInfo() {
 
 
 
-function Wbface_hover() {
+function Wbface_hover(myID) {
     var index = 0;
     $(document).on("hover", ".WB_global_personcard", function () {
         index = 1;
@@ -102,6 +176,40 @@ function Wbface_hover() {
     });
     $(document).on("mouseover", ".WB_face", function () {
         $(this).parent().parent().find(".WB_global_personcard").css({ visibility: "visible" });
+        var thisobj = $(this);
+        var thisID = $(this).parents(".WB_feed_type").attr("id");
+        var username;
+        var nickname;
+        var address;
+        var school;
+        var guanzhu;
+        var fans;
+        var novelty;
+        var headImg
+        $.ajax({
+            url: "ws/userHome.asmx/FaceHover",
+            type: "POST",
+            contentType: "application/json",
+            data: "{ID:" + thisID + ",me:"+myID+"}",
+            dataType: "json",
+            success: function (res) {
+                var arr = res.d;
+                for (var i = 0; i < arr.length; i++) {
+                    username = arr[0];
+                    nickname = arr[1];
+                    address = arr[2];
+                    school = arr[3];
+                    guanzhu = arr[4];
+                    fans = arr[5];
+                    novelty = arr[6];
+                    headImg = arr[7];
+                }
+                //alert(res.d);
+
+                thisobj.parents(".WB_feed_type").find(".WB_global_personcard").html("<div class='top_div'><img src='images/userHomeImg/002_m.jpg' width='368' height='105'></div><div class='mid_div'><div class='mid_con'><div class='mid_con_bar'><div class='inner'><a href='#' class='innera'>" + username + "</a>(<a href='#' class='innera'>" + nickname + "</a>)</div><div class='inner'><a href='#' class='innera'>关注<span>" + guanzhu + "</span></a><span class='sfgt'>|</span><a href='#' class='innera'>粉丝<span>" + fans + "</span></a><span class='sfgt'>|</span><a href='#' class='innera'>微博<span>" + novelty + "</span></a></div></div><div class='mid_sec'><div class='mid_sec_con'><a href='#' class='innera'>" + address + "</a><span class='sfgt '>|</span><span class='innera black'>毕业学校：</span><a href='#' class='innera'>" + school + "</a></div></div></div></div><div class='bottom_div'><div class='bot_inner'><a href='javascript:void(0)' class='innera'>个人主页</a><span class='sfgt'>|</span><a href='javascript:void(0)' class='innera'>微博</a><span class='sfgt'>|</span><a href='javascript:void(0)' class='innera'>个人资料</a><span class='sfgt'>|</span><a href='javascript:void(0)' class='innera'>相册</a><span class='sfgt'>|</span><a href='javascript:void(0)' class='innera'>赞</a><span class='sfgt'>|</span><a href='javascript:void(0)' class='innera'>…</a></div></div><div class='headImag'><img src='" + headImg + "' width='86' height='86'></div>");
+            }
+        });
+
     });
     $(document).on("mouseout", ".WB_face", function () {
         if (index == 1) {
@@ -133,10 +241,24 @@ function WB_feed_typeHover() {
     
 }
 function weibo_hide() {
-    $(document).on("click", ".hide", function () {
+    var noID;
 
-        $(this).parent().parent().parent().parent().prev().parent().hide();
-     });
+    $(document).on("click", ".hide", function () {
+        
+        var thisLine = $(this);
+        noID = $(this).parents(".WB_feed_type").attr("id");
+
+        $.ajax({
+            url: "ws/userHome.asmx/HideNov",
+            type: "POST",
+            contentType: "application/json",
+            data: "{noveltyID:" + noID + "}",
+            dataType: "json",
+            success: function (res) {
+                thisLine.parents(".WB_feed_type").hide();
+            }
+        });
+    });
     
 }
 
@@ -242,10 +364,10 @@ function countImgs() {
        path=path+$(this).attr("src")+";";
        index++;
    });
-   return path;
+   return index;
 }
 
-function submitClick() {
+function submitClick(myID) {
     $(".send_btn").click(function () {
         var pathstrs = countImgs();
         var txt = $(".input_detail").val();
@@ -255,21 +377,41 @@ function submitClick() {
             return;
         }
         else {
+            var userName = "";
+            var comments = "";
+            var time = "";
+            var supportnum = "";
+            var transmitnum = "";
+            var commentnum = "";
+            var thisurl;
+            var novID;
+            var recept;
             $.ajax({
                 url: "ws/userHome.asmx/AddNews",
                 type: "POST",
                 contentType: "application/json",
-                data: "{sendID:5,state:'1',txtcomment:'" + txt + "',paths:'" + pathstrs + "'}",
+                data: "{sendID:" + myID + ",state:'1',txtcomment:'" + txt + "',paths:'" + pathstrs + "'}",
                 dataType: "json",
                 success: function (res) {
-                    alert(res.d);
+                    recept = res.d;
+                    userName = recept.split(";")[0];
+                    comments = recept.split(";")[1];
+                    time = recept.split(";")[2];
+                    supportnum = recept.split(";")[3];
+                    transmitnum = recept.split(";")[4];
+                    commentnum = recept.split(";")[5];
+                    thisurl = recept.split(";")[6];
+                    novID = recept.split(";")[7];
+
+                    $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+
                 }
 
             });
-        
-        
+
+
         }
-        
+
     });
 }
 
