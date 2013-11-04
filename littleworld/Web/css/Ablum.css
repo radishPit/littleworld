@@ -1,5 +1,8 @@
 ﻿body {
-}#sllcontent{width:980px;height:auto; min-height:902px;}
+}
+#errormes{font-size:12px; font-family:Arial; color:#f00;}
+#showeorr{width:412px;height:20px; padding:3px; font-size:12px; font-family:Arial; color:#f00;}
+#sllcontent{width:980px;height:auto; min-height:902px;}
 #ablumnav{width:980px;height:42px; border-bottom:1px solid #ccc; margin-top:40px;}
 #midnav{width:950px;height:36px;margin:0 auto;}
 #logobox{float:left; width:93px;height:30px; margin-top:9px;margin-right:16px;}
@@ -18,7 +21,7 @@
 #flspan{float:left;width:48px; height:18px; margin-top:8px; margin-right:10px;color:rgb(85, 85, 85); font-size:12px;}
 #flselect{width:230px;height:17px; padding:6px 3px 6px 5px;border:1px solid #ccc;color:rgb(85, 85, 85); position:relative; float:left;}
 #moren{width:205px;height:18px;float:left;border:1px solid #ccc; font-size:12px; font-family:Arial; text-align:left;}
-#btnshow{width:17px;height:17px; margin-right:2px; background-image:url("../images/ablumImg/icon.png"); background-position:0px -990px; background-repeat:no-repeat;border:1px solid #ccc;}
+#btnshow{width:17px;height:17px; margin-right:2px; background-image:url("../images/ablumImg/icon.png"); background-position:0px -990px; background-repeat:no-repeat;border:1px solid #ccc; float:left;}
 .Ablums{width:234px;height:22px; padding:2px; position:absolute;left:0px;top:30px;border:1px solid #ccc;font-size:12px; font-family:Arial; text-align:left;}
 #createAlum{width:70px;height:24px;float:left;font-size:12px; font-family:Arial; text-align:left;color:rgb(85, 85, 85); border:1px solid #ccc; text-align:center; cursor:pointer;}
 #addablumdes{width:512px;height:196px;border:1px oslid #ccc; position:absolute; background-color:rgb(240, 240, 240);left:500px;top:40px;font-size:12px; font-family:Arial; text-align:left;color:rgb(85, 85, 85);}
@@ -33,3 +36,5 @@
 #btnCancle{width:44px;height:20px; padding:1px; margin-right:10px; background-color:rgb(135, 198, 245);color:#fff; text-align:center;float:left;}
 #fl{float:left;}
 #fr{float:right; width:28px;height:28px; display:block; background-image:url("../images/ablumImg/icon.png"); background-position:0px -960px; background-repeat:no-repeat; cursor:pointer;}
+.iname{width:282px;height:14px; padding:6px 4px 7px 5px; margin-right:10px; background-color:transparent;border:1px;}
+.selectone{width:205px;height:18px;float:left;border:1px solid #ccc; font-size:12px; font-family:Arial; text-align:left;float:left;}

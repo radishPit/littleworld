@@ -8,19 +8,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <div id="box">
-      <div id="box-title"><a id="boxtitle-a" href="#">相册专辑</a><span>(共1个)</span><a href="#" id="addablum">上传照片</a></div>
+      <div id="box-title"><a id="boxtitle-a" href="#">相册专辑</a><span>(共<%=count %>个)</span><a href="Ablum.aspx?userid=<%=userid %>" id="addablum">上传照片</a></div>
       <div id="box-content">
-           <div class="ablumlist">
-              <div class="photobox">
-                 <div class="a-photobox1"></div>
-                 <div class="a-photobox2"><i class="img_box"><img src="images/userAblumImg/status_0.png" alt="相册" /></i></div>
-                 <div class="count">共0张</div>
-              </div>
-              <div class="ablumtitle-box">
-                <div class="titlediv"><a href="#" class="skin ablumtitle">默认相册</a></div>
-                <div class="updatetime">更新于<span></span></div>
-              </div>
-           </div>
        </div>
    </div>
 </asp:Content>

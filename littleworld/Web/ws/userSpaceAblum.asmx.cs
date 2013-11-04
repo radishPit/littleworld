@@ -26,6 +26,12 @@ namespace littleworld.Web.ws
         public List<Model.photoGroupTb> ShowAlumList(int userid) {
             BLL.photoGroupTb bllphoto = new BLL.photoGroupTb();
             List<Model.photoGroupTb> modphoto = bllphoto.GetModelList("ownID=" + userid);
+            //foreach (Model.photoGroupTb m in modphoto)
+            //{
+            //    m.ownID;
+            //    m.photoGroupID;
+            //    m.groupName;
+            //}
             return modphoto;
         }
     }

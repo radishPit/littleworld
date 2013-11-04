@@ -11,6 +11,7 @@ namespace littleworld.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             BLL.userTb user=new BLL.userTb();
             Model.userTb moduser=user.GetModel(5);
             this.lblname.Text = moduser.userName.ToString();

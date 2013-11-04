@@ -41,7 +41,7 @@ namespace littleworld.Web
                 else
                 {
                     this.falseCause.Text = "*账号不存在，请重新输入！";
-                    return;
+
                 }
 
             }

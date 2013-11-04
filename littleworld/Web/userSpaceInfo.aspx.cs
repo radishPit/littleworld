@@ -21,11 +21,11 @@ namespace littleworld.Web
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int userid = 5;
             if (!IsPostBack)
             {
                 BLL.userTb blluser = new BLL.userTb();
-                Model.userTb f = blluser.GetModel(5);
+                Model.userTb f = blluser.GetModel(userid);
                 this._user = f;
 
                 this.lbluserage.Text = this._user.age.ToString();

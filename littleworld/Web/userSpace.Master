@@ -88,7 +88,7 @@
     			<div id="header-footer">
     				<div id="headerimage">
                         <div id="headerpic">
-                            <asp:Image ID="imghead" runat="server" />
+                            <asp:Image ID="imghead" runat="server" CssClass="headimg" />
                             <div id="changeimg"><a href="#">更换头像</a></div>
                         </div>
                         <div id="userfan">
@@ -137,7 +137,7 @@
                         <a href="#">个人资料</a>
                     </div>
                     <div class="navs">
-                        <a href="#">相册</a>
+                        <a href="userAlbum.aspx">相册</a>
                     </div>
                     <div class="navs">
                         <a href="#">赞</a>
@@ -150,9 +150,11 @@
                     </div>
                </div>
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       <div id="mycontent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
+            </asp:ContentPlaceHolder>
+        </div>
     </div>
    <div class="W_miniblog">
 			<div class="W_miniblog_fb">

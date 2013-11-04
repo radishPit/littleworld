@@ -2,9 +2,12 @@
 a{text-decoration: none;}
 /*img{border:0px;}*/
 
+
+
+#mycontent{width:980px;height:auto; margin:10px auto;}
 /*...........................main....................................*/
 #main{width:980px;height:2001px;border:1px solid #ccc;margin:0 auto;}
-#header{width:980px;height:439px;border:1px solid #ccc;}
+#header{width:980px;height:439px;border:1px solid #ccc; margin:0 auto;}
 #header-top{width:980px;height:300px;border:1px solid #ccc;}
 #header-footer{width:980px;height:124px;padding-bottom:15px;position: relative;}
 #headerimage{width:184px;height:235px;position: absolute;border:1px solid #ccc;top:-108px;left:20px;}
@@ -37,9 +40,9 @@ a{text-decoration: none;}
 #conlege{color:rgb(235, 100, 120);}
 
 
-
+.headimg{width:180px;height:180px;}
 #maincontent{width:980px;height:1562px;border:1px solid #ccc;}
-#mainnav{width:960px;height:51px;padding-left:20px;}
+#mainnav{width:960px;height:51px;padding-left:20px;  margin:0 auto;}
 #child{width:960px;height:1511px;position: relative;padding-left:20px;}
 .navs{width:116px;height:38px;padding:8px 0 3px 0;border:1px solid #ccc;float:left;text-align: center;background-color:rgb(242, 242, 242);}
 .navs a{color:rgb(51, 51, 51);font-size:16px;font-family:"Microsoft Yahei";line-height:38px;}

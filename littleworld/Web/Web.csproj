@@ -150,6 +150,11 @@
     <Content Include="images\LTsection\logo_s.png" />
     <Content Include="images\LTsection\spotify_variation.ico" />
     <Content Include="images\LTsection\zx110.png" />
+    <Content Include="images\LTuserloginImg\aiwrap.png" />
+    <Content Include="images\LTuserloginImg\bg.jpg" />
+    <Content Include="images\LTuserloginImg\drawingpin2_blue.png" />
+    <Content Include="images\LTuserloginImg\key.png" />
+    <Content Include="images\LTuserloginImg\LoginLOGO.png" />
     <Content Include="images\superAdminImg\btn_modify.gif" />
     <Content Include="images\superAdminImg\icon_del.gif" />
     <Content Include="images\superAdminImg\jianbian.jpg" />
@@ -170,6 +175,7 @@
     <Content Include="images\Temp\f1471c98-bf9b-489d-8527-90d05c9aa349.jpg" />
     <Content Include="images\Temp\ff3f9364-77a8-4d73-ba3a-c2bfd1fc3497.jpg" />
     <Content Include="images\userAblumImg\status_0.png" />
+    <Content Include="images\userHomeImg\002_m.jpg" />
     <Content Include="images\userHomeImg\1.gif" />
     <Content Include="images\userHomeImg\all_iconbtn.png" />
     <Content Include="images\userHomeImg\hearta_org.gif" />
@@ -199,6 +205,15 @@
     <Content Include="js\superAdministration.js" />
     <Content Include="js\superModifyAdminInfo.js" />
     <Content Include="js\superSeeAdminInfo.js" />
+    <Content Include="js\uploadify-v2.1.4\cancel.png" />
+    <Content Include="js\uploadify-v2.1.4\expressInstall.swf" />
+    <Content Include="js\uploadify-v2.1.4\jquery-1.4.2.min.js" />
+    <Content Include="js\uploadify-v2.1.4\jquery.uploadify.v2.1.4.js" />
+    <Content Include="js\uploadify-v2.1.4\jquery.uploadify.v2.1.4.min.js" />
+    <Content Include="js\uploadify-v2.1.4\swfobject.js" />
+    <Content Include="js\uploadify-v2.1.4\uploadify.allglyphs.swf" />
+    <Content Include="js\uploadify-v2.1.4\uploadify.css" />
+    <Content Include="js\uploadify-v2.1.4\uploadify.swf" />
     <Content Include="js\userComment.js" />
     <Content Include="js\userFindPwd.js" />
     <Content Include="js\userGroupManage.js" />
@@ -223,7 +238,7 @@
     <Content Include="superModifyAdminInfo.aspx" />
     <Content Include="superSeeAdminInfo.aspx" />
     <Content Include="This\images\cancel.png" />
-    <Content Include="This\Jquery-1.9.1.js" />
+    <Content Include="This\jquery-1.3.2.min.js" />
     <Content Include="This\jquery.uploadify.js" />
     <Content Include="This\uploader.swf" />
     <Content Include="This\uploadify.css" />
@@ -296,6 +311,37 @@
     <Content Include="This\UploadImg\noveltyImages\f49f3171-191a-4272-b69f-1496f5c922d4.jpg" />
     <Content Include="This\UploadImg\noveltyImages\f4b51114-66c5-4d73-9707-6042b7424397.jpg" />
     <Content Include="This\UploadImg\noveltyImages\fca7731a-0962-4a4f-a83e-7d84ea703c67.jpg" />
+    <Content Include="UploadFile\00e98ab5-98bf-43ca-af84-68719dbc4b8b.jpg" />
+    <Content Include="UploadFile\1-1211132142505F.jpg" />
+    <Content Include="UploadFile\1178493e-4a8d-468d-a997-6b58ce77095d.jpg" />
+    <Content Include="UploadFile\17efe20e-2a8a-4d65-b620-d5ad8ad75f05.jpg" />
+    <Content Include="UploadFile\1b55811a-db5c-490d-977f-f931cb6b5558.jpg" />
+    <Content Include="UploadFile\1_101225001621_1.jpg" />
+    <Content Include="UploadFile\23bff1e1-6875-4c8f-95df-84e22b53a433.jpg" />
+    <Content Include="UploadFile\2cfd80ed-0ea9-45b2-b65e-731fa36b08fb.jpg" />
+    <Content Include="UploadFile\3030457e-a631-4467-b8e1-7258d91a0537.jpg" />
+    <Content Include="UploadFile\386078e7-4bb0-4cd1-9a46-c5de50386e46.jpg" />
+    <Content Include="UploadFile\3ae5a6a9-581c-43dc-91d5-def55f48fd8e.jpg" />
+    <Content Include="UploadFile\46cb3bbd-aacb-407d-bc2f-e2d955c314a0.jpg" />
+    <Content Include="UploadFile\4851121e-fda2-4f2c-bd8f-8cb73992d5bd.jpg" />
+    <Content Include="UploadFile\4e6c61ba-5ed7-4fb9-9df8-6261e089112a.jpg" />
+    <Content Include="UploadFile\665fa099-2ae9-4dc7-b8de-73d2ba9d41b6.jpg" />
+    <Content Include="UploadFile\6a5bd37a-d973-47c6-9986-c08dcaf7ac4e.jpg" />
+    <Content Include="UploadFile\6d961212-b14f-497c-84a0-9a0de41f0c2d.jpg" />
+    <Content Include="UploadFile\784e96aa-9b16-4996-96b4-e011af72825c.jpg" />
+    <Content Include="UploadFile\8215548e-5d22-4863-b06b-0312e461d084.jpg" />
+    <Content Include="UploadFile\84bfa1f5-a709-4b5c-86db-1adf7b8fd6f7.jpg" />
+    <Content Include="UploadFile\a8eb080c-c293-4c2a-ac93-fb60267f172c.jpg" />
+    <Content Include="UploadFile\b5d065b3-06b4-4c21-aef7-452d955df50e.jpg" />
+    <Content Include="UploadFile\b64dc747-c242-4b05-b91b-177179bf0a74.jpg" />
+    <Content Include="UploadFile\bd289f0c-054d-4100-bb5b-b991d5a14cde.jpg" />
+    <Content Include="UploadFile\c4636c46-024c-4630-8c8f-ecbed2c7dd1f.jpg" />
+    <Content Include="UploadFile\c4f9c3ff-0575-4e1b-b2f0-badac2a29a72.jpg" />
+    <Content Include="UploadFile\c56bc5b5-e0f3-4c8d-a3eb-24f1cfd5e226.jpg" />
+    <Content Include="UploadFile\d9b5e210-e593-4277-979a-cd452d3a737e.jpg" />
+    <Content Include="UploadFile\dc9b4ce5-075f-4c91-898f-2270037519d2.jpg" />
+    <Content Include="UploadFile\e40df6fc-10f1-4ee0-89f8-acebed4c0d56.jpg" />
+    <Content Include="UploadFile\fbc82d0c-88a7-49cc-89f2-2a7eedf4e69f.jpg" />
     <Content Include="userAlbum.aspx" />
     <Content Include="userComment.aspx" />
     <Content Include="userFindPwd.aspx" />
@@ -322,6 +368,7 @@
     <Content Include="ws\adminSeeNovelty.asmx" />
     <Content Include="ws\adminSeeUser.asmx" />
     <Content Include="ws\adminSendNotice.asmx" />
+    <Content Include="ws\album.asmx" />
     <Content Include="ws\LTnote.asmx" />
     <Content Include="ws\LTsection.asmx" />
     <Content Include="ws\superAdmin.asmx" />
@@ -520,6 +567,9 @@
     <Compile Include="superSeeAdminInfo.aspx.designer.cs">
       <DependentUpon>superSeeAdminInfo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="userAlbum.aspx.cs">
       <DependentUpon>userAlbum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -678,6 +728,9 @@
       <DependentUpon>adminSendNotice.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ws\album.asmx.cs">
+      <DependentUpon>album.asmx</DependentUpon>
+    </Compile>
     <Compile Include="ws\LTnote.asmx.cs">
       <DependentUpon>LTnote.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -801,6 +854,7 @@
     <Folder Include="images\userResetPwdImg\" />
     <Folder Include="images\userStoreImg\" />
     <Folder Include="images\userSupportImg\" />
+    <Folder Include="UploadFile\dhfods\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="userMasterTRB.Master" />
@@ -812,9 +866,72 @@
     <Content Include="This\Upload.ashx" />
     <Content Include="LTsectionMaster.Master" />
     <None Include="images\LTsection\Thumbs.db" />
+    <None Include="images\LTuserloginImg\Thumbs.db" />
+    <None Include="js\uploadify-v2.1.4\check.php" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\air\logging\FileTarget.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\HMAC.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\MD5.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\MD5Stream.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\SHA1.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\SHA224.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\SHA256.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\crypto\WSSEUsernameToken.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\errors\IllegalStateError.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\fileformats\vcard\Address.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\fileformats\vcard\Email.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\fileformats\vcard\Phone.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\fileformats\vcard\VCard.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\fileformats\vcard\VCardParser.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\images\BitString.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\images\JPGEncoder.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\images\PNGEncoder.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\net\DynamicURLLoader.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\net\IURIResolver.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\net\MimeTypeMap.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\net\proxies\RFC2817Socket.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\net\URI.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\net\URIEncodingBitmap.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\Database.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\Definition.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\Dict.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\DictionaryServer.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\ConnectedEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\DatabaseEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\DefinitionEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\DefinitionHeaderEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\DictionaryServerEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\DisconnectedEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\ErrorEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\MatchEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\MatchStrategiesEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\events\NoMatchEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\MatchStrategy.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\Response.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\util\CompleteResponseEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\protocols\dict\util\SocketHelper.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSON.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSONDecoder.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSONEncoder.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSONParseError.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSONToken.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSONTokenizer.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\serialization\json\JSONTokenType.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\ArrayUtil.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\DateUtil.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\DictionaryUtil.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\IntUtil.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\NumberFormatter.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\StringUtil.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\utils\XMLUtil.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\webapis\events\ServiceEvent.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\webapis\ServiceBase.as" />
+    <None Include="js\uploadify-v2.1.4\com\adobe\webapis\URLLoaderBase.as" />
+    <None Include="js\uploadify-v2.1.4\uploadify.fla" />
+    <None Include="js\uploadify-v2.1.4\uploadify.php" />
     <None Include="This\uploader.fla" />
     <Content Include="This\UploadVB.ashx" />
     <Content Include="userSpace.Master" />
+    <Content Include="UploadHandler.ashx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
