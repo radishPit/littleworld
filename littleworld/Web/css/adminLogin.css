@@ -1,6 +1,7 @@
 ﻿*{ margin: 0; padding: 0;}
 body 
 {
+	min-width:850px;min-height:850px;
 	background-image: url("../images/adminLoginImg/tumblr_mt810zPtot1sccgico1_1280.jpg");
 }
 

@@ -730,6 +730,7 @@
     </Compile>
     <Compile Include="ws\album.asmx.cs">
       <DependentUpon>album.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ws\LTnote.asmx.cs">
       <DependentUpon>LTnote.asmx</DependentUpon>
