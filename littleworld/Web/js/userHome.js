@@ -1,7 +1,7 @@
 ﻿$(function () {
 
     var myID = $(".FindID").attr("id");
-   
+
     loadthing();
     getFocus();
     submitClick(myID);
@@ -18,16 +18,56 @@
     addInfo(myID);
     support(myID);
     transmit(myID);
-    //
+    store(myID);
+    pingbi(myID);
+    jubao();
+  
 
 });
 
-function test() {
-   
-        alert("hi");
-
-
-    }
+function pingbi(myID) {
+    $(document).on("click", ".pb", function () {
+        var novID = $(this).parents(".WB_feed_type").attr("id");
+        
+        $.ajax({
+            url:"ws/userHome.asmx/PB",
+            type:"POST",
+            contentType: "application/json",
+            data: "{ID:"+ myID +",novID:"+ novID+"}",
+            dataType: "json",
+            success: function (res) {
+                alert(res.d);
+            }
+        });
+    });
+}
+function store(myID) {
+    var ID;
+    var novID;
+    var title;
+    $(document).on("click", ".store", function () {
+        var store = $(this);
+        novID = $(this).parents(".WB_feed_type").attr("id");
+        ID = myID;
+        title = $(this).parents(".WB_feed_type").attr("id");
+        $.ajax({
+            url: "ws/userHome.asmx/AddStore",
+            type: "POST",
+            contentType: "application/json",
+            data: "{novID:" + novID + ",myID:" + ID + "}",
+            dataType: "json",
+            success: function (res) {
+                if (res.d=="yes") {
+                    store.html("取消收藏");
+                }
+                else {
+                    store.html("收藏");
+                }
+                
+            }
+        });
+    });
+}
 
 //待完成
 function transmit(myID) {
@@ -75,7 +115,7 @@ function transmit(myID) {
                 thisurl = recept.split(";")[6];
                 novID = recept.split(";")[7];
 
-                $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_media_expand'><div class='WB_arrow'><em class='S_line1_c'>◆</em><span class='S_bg1_c'>◆</span></div><div node-type='feed_list_forwardContent'><div class='WB_info'><a href='#' class='WB_name'>"+preuserName+"</a></div><div class='WB_text'>"+precontents+"</div><div class='WB_func'><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan'><em class='icon_praised_b'></em>(1299)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>转发(1443)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>收藏</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>评论(1443)</a></div><div class='WB_from'><a href='' class='WB_time'>10月24日 22:37</a></div></div></div></div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+                $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_media_expand'><div class='WB_arrow'><em class='S_line1_c'>◆</em><span class='S_bg1_c'>◆</span></div><div node-type='feed_list_forwardContent'><div class='WB_info'><a href='#' class='WB_name'>" + preuserName + "</a></div><div class='WB_text'>" + precontents + "</div><div class='WB_func'><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan'><em class='icon_praised_b'></em>(1299)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>转发(1443)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>收藏</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>评论(1443)</a></div><div class='WB_from'><a href='' class='WB_time'>10月24日 22:37</a></div></div></div></div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='userReport.aspx?novID="+novID+"' class='zan jubao'>举报</a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
 
 
             }
@@ -132,26 +172,21 @@ function addInfo(myID) {
         url: "ws/userHome.asmx/Addinfo",
         type: "POST",
         contentType: "application/json",
-        data: "{sendID:"+myID+"}",
+        data: "{sendID:" + myID + "}",
         dataType: "json",
         success: function (res) {
-            var num;
-            recept = res.d;
-            num = recept.split("@+@")[0];
-            var left = recept.split("@+@")[1];
-            for (var i = 0; i < num; i++) {
-                arr[i] = left.split("!=!")[i]; //每个新鲜事
-                userName = arr[i].split(";")[0];
-                comments = arr[i].split(";")[1];
-                time = arr[i].split(";")[2];
-                supportnum = arr[i].split(";")[3];
-                transmitnum = arr[i].split(";")[4];
-                commentnum = arr[i].split(";")[5];
-                thisurl = arr[i].split(";")[6];
-                novID = arr[i].split(";")[7];
-                $("#news_container").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+            $(res.d).each(function () {
+                userName = this["UserName"];
+                comments = this["Contents"];
+                time = this["Time"];
+                supportnum = this["Supportnum"];
+                transmitnum = this["Transmitnum"];
+                commentnum = this["Commentnum"];
+                thisurl = this["Headurl"];
+                novID = this["NovID"];
+                $("#news_container").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='userReport.aspx?novID="+novID+"' class='zan jubao'>举报</a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
 
-            }
+            });
 
 
         }
@@ -302,6 +337,8 @@ function chooseup_click() {
     $(document).on("click", ".icon_chooseup", function () {
         if (num % 2 == 0) {
             chPosition($(this), "no", "-225px");
+            var name=$(this).parents(".WB_feed_type").find(".WB_name").html();
+            $(this).parents(".WB_feed_type").find(".pb").html("屏蔽"+name.trim()+"的微博");
             $(this).next().show();
             WB_feed_typeHover();
         }
@@ -368,7 +405,7 @@ function countImgs() {
 }
 
 function submitClick(myID) {
-    $(".send_btn").click(function () {
+    $(document).on("click", ".send_btn", function () {
         var pathstrs = countImgs();
         var txt = $(".input_detail").val();
 
@@ -403,8 +440,12 @@ function submitClick(myID) {
                     thisurl = recept.split(";")[6];
                     novID = recept.split(";")[7];
 
-                    $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' id='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><ul class='WB_media_list'><li><div class='chePicMin'></div></li></ul><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
-
+                    $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan jubao'>举报</a></div></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+                    var newAdd = "#" + novID.toString();
+                    $(document).on("", "newAdd", function () { 
+                    
+                    })
+                    $(newAdd).fadeIn("slow");
                 }
 
             });

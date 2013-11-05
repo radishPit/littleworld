@@ -5,11 +5,12 @@
     
     <link href="css/userHome.css" rel="stylesheet" type="text/css" />
     <script src="js/userHome.js" type="text/javascript"></script>
-    <script src="This/jquery-1.3.2.min.js" type="text/javascript"></script>
+   <%-- <script src="This/jquery-1.3.2.min.js" type="text/javascript"></script>--%>
+   
     <script src="This/jquery.uploadify.js" type="text/javascript"></script>
     <link href="This/uploadify.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
-        var $j = $.noConflict(true);
+//        var $j = $.noConflict(true);
         $j(window).load(
     function () {
         $j("#<%=FileUpload1.ClientID%>").fileUpload({
@@ -136,7 +137,7 @@
         <div class="pl_rightmod_myinfo">
             <div class="W_person_info">
                 <div class="headImg">
-                    <a href="userSpaceInfo.aspx" class="headA">
+                    <a href="userSpace.aspx" class="headA">
                         <img alt="" runat="server"  id="myImg" onclick="myImg_Click()" src="images/userHomeImg/1.gif" width="80" height="80" />
                     </a>
                 </div>

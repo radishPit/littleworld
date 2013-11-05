@@ -18,20 +18,49 @@ namespace littleworld.Web.ws
     [System.Web.Script.Services.ScriptService]
     public class userHome : System.Web.Services.WebService
     {
-
         [WebMethod]
         public string HelloWorld()
         {
             return "Hello World";
         }
+        [WebMethod]
+        public string PB(string ID,string novID)
+        {
+            BLL.noveltyTb bll_n = new BLL.noveltyTb();
+            Model.noveltyTb mod_n = new Model.noveltyTb();
+            mod_n = bll_n.GetModel(Convert.ToInt16(novID));
+            BLL.fansTb bll_fan = new BLL.fansTb();
+            List<Model.fansTb> mod_fan = new List<Model.fansTb>();
+            mod_fan = bll_fan.GetModelList("ownID='"+ID+"'and ownedID='"+mod_n.senderID.ToString()+"'");
+            mod_fan[0].groupID = 0;
 
-        //[WebMethod]
-        //public string Sessionget()
-        //{
-        //    //string myID = Session["no"].ToString();
-
-        //    return "Hello World";
-        //}
+            bll_fan.Update(mod_fan[0]);
+            return mod_fan[0].ownedID.ToString();
+        }
+        [WebMethod]
+        public string AddStore(string novID,string myID)
+        {
+            BLL.storeTb bll_store = new BLL.storeTb();
+            List<Model.storeTb> mod_test = bll_store.GetModelList("noveltyID='"+novID+"'and storerID='"+myID+"'");
+            if (mod_test.Count()!=0)
+            {
+                bll_store.Delete(mod_test[0].ID);
+                return "no";
+            }
+            else
+            {
+                Model.storeTb mod_store = new Model.storeTb();
+                mod_store.noveltyID = Convert.ToInt16(novID);
+                mod_store.state = "1";
+                mod_store.storeTime = DateTime.Now;
+                mod_store.storerID = Convert.ToInt16(myID);
+                mod_store.title = "收藏";
+                bll_store.Add(mod_store);
+                return "yes";
+            }
+            
+        }
+       
 
         [WebMethod]
         public string[] FaceHover(string ID,string me)//获得新鲜事的ID
@@ -67,7 +96,6 @@ namespace littleworld.Web.ws
             noveltys = bll_nov.GetModelList("senderID='"+me+"'");
 
             string[] arr = new string[8];
-            //string[] arr = { mod_guanzhu.Count().ToString(), mod_fans.Count().ToString(), noveltys.Count().ToString() };
             arr[0] = mod_user.userName;
             arr[1] = nickname;
             arr[2] = mod_user.addr;
@@ -185,42 +213,40 @@ namespace littleworld.Web.ws
                 trString = noID.ToString() + "@=@" + user.userName + ";" + news.contents + ";" + news.publishtime.ToString() + ";" + news.supportNum.ToString() + ";" + news.transmitNum.ToString() + ";" + news.commentNum.ToString() + ";" + user.headImgUrl + ";" + news.noveltyID.ToString();
 
                 return trString;
-                //return news.noveltyID.ToString();
             }
             
 
         }
-
         [WebMethod]
-        public string Addinfo(string sendID)
+        public List<noveltyInfo> Addinfo(string sendID)
         {
-           
+            List<noveltyInfo> novs = new List<noveltyInfo>();
             BLL.userTb bll_user = new BLL.userTb();
             BLL.fansTb bll_fans = new BLL.fansTb();
-            List<Model.fansTb> Guanzhu = bll_fans.GetModelList("ownID='" + sendID + "' ");
-            List<int> list = new List<int>();
-            foreach (Model.fansTb fan in Guanzhu)
-            {
-                list.Add(fan.ownedID);
-            }
+            List<Model.fansTb> Guanzhu = bll_fans.GetModelList("ownID='" + sendID + "'and groupID!=-1 ");
+            //List<int> list = new List<int>();
+            //foreach (Model.fansTb fan in Guanzhu)
+            //{
+            //    list.Add(fan.ownedID);
+            //}
 
             BLL.noveltyTb bll_nov = new BLL.noveltyTb();
             List<Model.noveltyTb> mod_novlist = new List<Model.noveltyTb>();
             List<Model.noveltyTb> mod_alllist = new List<Model.noveltyTb>();
             for (int i = 0; i < Guanzhu.Count(); i++)
             {
-                mod_novlist= bll_nov.GetModelList("senderID='" + Guanzhu[i].ownedID + "'and state=1");
+                mod_novlist = bll_nov.GetModelList("senderID='" + Guanzhu[i].ownedID + "'and state=1");
                 mod_alllist.AddRange(mod_novlist);
             }
             List<Model.noveltyTb> mod_melist = new List<Model.noveltyTb>();
-            mod_melist = bll_nov.GetModelList("senderID='"+sendID+"'and state=1");
+            mod_melist = bll_nov.GetModelList("senderID='" + sendID + "'and state=1");
             mod_alllist.AddRange(mod_melist);
             Model.noveltyTb temp = new Model.noveltyTb();
-            for (int i = 0; i < mod_alllist.Count()-1; i++)
+            for (int i = 0; i < mod_alllist.Count() - 1; i++)
             {
                 for (int j = i + 1; j < mod_alllist.Count(); j++)
                 {
-                    if (mod_alllist[i].noveltyID<mod_alllist[j].noveltyID)
+                    if (mod_alllist[i].noveltyID < mod_alllist[j].noveltyID)
                     {
                         temp = mod_alllist[i];
                         mod_alllist[i] = mod_alllist[j];
@@ -228,22 +254,45 @@ namespace littleworld.Web.ws
                     }
                 }
             }
-            string all_novety="";
-            all_novety += mod_alllist.Count().ToString() + "@+@";
+           
+            //string all_novety = "";
+            //all_novety += mod_alllist.Count().ToString() + "@+@";
             for (int i = 0; i < mod_alllist.Count(); i++)
             {
+                
                 Model.userTb mod_user = new Model.userTb();
                 mod_user = bll_user.GetModel(mod_alllist[i].senderID);
-                all_novety += mod_user.userName.ToString() + ";" + mod_alllist[i].contents + ";" + mod_alllist[i].publishtime.ToString() + ";" + mod_alllist[i].supportNum.ToString() + ";" + mod_alllist[i].transmitNum.ToString() + ";" + mod_alllist[i].commentNum.ToString() + ";" + mod_user.headImgUrl + ";" + mod_alllist[i].noveltyID.ToString() + "!=!";
+
+                
+                List<Model.fansTb> mod_f = new List<Model.fansTb>();
+                mod_f = bll_fans.GetModelList("ownID='"+sendID+"'and ownedID='"+mod_user.userID.ToString()+"'");
+
+                noveltyInfo nov = new noveltyInfo();
+                if (mod_user.userID == Convert.ToInt16(sendID))
+                {
+                    nov.UserName =mod_user.userName;
+                }
+                else
+                {
+                    nov.UserName = mod_f[0].ownedName;
+                }
+                nov.TypeID =Convert.ToInt16(mod_alllist[i].typeID);
+                nov.Supportnum =Convert.ToInt16(mod_alllist[i].supportNum);
+                nov.Transmitnum = Convert.ToInt16(mod_alllist[i].transmitNum);
+                nov.Headurl = mod_user.headImgUrl;
+                nov.Time = mod_alllist[i].publishtime.ToString();
+                nov.Commentnum =Convert.ToInt16(mod_alllist[i].commentNum);
+                nov.Contents = mod_alllist[i].contents;
+                nov.NovID = mod_alllist[i].noveltyID;
+                novs.Add(nov);
             
             }
+            return novs;
 
+            //return all_novety;
 
-            return all_novety;
-           
 
         }
-
 
 
         [WebMethod]
@@ -277,7 +326,7 @@ namespace littleworld.Web.ws
            
             bll_notb.Add(mod_notb);
            
-            int maxID=bll_notb.GetMaxId();
+            int maxID=bll_notb.GetMaxId()-1;
 
             BLL.noveltyImagesTb bll_noImg = new BLL.noveltyImagesTb();
             Model.noveltyImagesTb mod_Img = new Model.noveltyImagesTb();
