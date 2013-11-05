@@ -42,7 +42,7 @@
 .current{width: 50px;height: 32px;float: left;}
 .curA{white-space: nowrap; font-weight: bold; display: block;width: 30px;height: 30px;line-height: 30px; margin: 0 10px;font-family: "SimSun";color: #333;font-size: 14px;}
 .curbg{display: block; width:44px;height: 8px; position: relative;margin:-6px auto 0 auto;top:2px;*top:13px;*margin-top:-15px;background-position: -500px -75px;background-image: url("../images/userHomeImg/icon.png");background-color: #fafafa;}
-.WB_feed_type{ position: relative; margin: 0px 20px;padding: 20px 0px 0px;border-color: #e6e6e6;width: 560px;min-height:50px;*min-height:80px;}
+.WB_feed_type{ position: relative; margin: 0px 20px;padding: 20px 0px 0px;border-color: #e6e6e6;width: 560px;min-height:50px;*min-height:80px;height:auto;}
 .WB_screen{ position: relative;width:12px;height: 12px;margin: -9px 0 0 548px;}
 .icon_chooseup{visibility:hidden;background-position: -75px -75px;display: inline-block;width: 12px;height: 12px;background-repeat: no-repeat;background-image: url("../images/userHomeImg/icon.png");}
 .menu_small{background-color: #fff;border-radius: 2px 2px 2px 2px;position:absolute;top:12px;right: 0px; display: none; height: 51px; padding: 1px;*height:51px;border:1px solid #ccc;}
@@ -81,7 +81,7 @@
 .WB_name{float: left; font-family: "SimSun";color: #333;font-weight: bold;font-size: 14px;line-height: 16px;}
 .wbnamecolor{color:#4d8775;}
 .WB_info{width:495px;*width:492px;height: 16px;white-space: nowrap;}
-.WB_text{white-space: nowrap;font-size: 14px;line-height:23px;padding: 4px 0px;font-family: "SimSun";color:#333;text-align: left;}
+.WB_text{width:485px;word-wrap:break-word; overflow:hidden; height:auto;max-height:170px; font-size: 14px;line-height:23px;padding: 4px 0px;font-family: "SimSun";color:#333;text-align: left;}
 .WB_media_list{width: 495px;height:120px;padding-bottom:15px;margin-right:-20px;*height: 135px;float: left;border:1px solid #ccc;}
 .WB_media_list li{display: inline-block;float: left;width:50px; margin: 0 9px 0 0;vertical-align: top;}
 .chePicMin{border:1px solid #ccc; display: inline-block;vertical-align:top;min-width:60px;height: 120px; text-align: center;color:#bee4d2;}
@@ -121,9 +121,7 @@
 
 
 
-
-
-.pl_rightmod_myinfo{width: 230px;height:136px;border: 1px solid #ccc;}
+.pl_rightmod_myinfo{width: 230px;height:136px;}
 .W_person_info{width: 190px;height: 83px;margin: 0 20px;}
 .headImg{width: 80px;height: 81px;padding-bottom: 2px;float: left;}
 .headA{display: block;width: 80px;height: 81px;}

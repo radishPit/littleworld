@@ -21,14 +21,10 @@
     store(myID);
     pingbi(myID);
     AddMaster(myID);
-    Message(myID);
+    
 
 });
-function Message(myID) {
-    $(document).on("click", ".message", function () {
-        $(this).attr("href", "userMassage.aspx?userID="+myID+"");
-    });
-}
+
 function AddMaster(myID) {
     $(".gn_name").html(myID);
 }
@@ -123,7 +119,7 @@ function transmit(myID) {
                 thisurl = recept.split(";")[6];
                 novID = recept.split(";")[7];
 
-                $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_media_expand'><div class='WB_arrow'><em class='S_line1_c'>◆</em><span class='S_bg1_c'>◆</span></div><div node-type='feed_list_forwardContent'><div class='WB_info'><a href='#' class='WB_name'>" + preuserName + "</a></div><div class='WB_text'>" + precontents + "</div><div class='WB_func'><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan'><em class='icon_praised_b'></em>(1299)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>转发(1443)</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>收藏</a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan'>评论(1443)</a></div><div class='WB_from'><a href='' class='WB_time'>10月24日 22:37</a></div></div></div></div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='userReport.aspx?novID="+novID+"' class='zan jubao'>举报</a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+                $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='userReport.aspx?novID="+novID+"' class='zan jubao'>举报</a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div>");
 
 
             }
@@ -175,7 +171,7 @@ function addInfo(myID) {
     var novID;
     var recept;
     var arr = new Array();
-
+    var ss;
     $.ajax({
         url: "ws/userHome.asmx/Addinfo",
         type: "POST",
@@ -185,14 +181,23 @@ function addInfo(myID) {
         success: function (res) {
             $(res.d).each(function () {
                 userName = this["UserName"];
-                comments = this["Contents"];
+                comments= this["Contents"];
                 time = this["Time"];
                 supportnum = this["Supportnum"];
                 transmitnum = this["Transmitnum"];
                 commentnum = this["Commentnum"];
                 thisurl = this["Headurl"];
                 novID = this["NovID"];
-                $("#news_container").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='userReport.aspx?novID="+novID+"' class='zan jubao'>举报</a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+//                var num = ss.length % 36;
+//                for (var i = 1; i < num+1; i++) {
+//                    comments += ss.substring(0, 36)+"<br>";
+//                    ss = ss.substring(36 * i);
+
+//                }
+
+
+
+                $("#news_container").append("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='userReport.aspx?novID=" + novID + "' class='zan jubao'>举报</a></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
 
             });
 
@@ -448,7 +453,7 @@ function submitClick(myID) {
                     thisurl = recept.split(";")[6];
                     novID = recept.split(";")[7];
 
-                    $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'>" + comments + "</div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan jubao'>举报</a></div></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
+                    $("#news_container").prepend("<div class='WB_feed_type'id=" + novID + "><div class='WB_global_personcard'><div class=''></div></div><div class='WB_screen'><a href='javascript:void(0)' class='icon_chooseup' id='xiaojiantou'></a><div class='menu_small'><ul><li><a href='javascript:void(0)' class='hide'>隐藏这条微博</a> </li><li><a href='javascript:void(0)' class='pb'>屏蔽##的微博</a> </li></ul></div></div><div class='WB_feed_datail'><div class='WB_face'><a href='#' class='W_face_radius'><img width='50'height='50' src=" + thisurl + "/></a></div><div class='WB_detail'><div class='WB_info'> <a href='#' class='WB_name'>" + userName + " </a></div><div class='WB_text'><p class='sp'>" + comments + "</p></div><div class='WB_func'><div class='WB_handle'><a href='javascript:void(0)' class='zan support'><em class='icon_praised_b'></em>(" + supportnum + ")</a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan transmit'>转发(" + transmitnum + ") </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan store'>收藏 </a><i class='sfgt'>|</i> <a href='javascript:void(0)' class='zan comment'>评论(" + commentnum + ") </a><i class='sfgt ch'>|</i><a href='javascript:void(0)' class='zan jubao'>举报</a></div></div><div class='WB_from'><a href='' class='WB_time'>" + time + "</a></div></div></div></div></div>");
                     var newAdd = "#" + novID.toString();
                     $(document).on("", "newAdd", function () { 
                     
