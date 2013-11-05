@@ -214,7 +214,15 @@
     <Content Include="images\userInfoImg\tumblr_mru7l73vil1qez33oo1_1280.jpg" />
     <Content Include="images\userInfoImg\tumblr_muwt4yjL3k1r8u7byo1_1280.jpg" />
     <Content Include="images\userMassageImg\msg_icon.png" />
+    <Content Include="images\userMasterTRBImg\bg_line.png" />
+    <Content Include="images\userMasterTRBImg\bg_nav.png" />
+    <Content Include="images\userMasterTRBImg\body_bg.jpg" />
+    <Content Include="images\userMasterTRBImg\footer_bg.png" />
     <Content Include="images\userMasterTRBImg\head_logo.png" />
+    <Content Include="images\userMasterTRBImg\icon.png" />
+    <Content Include="images\userMasterTRBImg\icon2.png" />
+    <Content Include="images\userMasterTRBImg\left_nav_border.png" />
+    <Content Include="images\userMasterTRBImg\repeat_bg_y.png" />
     <Content Include="js\ablum.js" />
     <Content Include="js\adminLogin.js" />
     <Content Include="js\adminMaster.js" />
