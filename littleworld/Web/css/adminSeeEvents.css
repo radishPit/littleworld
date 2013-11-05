@@ -4,7 +4,8 @@
 .adminNoveltyDetailA{ line-height: 35px; color:rgb(102,171,0);}
 .adminNoveltyDetailA:hover{ color:rgb(69,147,0); text-decoration:underline;}
 .gvSuperAdminSeeInfoHeaderA{ margin: 0 auto; float:none;}
-.gvSuperAdminSeeInfoHeaderAddr{ width:130px;}
+.gvSuperAdminSeeInfoHeaderAddr{ width:130px;margin:10px 0 30px 320px;}
+
 /**********************see user end*******************************/
 
 /**********************see user detail*******************************/
@@ -22,4 +23,6 @@
 .noveltyDetailUserImg{ height:120px; }
 .noveltyDetailUserImg img{ width:100px; height: 100px;}
 .details{ height:120px;}
+
+.paging{margin:0 0 0 350px;}
 /**********************see user detail end3*******************************/

@@ -121,13 +121,14 @@ namespace littleworld.Web
 
             }
             Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script language=javascript>alert('保存成功！');</script> ", false);
-
+            
             this.txtaddr.Text = "";
             this.txtage.Text = "";
             this.txtcol.Text = "";
             this.txtmid.Text = "";
             this.txtpri.Text = "";
             this.txtsenior.Text = "";
+            Response.Redirect("userLogin.aspx");
 
         }
 
