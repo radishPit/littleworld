@@ -20,10 +20,18 @@
     transmit(myID);
     store(myID);
     pingbi(myID);
-    jubao();
-  
+    AddMaster(myID);
+    Message(myID);
 
 });
+function Message(myID) {
+    $(document).on("click", ".message", function () {
+        $(this).attr("href", "userMassage.aspx?userID="+myID+"");
+    });
+}
+function AddMaster(myID) {
+    $(".gn_name").html(myID);
+}
 
 function pingbi(myID) {
     $(document).on("click", ".pb", function () {
