@@ -442,6 +442,7 @@
     </Compile>
     <Compile Include="adminSeeEvents.aspx.cs">
       <DependentUpon>adminSeeEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminSeeEvents.aspx.designer.cs">
       <DependentUpon>adminSeeEvents.aspx</DependentUpon>

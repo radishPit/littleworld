@@ -75,14 +75,18 @@ body, button, input, select, textarea {
 .cp_wb_short dl{margin-top:10px;}
 
 
-.cp_wb_long dt{
+.cp_wb_short  dt{
 	display:inline;
 	float:left;
 	margin-left:10px;
-	width:30px;
+	width:31px;
+	
 }
 
-.cp_wb_long dd{
+
+.cp_wb_short dd
+{
+    float:left;
 	margin-left:70px;
 	line-height:17px;
 	color:#999;

@@ -1,2 +1,170 @@
-﻿body {
+﻿.W_main_c {
+    padding: 22px 0px 50px;
 }
+.W_main_c {
+    float: left;
+    width: 600px;
+    min-height: 800px;
+    overflow: hidden;
+}
+.clearfix {
+    display: block;
+}
+ .group_read {
+    margin: 0px 20px;
+}
+ .sort, .group_read .title {
+  width: 560px;
+    height: 32px;
+    float: left;
+    border-bottom: 2px solid rgb(234, 20, 41);
+   
+}
+.group_read {
+    clear: both;
+}
+.group_read .item.current {
+    font-weight: bold;
+    height: 32px;
+}
+.group_read .item {
+    float: left;
+}
+li {
+    list-style: none outside none;
+}
+.group_read .item_link {
+    padding: 0px;
+}
+.group_read .item_link {
+    display: block;
+    padding: 0px 10px;
+    line-height: 30px;
+    font-size: 14px;
+   
+}
+ .W_tabarrow_big {
+    position: relative;
+    top: 2px;
+ 
+}
+ .W_tabarrow_big {
+    display: block;
+    left: 0px;
+}
+.W_tabarrow_big 
+{
+    position:relative;
+    top:2px;
+    width: 44px;
+    height: 8px;
+    margin: -6px auto 0px;
+    background-image: url('../images/userInfoImg/icon.png');
+    background-position: -500px -75px;
+    font-size: 0px;
+   
+    background-color: rgb(250, 250, 250);
+}
+  
+ 
+}
+.S_bg4, .WB_left_nav a.lev_curr, .WB_left_nav a.lev_curr:hover, a.W_gotop:hover, .SW_fun_bg:hover {
+    background-color: rgb(250, 250, 250);
+}
+body, legend, .S_txt1, .S_func1, .SW_fun .S_func1, .SW_fun2 .S_func3, .current .S_func1:hover {
+    color: rgb(51, 51, 51);
+}
+ul,dt
+{
+    padding:0;
+    margin:0;
+    }
+.big_comment_list {
+    margin-top: 6px;
+}
+.big_comment_list .msg_box .list {
+    border: 0px none;
+    padding-bottom: 0px;
+}
+ .big_comment_list .msg_box .list {
+    position: relative;
+}
+.big_comment_list .msg_box .face {
+    position: relative;
+}
+.big_comment_list .face {
+    float: left;
+    width: 50px;
+}
+.big_comment_list .msg_box .comment {
+    margin-left: 15px;
+    margin-top: 0px;
+    width: 495px;
+}
+.big_comment_list .comment {
+    float: left;
+    width: 500px;
+    margin: -5px 0px 0px 10px;
+    line-height: 21px;
+    position: relative;
+}
+.big_comment_list .cm_arr_box {
+    padding: 15px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 2px 2px 2px;
+}
+.S_line1 {
+    border-color: rgb(217, 217, 217);
+}   
+.S_bg1, a.W_gotop, .SW_fun_bg {
+    background-color: rgb(242, 242, 242);
+}
+.big_comment_list .comment {
+    line-height: 21px;
+}
+.big_comment_list .comment {
+    float: left;
+    width: 500px;
+    margin: -5px 0px 0px 10px;
+    line-height: 21px;
+    position: relative;
+}
+.big_comment_list .cm_arr_box .message_arrow {
+    position: absolute;
+    top: 15px;
+    left: -9px;
+    width: 10px;
+    overflow: hidden;
+}
+.big_comment_list .cm_arr_box .message_arrow * {
+    font-family: "SimSun";
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1.231;
+    display: block;
+    height: 20px;
+}
+.S_line1_c {
+    color: rgb(227, 239, 234);
+}
+address, caption, cite, code, dfn, em, i, th, var, b {
+    font-style: normal;
+    font-weight: normal;
+}
+.big_comment_list .cm_arr_box .message_arrow span {
+    margin: -20px 0px 0px 1px;
+}
+.big_comment_list .cm_arr_box .message_arrow * {
+    font-family: "SimSun";
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1.231;
+    display: block;
+    height: 20px;
+}
+.S_bg1_c {
+    color: rgb(242, 242, 242);
+}
+
+
