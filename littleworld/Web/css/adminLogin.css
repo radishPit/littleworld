@@ -1,14 +1,14 @@
 ﻿*{ margin: 0; padding: 0;}
 body 
-{
-	min-width:850px;min-height:850px;
+{text-align: center; font-size: 12px; background-size: cover;
 	background-image: url("../images/adminLoginImg/tumblr_mt810zPtot1sccgico1_1280.jpg");
+	 background-repeat: no-repeat;
 }
-
-#screen1{width: 1000px;height: 800px;}
-#screentop{width: 600px;height: 120px;margin: 160px 0 0 400px;}
-.screentab{width: 230px;height: 56px;background-color:rgb(162,162,115);float: left;border-radius: 9px;margin: 26px 16px 0 130px;}
-.top{text-decoration: none;color: rgb(255,255,255);line-height: 56px;font-size: 18px;font-weight: 400;margin: 0 0 0 60px;}
+#screen{width: 1000px;height: 400px;min-width:1000px;min-height:300px;}
+#screen1{width: 1000px;height: 400px;}
+#screentop{width: 300px;height: 120px;margin: 160px 0 0 380px;}
+.screentab{width: 230px;height: 56px;background-color:rgb(162,162,115);float: left;border-radius: 9px;margin: 26px 16px 0 0px;}
+.top{text-decoration: none;color: rgb(255,255,255);line-height: 56px;font-size: 18px;font-weight: 400;margin: 0 0 0 10px;}
 .screentab:hover{color: rgb(255,255,255);}
 #screentxt{width: 500px;height: 300px;margin: auto;}
 #txtid{width: 330px;height: 60px;margin: 0 0 0 70px;}
@@ -18,7 +18,7 @@ body
 #txtQ{width: 250px;height: 29px;border: 1px;margin: 0 0 0 21px;border-radius: 5px;}
 #pwdQ{width: 250px;height: 30px;border: 1px;margin: 0 0 0 21px;border-radius: 5px;}
 #btn{background-color:rgb(162,162,115);line-height: 56px;margin: 30px auto auto 130px;border-radius: 15px;width:180px;height:60px;}
-.top2{text-decoration: none;color: rgb(255,255,255);line-height:60px;font-size: 18px;font-weight: 400;margin-left: 36px;width:100px;height:30px;
+.top2{text-decoration: none;color: rgb(255,255,255);line-height:60px;font-size: 18px;font-weight: 400;margin-left: 10px;width:100px;height:30px;
 	margin-right: 0;
 	margin-bottom: 0;
 	text-align :center;
