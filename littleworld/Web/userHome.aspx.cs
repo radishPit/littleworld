@@ -56,6 +56,7 @@ namespace littleworld.Web
             this.fansnum.InnerText = fansnum;
             this.guanzhunum.InnerText = guanzhunum;
             
+            
         }
 
        
