@@ -538,6 +538,7 @@
     <Compile Include="LTuserlogin.aspx.designer.cs">
       <DependentUpon>LTuserlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="noveltyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="superAddAdmin.aspx.cs">
       <DependentUpon>superAddAdmin.aspx</DependentUpon>

@@ -30,7 +30,7 @@
                     <dl>
                         <dt>
                             <a href="/">
-                                <img src="<% =headImgUrl %>" alt="Alternate Text"></img>
+                                <img src="<% =headImgUrl %>" width="30" height="30" alt="Alternate Text"></img>
                             </a>
                         </dt>
                         <dd>

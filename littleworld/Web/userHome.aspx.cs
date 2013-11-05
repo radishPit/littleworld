@@ -25,15 +25,12 @@ namespace littleworld.Web
             string noveltynum;
             string guanzhunum;
             string myImg;
-            //int myID;
-
-            //int myID = 5;
+            
             BLL.userTb bll_user = new BLL.userTb();
             Model.userTb me = new Model.userTb();
             List<Model.userTb> myspace = new List<Model.userTb>();
             myspace = bll_user.GetModelList("userEmail='" + myEmail + "'");
             me = myspace[0];
-            //me = bll_user.GetModel(myID);
             MyID = me.userID;
             myname = me.userName;
             myImg = me.headImgUrl;
@@ -59,10 +56,6 @@ namespace littleworld.Web
             this.fansnum.InnerText = fansnum;
             this.guanzhunum.InnerText = guanzhunum;
             
-
-
-            //Session.Remove("no");
-            //Session.Remove("pwd");
         }
 
        
