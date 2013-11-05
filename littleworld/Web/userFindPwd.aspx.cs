@@ -62,7 +62,7 @@ namespace littleworld.Web
 
                         m_message.Subject = "LittleWorld";
 
-                        m_message.Body = "邮箱验证信息：http://localhost:46885/userResetPwd.aspx 载入重置密码界面";
+                        m_message.Body = "邮箱验证信息：http://localhost:3448/userResetPwd.aspx 载入重置密码界面";
 
                         SmtpClient m_smtpClient = new SmtpClient();
 

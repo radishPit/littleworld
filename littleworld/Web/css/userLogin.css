@@ -25,3 +25,5 @@ body{ text-align: center; font-size: 12px; background-size: cover; background-im
 .stxt{font-size:13px;color:rgb(255,255,255);}
 
 #logincheck{width:100px;height:30px;float:right;margin:20px auto 0 auto;float:right ;}
+
+.pwdS{font-size:16px;color:rgb(255,255,255);list-style-type:none;}

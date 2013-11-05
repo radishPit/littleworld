@@ -16,13 +16,13 @@ function initEvents() {
             $(this).val(name1);
         }
     });
-    $(".value1").keyup(function () {
-        var val = $(this).val();
-        var name = $(this).attr("name1");
-        if (val == "") {
-            $(this).val(name);
-        }
-    });
+//    $(".value1").keyup(function () {
+//        var val = $(this).val();
+//        var name = $(this).attr("name1");
+//        if (val == "") {
+//            $(this).val(name);
+//        }
+//    });
 
 
 }

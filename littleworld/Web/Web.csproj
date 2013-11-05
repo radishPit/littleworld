@@ -183,6 +183,13 @@
     <Content Include="images\userHomeImg\img_default.png" />
     <Content Include="images\userHomeImg\layer_arrow.png" />
     <Content Include="images\userHomeImg\layer_bg.png" />
+    <Content Include="images\userInfoImg\1.gif" />
+    <Content Include="images\userInfoImg\12.jpg" />
+    <Content Include="images\userInfoImg\1314122482y2RS.jpg" />
+    <Content Include="images\userInfoImg\1316507271ae9U.jpg" />
+    <Content Include="images\userInfoImg\icon.png" />
+    <Content Include="images\userInfoImg\tumblr_mru7l73vil1qez33oo1_1280.jpg" />
+    <Content Include="images\userInfoImg\tumblr_muwt4yjL3k1r8u7byo1_1280.jpg" />
     <Content Include="images\userMassageImg\msg_icon.png" />
     <Content Include="js\ablum.js" />
     <Content Include="js\adminLogin.js" />
@@ -442,6 +449,7 @@
     </Compile>
     <Compile Include="adminSeeEvents.aspx.cs">
       <DependentUpon>adminSeeEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminSeeEvents.aspx.designer.cs">
       <DependentUpon>adminSeeEvents.aspx</DependentUpon>
@@ -845,7 +853,6 @@
     <Folder Include="images\userCommentImg\" />
     <Folder Include="images\userFindPwdImg\" />
     <Folder Include="images\userGroupManageImg\" />
-    <Folder Include="images\userInfoImg\" />
     <Folder Include="images\userLoginImg\" />
     <Folder Include="images\userMasterTBImg\" />
     <Folder Include="images\userMasterTRBImg\" />

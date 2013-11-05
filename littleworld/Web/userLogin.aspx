@@ -24,6 +24,8 @@
 				<div id="textPassword"> 
 					<asp:TextBox type="text"  name1="Password" value="Password" id="textPasswordT"  
                         CssClass ="value1 logintext" runat="server" TextMode="Password" ></asp:TextBox>
+
+            
 				</div>
                 </div>
 
@@ -33,9 +35,10 @@
                   ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
                   ControlToValidate="textEmailT" Cssclass="stxt" ForeColor="White"></asp:RegularExpressionValidator>
 
-                     
+                     <a href="userFindPwd.aspx" class="pwdS">忘记密码</a>
 
             </div>
+
 			</div>
 <%--			<a id="loginBtn" href="#" runat="server">
 			    <strong>Login in</strong>
