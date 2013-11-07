@@ -155,6 +155,10 @@ namespace littleworld.BLL
 					{
 						model.creatTime=DateTime.Parse(dt.Rows[n]["creatTime"].ToString());
 					}
+					if(dt.Rows[n]["littleImgUrl"]!=null && dt.Rows[n]["littleImgUrl"].ToString()!="")
+					{
+					model.littleImgUrl=dt.Rows[n]["littleImgUrl"].ToString();
+					}
 					modelList.Add(model);
 				}
 			}

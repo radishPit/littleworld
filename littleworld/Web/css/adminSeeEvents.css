@@ -3,8 +3,8 @@
 .gvSuperAdminSeeInfoHeaderstate{width:130px;}
 .adminNoveltyDetailA{ line-height: 35px; color:rgb(102,171,0);}
 .adminNoveltyDetailA:hover{ color:rgb(69,147,0); text-decoration:underline;}
-.gvSuperAdminSeeInfoHeaderA{ margin: 0 auto; float:none;}
-.gvSuperAdminSeeInfoHeaderAddr{ width:130px;margin:10px 0 30px 320px;}
+.gvSuperAdminSeeInfoHeaderA{ margin: 0 auto; float:none;margin:10px 0 30px 320px;}
+.gvSuperAdminSeeInfoHeaderAddr{ width:130px;}
 
 /**********************see user end*******************************/
 
@@ -24,5 +24,6 @@
 .noveltyDetailUserImg img{ width:100px; height: 100px;}
 .details{ height:120px;}
 
-.paging{margin:0 0 0 350px;}
+.paging{margin:20px 0 0 50px;}
+.mainSeeContent{width:1000px;height:auto;margin:0 0 0px 320px;}
 /**********************see user detail end3*******************************/

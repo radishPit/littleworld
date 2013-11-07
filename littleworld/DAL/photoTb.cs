@@ -45,22 +45,24 @@ namespace littleworld.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into photoTb(");
-			strSql.Append("photoID,ownID,description,imgUrl,photoGroupID,creatTime)");
+			strSql.Append("photoID,ownID,description,imgUrl,photoGroupID,creatTime,littleImgUrl)");
 			strSql.Append(" values (");
-			strSql.Append("@photoID,@ownID,@description,@imgUrl,@photoGroupID,@creatTime)");
+			strSql.Append("@photoID,@ownID,@description,@imgUrl,@photoGroupID,@creatTime,@littleImgUrl)");
 			SqlParameter[] parameters = {
 					new SqlParameter("@photoID", SqlDbType.Int,4),
 					new SqlParameter("@ownID", SqlDbType.Int,4),
 					new SqlParameter("@description", SqlDbType.NVarChar,50),
 					new SqlParameter("@imgUrl", SqlDbType.NVarChar,50),
 					new SqlParameter("@photoGroupID", SqlDbType.Int,4),
-					new SqlParameter("@creatTime", SqlDbType.DateTime)};
+					new SqlParameter("@creatTime", SqlDbType.DateTime),
+					new SqlParameter("@littleImgUrl", SqlDbType.NVarChar,50)};
 			parameters[0].Value = model.photoID;
 			parameters[1].Value = model.ownID;
 			parameters[2].Value = model.description;
 			parameters[3].Value = model.imgUrl;
 			parameters[4].Value = model.photoGroupID;
 			parameters[5].Value = model.creatTime;
+			parameters[6].Value = model.littleImgUrl;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -83,7 +85,8 @@ namespace littleworld.DAL
 			strSql.Append("description=@description,");
 			strSql.Append("imgUrl=@imgUrl,");
 			strSql.Append("photoGroupID=@photoGroupID,");
-			strSql.Append("creatTime=@creatTime");
+			strSql.Append("creatTime=@creatTime,");
+			strSql.Append("littleImgUrl=@littleImgUrl");
 			strSql.Append(" where photoID=@photoID ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@ownID", SqlDbType.Int,4),
@@ -91,13 +94,15 @@ namespace littleworld.DAL
 					new SqlParameter("@imgUrl", SqlDbType.NVarChar,50),
 					new SqlParameter("@photoGroupID", SqlDbType.Int,4),
 					new SqlParameter("@creatTime", SqlDbType.DateTime),
+					new SqlParameter("@littleImgUrl", SqlDbType.NVarChar,50),
 					new SqlParameter("@photoID", SqlDbType.Int,4)};
 			parameters[0].Value = model.ownID;
 			parameters[1].Value = model.description;
 			parameters[2].Value = model.imgUrl;
 			parameters[3].Value = model.photoGroupID;
 			parameters[4].Value = model.creatTime;
-			parameters[5].Value = model.photoID;
+			parameters[5].Value = model.littleImgUrl;
+			parameters[6].Value = model.photoID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -160,7 +165,7 @@ namespace littleworld.DAL
 		{
 			
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select  top 1 photoID,ownID,description,imgUrl,photoGroupID,creatTime from photoTb ");
+			strSql.Append("select  top 1 photoID,ownID,description,imgUrl,photoGroupID,creatTime,littleImgUrl from photoTb ");
 			strSql.Append(" where photoID=@photoID ");
 			SqlParameter[] parameters = {
 					new SqlParameter("@photoID", SqlDbType.Int,4)};
@@ -194,6 +199,10 @@ namespace littleworld.DAL
 				{
 					model.creatTime=DateTime.Parse(ds.Tables[0].Rows[0]["creatTime"].ToString());
 				}
+				if(ds.Tables[0].Rows[0]["littleImgUrl"]!=null && ds.Tables[0].Rows[0]["littleImgUrl"].ToString()!="")
+				{
+					model.littleImgUrl=ds.Tables[0].Rows[0]["littleImgUrl"].ToString();
+				}
 				return model;
 			}
 			else
@@ -208,7 +217,7 @@ namespace littleworld.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select photoID,ownID,description,imgUrl,photoGroupID,creatTime ");
+			strSql.Append("select photoID,ownID,description,imgUrl,photoGroupID,creatTime,littleImgUrl ");
 			strSql.Append(" FROM photoTb ");
 			if(strWhere.Trim()!="")
 			{
@@ -228,7 +237,7 @@ namespace littleworld.DAL
 			{
 				strSql.Append(" top "+Top.ToString());
 			}
-			strSql.Append(" photoID,ownID,description,imgUrl,photoGroupID,creatTime ");
+			strSql.Append(" photoID,ownID,description,imgUrl,photoGroupID,creatTime,littleImgUrl ");
 			strSql.Append(" FROM photoTb ");
 			if(strWhere.Trim()!="")
 			{

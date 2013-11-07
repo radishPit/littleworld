@@ -16,7 +16,7 @@
             <asp:GridView runat="server" ID="gvSuperAdminSeeInfo" 
                 AutoGenerateColumns="False" 
                 onrowdatabound="gvSuperAdminSeeInfo_RowDataBound" 
-                CssClass="gvSuperAdminSeeInfoJRow" 
+                CssClass="gvSuperAdminSeeInfoHeaderAddr" 
                 onselectedindexchanged="gvSuperAdminSeeInfo_SelectedIndexChanged" 
                 Width="347px" >
                 <Columns>

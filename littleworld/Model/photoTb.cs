@@ -16,6 +16,7 @@ namespace littleworld.Model
 		private string _imgurl;
 		private int? _photogroupid;
 		private DateTime? _creattime;
+		private string _littleimgurl;
 		/// <summary>
 		/// 
 		/// </summary>
@@ -63,6 +64,14 @@ namespace littleworld.Model
 		{
 			set{ _creattime=value;}
 			get{return _creattime;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string littleImgUrl
+		{
+			set{ _littleimgurl=value;}
+			get{return _littleimgurl;}
 		}
 		#endregion Model
 
